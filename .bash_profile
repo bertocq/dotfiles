@@ -13,8 +13,11 @@ fi
 eval "$(rbenv init -)"
 eval "$(hub alias -s)"
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 # export CC=gcc-4.2
 
