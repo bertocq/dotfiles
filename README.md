@@ -25,6 +25,8 @@ brew install rbenv ruby-build
 brew install redis
 brew install wget
 brew install wifi-password # display current wifi password
+brew tap joshuaclayton/formulae
+brew install unused
 
 brew install caskroom/cask/brew-cask
 brew cask install appcleaner # unistall apps totally
