@@ -147,6 +147,11 @@ rbenv global 2.3.1
 gem install bundler
 ```
 
+```
+gem install rubocop
+gem install rubocop-rspec
+```
+
 # Nokigiri on MacOS sierra
 bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2
 bundle install
