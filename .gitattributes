@@ -1,0 +1,3 @@
+*.rb diff=ruby
+*.ru diff=ruby
+*.rake diff=ruby
