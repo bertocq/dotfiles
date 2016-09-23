@@ -1,0 +1,14 @@
+alias ll="ls -la"
+
+# Git
+alias gd="git diff"
+alias ga="git add"
+alias gcam="git commit -am"
+alias p='git pull --rebase'
+alias P='git push'
+
+# Development
+alias rc='rails c'
+alias rs='rails s'
+alias be='bundle exec'
+alias br='bundle exec rake'
