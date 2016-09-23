@@ -1,6 +1,6 @@
 [user]
-	name = Bertocq
-	email = bertocq@gmail.com
+  name = Bertocq
+  email = bertocq@gmail.com
 [color]
   ui = true
 [color "branch"]
@@ -8,42 +8,43 @@
   local = green 
   remote = white
 [color "diff"]
-	old = red strike
+  old = red strike
 [core]
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
-	editor = subl -n -w
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
+  editor = subl -n -w
 [alias]
-	br = branch
-	branches = branch -a
-	cam = commit --amend
-	ci = commit
-	co = checkout
-	cp = cherry-pick
-	cob = checkout -b
-	lg = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
-	ru = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop"
-	rubo = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop -a"
-	st = status -s
-	rpo = remote prune origin
-	su = pull --recurse-submodules
-	up = !git submodule update && git submodule foreach git checkout master && git submodule foreach git pull origin master
-	db = !sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -
-	pb = !sh -c 'git push --set-upstream origin $1' -
+  brs = branch -a
+  cam = commit --amend
+  ci = commit
+  co = checkout
+  cp = cherry-pick
+  cob = checkout -b
+  lg = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
+  ru = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop"
+  rubo = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop -a"
+  st = status -s
+  rpo = remote prune origin
+  su = pull --recurse-submodules
+  up = !git submodule update && git submodule foreach git checkout master && git submodule foreach git pull origin master
+  db = !sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -
+  pb = !sh -c 'git push --set-upstream origin $1' -
   pu = ![[ $(git config "branch.$(git symbolic-ref --short HEAD).merge") = '' ]] && git push -u origin $(git symbolic-ref --short HEAD) || git push
+  undo = reset HEAD^ --mixed
+  unstage = reset HEAD --
 [diff]
-	compactionHeuristic = true
+  compactionHeuristic = true
 [push]
-	default = simple
+  default = simple
 [pull]
-	rebase = true
+  rebase = true
 [commit]
   template = ~/.gitmessage
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [github]
-	user = bertocq
+  user = bertocq
