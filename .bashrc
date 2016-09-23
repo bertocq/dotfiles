@@ -3,8 +3,10 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 # Run twolfson/sexy-bash-prompt
 . ~/.bash_prompt
+
 # Add git completion
-source /usr/local/etc/bash_completion.d/git-completion.bash
+# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+source ~/git-completion.bash
 
 ### create directory and cd into it
 mkcd () {
