@@ -1,0 +1,9 @@
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+ToDo.md
+*.todo
+/ignore
+.env
+Backup.postman_dump
+.byebug_history
