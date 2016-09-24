@@ -12,6 +12,10 @@ alias PU="git pu"
 alias PR="git pull-request"
 alias go="git browse"
 alias rpo="git rpo"
+alias ru="git ru"
+alias rubo="git rubo"
+alias rup="git rup"
+alias rubop="git rubop"
 
 # Development
 alias rc='rails c'

@@ -14,21 +14,24 @@
   autocrlf = input
   editor = subl -w -n
 [alias]
-  brs = branch -a
+  bs = branch -a
+  bd = branch -D
   cam = commit --amend
   ci = commit
   co = checkout
   cp = cherry-pick
   cob = checkout -b
-  lg = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
-  ru = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop"
-  rubo = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop -a"
   st = status -s
+  lg = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
+  ru = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop -a"
+  rubo = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop"
+  rup = "!sh -c \"git diff --name-only HEAD..$1 | grep '.rb' | xargs rubocop -a\" -"
+  rubop = "!sh -c \"git diff --name-only HEAD..$1 | grep '.rb' | xargs rubocop \" -"
   rpo = remote prune origin
   su = pull --recurse-submodules
   up = !git submodule update && git submodule foreach git checkout master && git submodule foreach git pull origin master
-  db = !sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -
-  pb = !sh -c 'git push --set-upstream origin $1' -
+  db = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -"
+  pb = "!sh -c 'git push --set-upstream origin $1' -"
   pu = ![[ $(git config "branch.$(git symbolic-ref --short HEAD).merge") = '' ]] && git push -u origin $(git symbolic-ref --short HEAD) || git push
   undo = reset HEAD^ --mixed
   unstage = reset HEAD --
