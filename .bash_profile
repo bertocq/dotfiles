@@ -11,6 +11,7 @@ if [ -f ~/.aliases ]; then
 fi
 
 eval "$(rbenv init -)"
+eval "$(hub alias -s)"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
