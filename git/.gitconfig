@@ -12,7 +12,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   autocrlf = input
-  editor = subl -n -w
+  editor = subl -w -n
 [alias]
   brs = branch -a
   cam = commit --amend

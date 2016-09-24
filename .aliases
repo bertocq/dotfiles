@@ -6,6 +6,7 @@ alias ga="git add"
 alias gcam="git commit -am"
 alias p='git pull --rebase'
 alias P='git push'
+alias go="git browse"
 
 # Development
 alias rc='rails c'
