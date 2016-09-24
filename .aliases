@@ -1,3 +1,4 @@
+# Bash
 alias ll='ls -la'
 
 # Git
@@ -16,14 +17,16 @@ alias ru='git ru'
 alias rubo='git rubo'
 alias rup='git rup'
 alias rubop='git rubop'
+alias co='git co'
+alias cob='git cob'
 
-# Development
+# Ruby Dev
 alias rc='rails c'
 alias rs='rails s'
 alias be='bundle exec'
 alias br='bundle exec rake'
 
-# Heroku
+# Heroku Belt
 alias hl='heroku logs -t -a'
 alias hb='heroku run bash -a'
 alias hc='heroku run console -a'
