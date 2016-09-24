@@ -1,24 +1,30 @@
-alias ll="ls -la"
+alias ll='ls -la'
 
 # Git
-alias g="git"
-alias gd="git diff"
-alias gds="git diff --staged"
-alias ga="git add"
-alias gcm="git commit -m"
+alias g='git'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias ga='git add'
+alias gcm='git commit -m'
 alias p='git pull --rebase'
 alias P='git push'
-alias PU="git pu"
-alias PR="git pull-request"
-alias go="git browse"
-alias rpo="git rpo"
-alias ru="git ru"
-alias rubo="git rubo"
-alias rup="git rup"
-alias rubop="git rubop"
+alias PU='git pu'
+alias PR='git pull-request'
+alias go='git browse'
+alias rpo='git rpo'
+alias ru='git ru'
+alias rubo='git rubo'
+alias rup='git rup'
+alias rubop='git rubop'
 
 # Development
 alias rc='rails c'
 alias rs='rails s'
 alias be='bundle exec'
 alias br='bundle exec rake'
+
+# Heroku
+alias hl='heroku logs -t -a'
+alias hb='heroku run bash -a'
+alias hc='heroku run console -a'
+alias ha='heroku apps'
