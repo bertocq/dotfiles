@@ -1,12 +1,16 @@
 alias ll="ls -la"
 
 # Git
+alias g="git"
 alias gd="git diff"
 alias ga="git add"
-alias gcam="git commit -am"
+alias gcm="git commit -m"
 alias p='git pull --rebase'
 alias P='git push'
+alias PU="git pu"
+alias PR="git pull-request"
 alias go="git browse"
+alias rpo="git rpo"
 
 # Development
 alias rc='rails c'
