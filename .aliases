@@ -14,10 +14,7 @@ alias go='git browse'
 alias rpo='git rpo'
 alias ru='git ru'
 alias rubo='git rubo'
-alias rup='git rup'
-alias rubop='git rubop'
-alias co='git co'
-alias cob='git cob'
+alias gclean='git clean'
 
 # Ruby Dev
 alias rc='rails c'
