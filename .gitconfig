@@ -66,7 +66,7 @@
   unstage = reset HEAD --
 
   # Github
-  pr = pull-request -F ~/pr-template.md | pbcopy
+  pr = pull-request | pbcopy
 [diff]
   compactionHeuristic = true
 [push]
