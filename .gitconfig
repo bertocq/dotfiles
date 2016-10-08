@@ -85,7 +85,5 @@
   user = bertocq
 [fetch]
   prune = true
-[help]
-	autocorrect = 1
 [branch]
 	autosetuprebase = always
