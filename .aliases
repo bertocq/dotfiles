@@ -2,8 +2,8 @@
 alias ll='ls -la'
 
 # Git
-alias g='git'
 alias gd='git gd'
+alias gds='git gds'
 alias ga='git add'
 alias gcm='git gcm'
 alias p='git p'
@@ -14,7 +14,6 @@ alias go='git browse'
 alias rpo='git rpo'
 alias ru='git ru'
 alias rubo='git rubo'
-alias gclean='git clean'
 
 # Ruby Dev
 alias rc='rails c'
@@ -27,3 +26,6 @@ alias hl='heroku logs -t -a'
 alias hb='heroku run bash -a'
 alias hc='heroku run console -a'
 alias ha='heroku apps'
+alias hco='heroku config -a'
+alias hcos='heroku config:set'
+alias hcou='heroku config:unset'
