@@ -1,6 +1,7 @@
 # set bash colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
 # Run twolfson/sexy-bash-prompt
 . ~/.bash_prompt
 
