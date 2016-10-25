@@ -100,6 +100,9 @@ defaults write com.apple.dock mru-spaces -bool false
 # Install all available software updates
 sudo softwareupdate -ia
 
+# XCode dev tools install
+xcode-select --install
+
 # Extra configs:
 
 Divvy: Copy .divvy content and paste on to Safari search bar
@@ -126,6 +129,7 @@ gem install bundler
 # Nokigiri on MacOS sierra
 bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2
 bundle install
+brew unlink xz; bundle install; brew link xz
 http://stackoverflow.com/questions/40038953/installing-nokogiri-on-mac-os-sierra-10-12
 
 # Heroku 
