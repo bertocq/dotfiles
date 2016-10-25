@@ -29,3 +29,6 @@ alias ha='heroku apps'
 alias hco='heroku config -a'
 alias hcos='heroku config:set'
 alias hcou='heroku config:unset'
+
+# OSX
+alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
