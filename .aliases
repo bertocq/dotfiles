@@ -32,3 +32,4 @@ alias hcou='heroku config:unset'
 
 # OSX
 alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
+alias appupdate='sudo softwareupdate -ia; mas upgrade'

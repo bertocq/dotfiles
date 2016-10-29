@@ -139,6 +139,3 @@ https://devcenter.heroku.com/articles/heroku-command-line
 scutil --set ComputerName "bcq"
 scutil --set LocalHostName "bcq"
 scutil --set HostName "bcq"
-
-
-
