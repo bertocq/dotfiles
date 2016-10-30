@@ -21,8 +21,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Git-radar https://github.com/michaeldfallen/git-radar
 export PS1="$PS1\$(git-radar --bash --fetch): "
 
-source ~/git-completion.bash
-
 ### Used to change terminal tab title
 function title {
     echo -ne "\033]0;"$*"\007"
