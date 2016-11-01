@@ -24,6 +24,8 @@
 
   # Staging
   s = stash
+  ss = show stash
+  su = stash --include-untracked
   sa = stash apply
   sd = stash drop
   sp = stash pop
@@ -89,3 +91,5 @@
   prune = true
 [branch]
   autosetuprebase = always
+[merge]
+  ff = false
