@@ -57,7 +57,7 @@
 
   # Submodules
   su = pull --recurse-submodules
-  up = !git submodule update && git submodule foreach git checkout master && git submodule foreach git pull origin master
+  sup = !git submodule update && git submodule foreach git checkout master && git submodule foreach git pull origin master
   
   # Reverting
   revert = reset HEAD~
@@ -67,10 +67,12 @@
 
   # Github
   pr = pull-request
+
+  it = !git init && git commit -m “root” --allow-empty
 [diff]
   compactionHeuristic = true
 [push]
-	default = tracking
+  default = tracking
 [pull]
   rebase = true
 [commit]
@@ -86,4 +88,4 @@
 [fetch]
   prune = true
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
