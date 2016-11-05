@@ -16,10 +16,11 @@ alias ru='git ru'
 alias rubo='git rubo'
 
 # Ruby Dev
-alias rc='rails c'
-alias rs='rails s'
 alias be='bundle exec'
 alias br='bundle exec rake'
+alias spec='bundle exec rspec'
+alias rc='rails c'
+alias rs='rails s'
 
 # Heroku Belt
 alias hl='heroku logs -t -a'
