@@ -2,6 +2,7 @@
 alias ll='ls -la'
 
 # Git
+alias gs='git st'
 alias gd='git gd'
 alias gds='git gds'
 alias ga='git add'
