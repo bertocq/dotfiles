@@ -2,6 +2,7 @@
 *.sublime-workspace
 *.sublime-project
 ToDo.md
+/todo
 *.todo
 /ignore
 .env
