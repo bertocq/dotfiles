@@ -7,7 +7,7 @@ cd ~/dotfiles
 chmod +x makesymlinks.sh
 ./makesymlinks.sh
 ```
-
+```
 brew install bash
 brew install git
 brew install homebrew/versions/bash-completion2
@@ -146,3 +146,4 @@ awk '{print $1}' ~/.bash_history | sort | uniq -c | sort -n
 sed 's/|/\n/g' ~/.bash_history | awk '{CMD[$1]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
 
 To find out most used commands and thing about making aliases
+```
