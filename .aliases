@@ -19,8 +19,8 @@ alias rubo='git rubo'
 # Ruby Dev
 alias be='bundle exec'
 alias br='bundle exec rake'
-alias spec='bundle exec rspec'
-alias spect='bundle exec rspec --tag'
+alias sp='bundle exec rspec'
+alias spt='bundle exec rspec --tag'
 alias rc='rails c'
 alias rs='rails s'
 
