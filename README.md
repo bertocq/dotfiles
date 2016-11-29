@@ -44,6 +44,7 @@ brew cask install keka
 brew cask install libreoffice
 brew cask install little-snitch
 brew cask install macdown
+brew cask install mas
 brew cask install micro-snitch
 brew cask install psequel
 brew cask install robomongo
