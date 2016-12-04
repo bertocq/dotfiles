@@ -46,6 +46,7 @@ brew cask install little-snitch
 brew cask install macdown
 brew cask install mas
 brew cask install micro-snitch
+brew cask install mojibar
 brew cask install psequel
 brew cask install robomongo
 brew cask install sequel-pro
