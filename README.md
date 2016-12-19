@@ -11,6 +11,7 @@ chmod +x makesymlinks.sh
 ```
 brew install bash
 brew install diff-so-fancy # Making git diffs better in command line
+brew install elixir
 brew install git
 brew install homebrew/versions/bash-completion2
 brew install httpie
