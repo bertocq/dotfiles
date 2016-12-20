@@ -93,3 +93,5 @@
   autosetuprebase = always
 [merge]
   ff = false
+[rerere]
+  enabled = true
