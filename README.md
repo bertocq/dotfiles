@@ -149,3 +149,6 @@ sed 's/|/\n/g' ~/.bash_history | awk '{CMD[$1]++;count++;}END { for (a in CMD)pr
 
 To find out most used commands and thing about making aliases
 ```
+
+# Add private key to OSX Keychain
+ssh-add -K ~/.ssh/id_rsa
