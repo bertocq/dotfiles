@@ -45,5 +45,5 @@ alias hps='heroku pg:psql -a'
 
 # OSX
 alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
-alias appupdate='sudo softwareupdate -ia; brew doctor; brew upgrade; brew update; brew cask cleanup; mas upgrade'
+alias update='sudo softwareupdate -ia; brew doctor; brew upgrade; brew update; brew cask cleanup; mas upgrade'
 alias wifi='wifi-password'
