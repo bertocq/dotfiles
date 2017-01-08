@@ -40,7 +40,7 @@
   pu = ![[ $(git config "branch.$(git symbolic-ref --short HEAD).merge") = '' ]] && git push -u origin $(git symbolic-ref --short HEAD) || git push
   clearb = "! git branch --merged | xargs git branch -d"
   rpo = remote prune origin
-  reb = "!git fetch origin && git rebase origin/master"
+  mr = "!git checkout master && git pull && git checkout - && git rebase origin/master"
 
   # Commits
   ci = commit
@@ -76,7 +76,7 @@
 [diff]
   compactionHeuristic = true
 [push]
-  default = tracking
+  default = current
 [pull]
   rebase = true
 [commit]
