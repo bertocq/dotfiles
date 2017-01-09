@@ -1,5 +1,6 @@
 # Bash
 alias ll='ls -la'
+alias s='subl'
 
 # Git
 alias gs='git st'
