@@ -24,6 +24,7 @@ alias spt='bundle exec rspec --tag'
 alias spc='bundle exec rspec --color --format documentation --require spec_helper --require rails_helper spec'
 alias rc='rails c'
 alias rs='rails s'
+alias rf='redis-cli flushall'
 
 # Heroku Belt
 alias hl='heroku logs -t -a'
