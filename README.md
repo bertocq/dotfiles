@@ -15,6 +15,7 @@ brew install homebrew/versions/bash-completion2
 brew install httpie
 brew install hub
 brew install libxml2
+brew install mas
 brew install michaeldfallen/formula/git-radar
 brew install mongo
 brew install mysql
@@ -45,7 +46,6 @@ brew cask install keka
 brew cask install libreoffice
 brew cask install little-snitch
 brew cask install macdown
-brew cask install mas
 brew cask install micro-snitch
 brew cask install mojibar
 brew cask install psequel
@@ -152,4 +152,12 @@ To find out most used commands and thing about making aliases
 ```
 
 # Add private key to OSX Keychain
+```
 ssh-add -K ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa &>/dev/null
+```
+# Download all Organization repos (private ones as well)
+```
+curl -u bertocq -s https://api.github.com/orgs/<ORG_NAME>/repos?per_page=200 | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo["ssh_url"]} ]}'
+```
