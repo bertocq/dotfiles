@@ -9,6 +9,7 @@ chmod +x makesymlinks.sh
 ```
 ```
 brew install bash
+brew install diff-so-fancy
 brew install git
 brew install homebrew/versions/bash-completion2
 brew install httpie

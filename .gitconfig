@@ -47,8 +47,8 @@
   gcm = commit -m
 
   # Diff
-  gd = diff --color-words
-  gds = diff --staged
+  gd = "! git diff --color | diff-so-fancy"
+  gds = "! git diff --staged | diff-so-fancy"
 
   # Rubocop
   ru = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop -a"
