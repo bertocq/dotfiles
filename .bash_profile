@@ -16,9 +16,12 @@ eval "$(hub alias -s)"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-#export CC=gcc-4.2
+# export CC=gcc-4.2
 
-#add Homebrew’s sbin to PATH
+# Add Homebrew’s sbin to PATH
 export PATH=/usr/local/sbin:$PATH
 
 # test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Just in case https://github.com/lionheart/openradar-mirror/issues/15361 keeps being an issue
+# { eval `ssh-agent`; ssh-add -A; } &>/dev/null
