@@ -117,6 +117,10 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 rm -r User
 ln -s ~/Dropbox/Sublime/User
 ```
+# Little snitch installation
+```
+open /usr/local/Caskroom/little-snitch/3.7.2/Little\ Snitch\ Installer.app
+```
 
 # Extra manual downloads:
 Chrome Canary
