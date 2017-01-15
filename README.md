@@ -164,3 +164,10 @@ ssh-add ~/.ssh/id_rsa &>/dev/null
 ```
 curl -u bertocq -s https://api.github.com/orgs/<ORG_NAME>/repos?per_page=200 | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo["ssh_url"]} ]}'
 ```
+
+# Chrome config: 
+Gmail as email handler
+http://apple.stackexchange.com/a/112624
+
+# macos Shortuct:
+> Preferences > Keyboard > Shortcuts > Keyboard > Move focus to next window > Cmd+¡
