@@ -15,6 +15,8 @@ mkcd () {
   cd "$1"
 }
 
+export EDITOR="subl -w"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
