@@ -5,8 +5,8 @@
 ############################
 
 dir=~/dotfiles
-files=".aliases .bash_profile .bash_prompt .bashrc .divvy .iterm_bertocq_profile .rubocop.yml 
-.gitconfig .gitignore_global .gitmessage .git-completion.bash"
+files=".aliases .bash_profile .bash_prompt .bashrc .divvy .git-completion.bash
+.gitconfig .gitignore_global .gitmessage .rubocop.yml com.googlecode.iterm2.plist"
 
 # create symlinks on ~/ for each dotfile
 for file in $files; do
