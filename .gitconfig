@@ -47,6 +47,7 @@
   ci = commit
   cp = cherry-pick
   gcm = commit -m
+  uncommit = reset --soft HEAD^
 
   # Diff
   gd = "! git diff --color | diff-so-fancy"
