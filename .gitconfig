@@ -43,11 +43,12 @@
   reb = "!git fetch origin && git rebase origin/master"
 
   # Commits
-  cam = commit --amend
   ci = commit
   cp = cherry-pick
-  gcm = commit -m
-  uncommit = reset --soft HEAD^
+  cm = commit -m
+  cam = commit --amend
+  ucm = reset --soft HEAD^
+  it = !git init && git commit -m “root” --allow-empty
 
   # Diff
   gd = "! git diff --color | diff-so-fancy"
@@ -72,8 +73,6 @@
 
   # Github
   pr = pull-request
-
-  it = !git init && git commit -m “root” --allow-empty
 [diff]
   compactionHeuristic = true
 [push]
