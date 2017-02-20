@@ -8,6 +8,7 @@ chmod +x makesymlinks.sh
 ./makesymlinks.sh
 ```
 
+Install [Homebrew](https://brew.sh/)
 ```
 brew install bash
 brew install diff-so-fancy # Making git diffs better in command line
@@ -64,6 +65,13 @@ brew cask install trailer # github repo PR/issue watch
 brew cask install transmission
 brew cask install vlc
 brew cask install xscope # graphical tools
+
+sudo softwareupdate -ia
+brew doctor
+brew upgrade
+brew update
+brew cask cleanup
+mas upgrade
 ```
 
 ``` 
