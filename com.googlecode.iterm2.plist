@@ -148,12 +148,16 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>354 289 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>1804 96 606 456 1280 -164 1920 1058 </string>
+	<string>269 139 606 456 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>49 200 796 473 0 0 1280 778 </string>
+	<string>49 226 1018 447 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>49 3 1228 775 0 0 1280 778 </string>
+	<string>-160 1066 1228 762 -209 800 1680 1028 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>152 50 570 452 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -792,7 +796,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>6CC1079C-6CB0-4062-A6FA-53EA9C72F1A4</string>
 	<key>NoSyncLastTipTime</key>
-	<real>506795818.977974</real>
+	<real>509400730.48855102</real>
+	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
+	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -810,6 +816,34 @@
 		<string>0003</string>
 		<string>0004</string>
 		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
 	</array>
 	<key>PointerActions</key>
 	<dict>
@@ -855,8 +889,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-22T12:22:28Z</date>
+	<date>2017-02-21T08:12:04Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>TabStyle</key>
 	<integer>3</integer>
@@ -867,6 +903,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.0.14</string>
 </dict>
 </plist>
