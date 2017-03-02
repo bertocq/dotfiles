@@ -5,7 +5,7 @@
   ui = true
 [color "branch"]
   current = red
-  local = green 
+  local = green
   remote = white
 [color "diff"]
   old = red strike
@@ -18,7 +18,7 @@
   # Status
   st = status -s
   lg = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
-  
+
   # Pull
   p = pull --rebase
 
@@ -29,6 +29,7 @@
   sa = stash apply
   sd = stash drop
   sp = stash pop
+  sc = "!git stash && git stash drop"
 
   # Branches
   bs = branch -a
@@ -64,7 +65,7 @@
   # Submodules
   su = pull --recurse-submodules
   sup = !git submodule update && git submodule foreach git checkout master && git submodule foreach git pull origin master
-  
+
   # Reverting
   revert = reset HEAD~
   reset = reset HEAD^ --mixed
