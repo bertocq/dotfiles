@@ -57,10 +57,10 @@
   #gds = "! git diff --staged | diff-so-fancy"
 
   # Rubocop
-  ru = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop -a"
-  rubo = "! git status --porcelain | cut -c4- | grep '.rb' | xargs rubocop"
-  rup = "!sh -c \"git diff --name-only HEAD..$1 | grep '.rb' | xargs rubocop -a\" -"
-  rubop = "!sh -c \"git diff --name-only HEAD..$1 | grep '.rb' | xargs rubocop \" -"
+  ru = "! git status --porcelain | cut -c4- | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a"
+  rubo = "! git status --porcelain | cut -c4- | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop"
+  rup = "!sh -c \"git diff --name-only HEAD..$1 | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a\" -"
+  rubop = "!sh -c \"git diff --name-only HEAD..$1 | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop \" -"
 
   # Submodules
   su = pull --recurse-submodules
