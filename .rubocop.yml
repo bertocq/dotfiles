@@ -5,3 +5,5 @@ AllCops:
     - db/schema.rb
 Metrics/LineLength:
   Max: 140
+Documentation:
+  Enabled: false
