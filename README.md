@@ -5,6 +5,7 @@ My configuration files 📝
 ```
 git clone https://github.com/bertocq/dotfiles.git
 ./dotfiles/makesymlinks.sh
+wget https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -O ~/git-completion.bash
 ```
 
 ```
