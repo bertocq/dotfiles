@@ -7,3 +7,5 @@ Metrics/LineLength:
   Max: 140
 Documentation:
   Enabled: false
+Rails:
+  Enabled: true
