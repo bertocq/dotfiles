@@ -39,6 +39,7 @@ brew install unused
 
 # Cask installs
 brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 brew cask install appcleaner # unistall apps totally
 brew cask install choosy # lets you choose browser to open url
 brew cask install coconutbattery # control mac / iphone battery life
@@ -52,6 +53,7 @@ brew cask install fman
 brew cask install garmin-express
 brew cask install gimp
 brew cask install google-chrome
+brew cask install google-chrome-canary
 brew cask install gopro-studio
 brew cask install image2icon
 brew cask install iterm2
@@ -150,9 +152,6 @@ Where: `-*/log/*, -*/coverage/*, -*/tmp/*, -*/node_modules/*, -*/vendor/*`
 ```
 open /usr/local/Caskroom/little-snitch/3.7.2/Little\ Snitch\ Installer.app
 ```
-
-## Extra manual downloads:
-Chrome Canary
 
 ## Nokigiri on MacOS sierra
 ```
