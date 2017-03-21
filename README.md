@@ -40,6 +40,7 @@ brew cask install divvy # move windows around
 brew cask install dropbox
 brew cask install duet # use ipad as secondary screen
 brew cask install firefox
+brew cask install fman
 brew cask install garmin-express
 brew cask install gimp
 brew cask install google-chrome
@@ -51,12 +52,13 @@ brew cask install libreoffice
 brew cask install little-snitch # network monitor
 brew cask install macdown # markdown editor
 brew cask install micro-snitch # microphone/webcam vigilante
+brew cask install postman
 brew cask install psequel # psql gui
 brew cask install robomongo # mongo gui
 brew cask install sequel-pro # sql gui
-brew cask install smcfancontrol # check temp & fan revs
 brew cask install skype
 brew cask install slack
+brew cask install smcfancontrol # check temp & fan revs
 brew cask install spotify
 brew cask install sublime-text
 brew cask install subtitles
