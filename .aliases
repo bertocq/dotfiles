@@ -30,6 +30,7 @@ alias spc='bundle exec rspec --color --format documentation --require spec_helpe
 alias rc='rails c'
 alias rs='rails s'
 alias rf='redis-cli flushall'
+alias fs="foreman start"
 
 # Heroku Belt
 alias hl='heroku logs -t -a'
