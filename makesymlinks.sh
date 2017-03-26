@@ -5,8 +5,8 @@
 ############################
 
 dir=~/dotfiles
-files=".aliases .bash_profile .bash_prompt .bashrc .divvy .git-completion.bash
-.gitconfig .gitignore_global .gitmessage .rubocop.yml com.googlecode.iterm2.plist"
+# get all files, excluding DS_STORE, README and this file
+files="$(ls -A $dir | grep -vE 'DS|README|makesymlinks')"
 
 # create symlinks on ~/ for each dotfile
 for file in $files; do
