@@ -112,6 +112,9 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Disable the "Are you sure you want to open this application?" dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
 # Install all available software updates
 sudo softwareupdate -ia
 
@@ -146,8 +149,6 @@ open /usr/local/Caskroom/little-snitch/3.7.2/Little\ Snitch\ Installer.app
 
 # Extra manual downloads:
 Chrome Canary
-CCMenu ?
-TrailerApp?
 
 # Ruby
 ```
