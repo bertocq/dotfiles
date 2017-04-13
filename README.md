@@ -61,7 +61,6 @@ brew cask install slack
 brew cask install smcfancontrol # check temp & fan revs
 brew cask install spotify
 brew cask install sublime-text
-brew cask install subtitles
 brew cask install telegram
 brew cask install trailer # github repo PR/issue watch
 brew cask install transmission
