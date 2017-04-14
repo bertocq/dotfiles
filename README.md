@@ -8,12 +8,20 @@ chmod +x makesymlinks.sh
 ./makesymlinks.sh
 ```
 
-Install [Homebrew](https://brew.sh/)
 ```
+sudo softwareupdate -ia
+xcode-select --install # XCode dev tools install
+
+# Install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+
+# Brew installs
 brew install bash
 brew install diff-so-fancy # Making git diffs better in command line
 brew install elixir
 brew install git
+brew install heroku
 brew install homebrew/versions/bash-completion2
 brew install httpie
 brew install hub # github's command line
@@ -30,6 +38,7 @@ brew install wifi-password # display current wifi password
 brew tap joshuaclayton/formulae
 brew install unused
 
+# Cask installs
 brew install caskroom/cask/brew-cask
 brew cask install appcleaner # unistall apps totally
 brew cask install choosy # lets you choose browser to open url
@@ -50,7 +59,6 @@ brew cask install iterm2
 brew cask install keka # file compression/uncompression
 brew cask install libreoffice
 brew cask install little-snitch # network monitor
-brew cask install macdown # markdown editor
 brew cask install micro-snitch # microphone/webcam vigilante
 brew cask install postman
 brew cask install psequel # psql gui
@@ -67,20 +75,22 @@ brew cask install transmission
 brew cask install vlc
 brew cask install xscope # graphical tools
 
-sudo softwareupdate -ia
-brew doctor
-brew upgrade
-brew update
-brew cask cleanup
-mas upgrade
+brew cask cleanup # Delete cask downloads
+mas upgrade # Update AppStore apps
+
+# Install Ruby + Bundler & Rubocop
+rbenv install 2.3.1
+rbenv global 2.3.1
+gem install bundler
+gem install rubocop
+gem install rubocop-rspec
 ```
 
-``` 
+```
 # Sexy Bash Prompt
 (cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
 
 # Bash 4 in OS X
-brew install bash
 sudo bash -c "echo $(brew --prefix)/bin/bash >> /etc/shells"
 chsh -s "$(brew --prefix)"/bin/bash
 
@@ -115,12 +125,6 @@ defaults write com.apple.dock mru-spaces -bool false
 # Disable the "Are you sure you want to open this application?" dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Install all available software updates
-sudo softwareupdate -ia
-
-# XCode dev tools install
-xcode-select --install
-
 # Computer Name
 scutil --set ComputerName "bcq"
 scutil --set LocalHostName "bcq"
@@ -128,7 +132,6 @@ scutil --set HostName "bcq"
 ```
 
 # Extra configs:
-
 Divvy: Copy .divvy content and paste on to Safari search bar
 
 # TODO: move sublime config from dropbox to git private repo
@@ -140,7 +143,7 @@ rm -r User
 ln -s ~/Dropbox/Sublime/User
 ```
 On Find&Replace panel:
-Where: `-*/log/*`
+Where: `-*/log/*, -*/coverage/*, -*/tmp/*, -*/node_modules/*, -*/vendor/*`
 
 # Little snitch installation
 ```
@@ -150,33 +153,12 @@ open /usr/local/Caskroom/little-snitch/3.7.2/Little\ Snitch\ Installer.app
 # Extra manual downloads:
 Chrome Canary
 
-# Ruby
-```
-rbenv install 2.3.1
-rbenv global 2.3.1
-gem install bundler
-```
-
-```
-gem install rubocop
-gem install rubocop-rspec
-```
-
 # Nokigiri on MacOS sierra
+```
 bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2
 bundle install
 brew unlink xz; bundle install; brew link xz
 http://stackoverflow.com/questions/40038953/installing-nokogiri-on-mac-os-sierra-10-12
-
-# Heroku 
-https://devcenter.heroku.com/articles/heroku-command-line
-
-# Check periodically 
-awk '{print $1}' ~/.bash_history | sort | uniq -c | sort -n
-
-sed 's/|/\n/g' ~/.bash_history | awk '{CMD[$1]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
-
-To find out most used commands and thing about making aliases
 ```
 
 # Add private key to OSX Keychain
@@ -191,9 +173,18 @@ ssh-add ~/.ssh/id_rsa &>/dev/null
 curl -u bertocq -s https://api.github.com/orgs/<ORG_NAME>/repos?per_page=200 | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo["ssh_url"]} ]}'
 ```
 
-# Chrome config: 
-Gmail as email handler
+# Chrome config:
+## Gmail as email handler
 http://apple.stackexchange.com/a/112624
 
-# macos Shortuct:
+## Chrome extensions config
+chrome://extensions > Keyboard shortcuts
+- OneTab:
+  - "Display OneTab": Alt+Shift+1
+  - "Send the current tab to OneTab": Alt+Shift+W
+- Rearrange Tabs:
+  - "Move active tab to left": Command+Ctrl+Left Arrow
+  - "Move active tab to right": Command+Ctrl+Right Arrow
+
+# macos Shortcut:
 > Preferences > Keyboard > Shortcuts > Keyboard > Move focus to next window > Cmd+¡
