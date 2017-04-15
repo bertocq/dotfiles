@@ -165,11 +165,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>354 289 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>220 1047 606 456 -209 800 1680 1028 </string>
+	<string>1804 43 606 456 1280 -217 1920 1058 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>49 214 796 473 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>49 16 1228 762 0 0 1280 778 </string>
+	<string>4 0 1276 778 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>49 3 1228 775 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -812,7 +812,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>6CC1079C-6CB0-4062-A6FA-53EA9C72F1A4</string>
 	<key>NoSyncLastTipTime</key>
-	<real>512641520.25634998</real>
+	<real>513073306.62027901</real>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -888,6 +888,10 @@
 		<string>0059</string>
 		<string>0060</string>
 		<string>0061</string>
+		<string>0062</string>
+		<string>0063</string>
+		<string>0064</string>
+		<string>0065</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -937,11 +941,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-03-31T12:08:44Z</date>
+	<date>2017-04-13T19:32:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>TabStyle</key>
 	<integer>3</integer>
 	<key>WordCharacters</key>
