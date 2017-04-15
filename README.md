@@ -3,9 +3,8 @@
 My configuration files 📝
 
 ```
-cd ~/dotfiles
-chmod +x makesymlinks.sh
-./makesymlinks.sh
+git clone https://github.com/bertocq/dotfiles.git
+./dotfiles/makesymlinks.sh
 ```
 
 ```
@@ -131,11 +130,13 @@ scutil --set LocalHostName "bcq"
 scutil --set HostName "bcq"
 ```
 
-# Extra configs:
+## Extra configs:
 Divvy: Copy .divvy content and paste on to Safari search bar
 
-# TODO: move sublime config from dropbox to git private repo
-# https://bitbucket.org/bertocq/sublimetext_config
+## Sublimetext Config
+TODO: move sublime config from dropbox to git private repo
+https://bitbucket.org/bertocq/sublimetext_config
+
 Sublimetext: Once config files are downloaded from dropbox, symlink with:
 ```
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
@@ -145,15 +146,15 @@ ln -s ~/Dropbox/Sublime/User
 On Find&Replace panel:
 Where: `-*/log/*, -*/coverage/*, -*/tmp/*, -*/node_modules/*, -*/vendor/*`
 
-# Little snitch installation
+## Little snitch installation
 ```
 open /usr/local/Caskroom/little-snitch/3.7.2/Little\ Snitch\ Installer.app
 ```
 
-# Extra manual downloads:
+## Extra manual downloads:
 Chrome Canary
 
-# Nokigiri on MacOS sierra
+## Nokigiri on MacOS sierra
 ```
 bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2
 bundle install
@@ -161,23 +162,23 @@ brew unlink xz; bundle install; brew link xz
 http://stackoverflow.com/questions/40038953/installing-nokogiri-on-mac-os-sierra-10-12
 ```
 
-# Add private key to OSX Keychain
+## Add private key to OSX Keychain
 ```
 ssh-add -K ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa &>/dev/null
 ```
 
-# Download all Organization repos (private ones as well)
+## Download all Organization repos (private ones as well)
 ```
 curl -u bertocq -s https://api.github.com/orgs/<ORG_NAME>/repos?per_page=200 | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo["ssh_url"]} ]}'
 ```
 
-# Chrome config:
-## Gmail as email handler
+## Chrome config:
+### Gmail as email handler
 http://apple.stackexchange.com/a/112624
 
-## Chrome extensions config
+### Chrome extensions config
 chrome://extensions > Keyboard shortcuts
 - OneTab:
   - "Display OneTab": Alt+Shift+1
@@ -186,5 +187,5 @@ chrome://extensions > Keyboard shortcuts
   - "Move active tab to left": Command+Ctrl+Left Arrow
   - "Move active tab to right": Command+Ctrl+Right Arrow
 
-# macos Shortcut:
+## macos Shortcut:
 > Preferences > Keyboard > Shortcuts > Keyboard > Move focus to next window > Cmd+¡
