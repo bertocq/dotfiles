@@ -42,6 +42,7 @@
   clearb = "! git branch --merged | xargs git branch -d"
   rpo = remote prune origin
   mr = "!git checkout master && git pull && git checkout - && git rebase origin/master"
+  merge = merge --no-ff
 
   # Commits
   ci = commit
