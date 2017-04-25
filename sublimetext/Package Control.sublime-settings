@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"Cobalt2 Flat Theme",
+		"Compare Side-By-Side",
+		"EditorConfig",
+		"Elixir",
+		"Fix Mac Path",
+		"Git Commit Message Syntax",
+		"Indent XML",
+		"MoveTab",
+		"Package Control",
+		"PlainTasks",
+		"Pretty JSON",
+		"Pretty YAML",
+		"RuboCop",
+		"SideBarEnhancements",
+		"Status Bar File Size",
+		"Text Pastry",
+		"Theme - Cobalt2"
+	]
+}

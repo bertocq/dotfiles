@@ -7,15 +7,6 @@ echo 'password' | sudo -S ~/dotfiles/install_and_config.sh
 ```
 
 ## Sublimetext Config
-TODO: move sublime config from dropbox to git private repo
-https://bitbucket.org/bertocq/sublimetext_config
-
-Sublimetext: Once config files are downloaded from dropbox, symlink with:
-```
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-rm -r User
-ln -s ~/Dropbox/Sublime/User
-```
 On Find&Replace panel:
 Where: `-*/log/*, -*/coverage/*, -*/tmp/*, -*/node_modules/*, -*/vendor/*`
 

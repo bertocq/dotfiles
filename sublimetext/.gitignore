@@ -1,0 +1,19 @@
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Package control specific files
+bh_unicode_properties.cache
+oscrypto-ca-bundle.crt
+Package Control.ca-bundle
+Package Control.ca-certs/
+Package Control.ca-list
+Package Control.cache/
+Package Control.last-run
+Package Control.merged-ca-bundle
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+
+# Extension specific files
+TextPastryHistory.sublime-settings
