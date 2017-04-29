@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Bash
 alias ll='ls -la'
 alias s='subl'
@@ -15,8 +17,8 @@ alias p='git p'
 alias P='git push'
 alias PU='git pu'
 alias PR='git pr'
-alias PRW="PR -l 'Work in Progress'"
-alias PRR="PR -l 'Ready for Review'"
+alias PRW="PR --push --edit -F ~/.github_template.md -l 'Work in Progress' --browse"
+alias PRR="PR --push --edit -F ~/.github_template.md -l 'Ready for Review' --browse"
 alias go='git browse'
 alias rpo='git rpo'
 alias clearb='git clearb'
