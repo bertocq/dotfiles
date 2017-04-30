@@ -18,6 +18,7 @@ alias P='git push'
 alias PU='git pu'
 alias PRW="git PRW"
 alias PRR="git PRR"
+alias PRO='~./dotfiles/github-pull-request'
 alias go='git browse'
 alias rpo='git rpo'
 alias clearb='git clearb'
