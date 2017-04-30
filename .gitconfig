@@ -48,7 +48,8 @@
   ci = commit
   cp = cherry-pick
   cm = commit -m
-  cam = commit --amend
+  ca = commit --amend
+  can = commit --amend --no-edit
   ucm = reset --soft HEAD^
   it = !git init && git commit -m “root” --allow-empty
   csha = !git rev-parse HEAD | pbcopy # copy sha of last commit
