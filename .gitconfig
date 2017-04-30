@@ -51,6 +51,7 @@
   cam = commit --amend
   ucm = reset --soft HEAD^
   it = !git init && git commit -m “root” --allow-empty
+  csha = !git rev-parse HEAD | pbcopy # copy sha of last commit
 
   # Diff
   gd = "! git diff --color | diff-so-fancy"
