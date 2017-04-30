@@ -74,7 +74,8 @@
   unstage = reset HEAD --
 
   # Github
-  pr = pull-request
+  PRW = "!hub pull-request --push --edit -F ~/.github_template.md -l 'Work in Progress' --browse"
+  PRR = "!hub pull-request --push --edit -F ~/.github_template.md -l 'Ready for Review' --browse"
 [diff]
   compactionHeuristic = true
 [push]
