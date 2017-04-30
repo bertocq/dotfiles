@@ -41,7 +41,7 @@
   pu = ![[ $(git config "branch.$(git symbolic-ref --short HEAD).merge") = '' ]] && git push -u origin $(git symbolic-ref --short HEAD) || git push
   clearb = "! git branch --merged | xargs git branch -d"
   rpo = remote prune origin
-  mr = "!git checkout master && git pull && git checkout - && git rebase origin/master"
+  mr = "!git checkout master && git pull && git checkout @{-1} && git rebase origin/master"
   merge = merge --no-ff
 
   # Commits
@@ -56,8 +56,7 @@
 
   # Diff
   gd = "! git diff --color | diff-so-fancy"
-  gds = diff --staged
-  #gds = "! git diff --staged | diff-so-fancy"
+  gds = "! git diff --staged --color | diff-so-fancy"
 
   # Rubocop
   ru = "! git status --porcelain | cut -c4- | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a"
