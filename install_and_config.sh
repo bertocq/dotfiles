@@ -16,6 +16,7 @@ files=".aliases .bash_profile .bash_prompt .bashrc .editorconfig .gitattributes 
 # create symlinks on ~/ for each file
 for file in $files; do
   echo "Creating symlink to $file in home directory."
+  rm ~/"$file"
   ln -s ~/dotfiles/"$file" ~/"$file"
 done
 
