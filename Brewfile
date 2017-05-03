@@ -46,6 +46,7 @@ brew 'ruby-build'
 brew 'rbenv'
 brew 'redis', restart_service: true
 brew 'ruby'
+brew 'shellcheck'
 brew 'the_silver_searcher'
 brew 'webkit2png'
 brew 'wget'
