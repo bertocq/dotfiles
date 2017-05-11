@@ -6,10 +6,6 @@ git clone https://github.com/bertocq/dotfiles.git ~/dotfiles
 echo 'password' | sudo -S ~/dotfiles/install_and_config.sh
 ```
 
-## Sublimetext Config
-On Find&Replace panel:
-Where: `-*/log/*, -*/coverage/*, -*/tmp/*, -*/node_modules/*, -*/vendor/*`
-
 ## Little snitch installation
 ```
 open /usr/local/Caskroom/little-snitch/3.7.2/Little\ Snitch\ Installer.app
