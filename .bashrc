@@ -9,6 +9,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # Add git completion
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source ~/git-completion.bash
+complete -o default -o nospace -F _git g
 
 ### create directory and cd into it
 mkcd () {
