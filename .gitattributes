@@ -1,3 +1,4 @@
 *.rb diff=ruby
 *.ru diff=ruby
 *.rake diff=ruby
+db/schema.rb merge=railsschema
