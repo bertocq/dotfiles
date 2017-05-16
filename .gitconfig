@@ -13,6 +13,7 @@
   excludesfile = ~/.gitignore_global
   autocrlf = input
   editor = subl -w -n
+  whitespace = trailing-space,space-before-tab
 [alias]
 
   # Status
@@ -80,8 +81,10 @@
   PRR = "!hub pull-request --push --edit -F ~/.github_template.md -l 'Ready for Review' --browse"
 [diff]
   compactionHeuristic = true
+  renames = copies
+  mnemonicprefix = true
 [push]
-  default = current
+  default = tracking
 [pull]
   rebase = true
 [commit]
@@ -98,8 +101,10 @@
   prune = true
 [branch]
   autosetuprebase = always
+  autosetupmerge = true
 [merge]
   ff = false
+  stat = true
 [rerere]
   enabled = true
 [merge "railsschema"]
