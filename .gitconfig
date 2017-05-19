@@ -58,6 +58,7 @@
 
   # Diff
   gd = "! git diff --color | diff-so-fancy"
+  gdf = "!sh -c \" git diff --color $1 | diff-so-fancy\" -"
   gds = "! git diff --staged --color | diff-so-fancy"
 
   # Rubocop
