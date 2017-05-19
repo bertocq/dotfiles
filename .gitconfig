@@ -33,7 +33,8 @@
   sc = "!git stash && git stash drop"
 
   # Branches
-  bs = branch -a
+  ba = branch -a
+  bs = branch -vv
   bd = branch -D
   co = checkout
   cob = checkout -b
