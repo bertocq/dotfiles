@@ -1,73 +1,78 @@
 {
-  "always_show_minimap_viewport": false,
-  "auto_indent": true,
-  "auto_match_enabled": true,
-  "binary_file_patterns": [
-    "*.jpg",
-    "*.jpeg",
-    "*.png",
-    "*.gif",
-    "*.ttf",
-    "*.tga",
-    "*.dds",
-    "*.ico",
-    "*.eot",
-    "*.pdf",
-    "*.swf",
-    "*.jar",
-    "*.zip",
-    ".DS_Store",
-    "*.psd",
-    "node_modules/",
-    "vendor/",
-    "tmp/",
-    "log/",
-    "coverage/"
-  ],
-  "bold_folder_labels": true,
-  "caret_extra_bottom": 1,
-  "caret_extra_top": 1,
-  "caret_extra_width": 0,
-  "caret_style": "phase",
-  "color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
-  "default_encoding": "UTF-8",
-  "detect_indentation": true,
-  "drag_text": true,
-  "draw_minimap_border": true,
-  "ensure_newline_at_eof_on_save": true,
-  "fade_fold_buttons": true,
-  "fold_buttons": true,
-  "font_options": [
-    "no_round"
-  ],
-  "font_size": 14,
-  "gutter": true,
-  "highlight_line": true,
-  "highlight_modified_tabs": true,
-  "hot_exit": true,
-  "ignored_packages": [
-    "Vintage"
-  ],
-  "indent_guide_options": [
-    "draw_normal",
-    "draw_active"
-  ],
-  "line_numbers": true,
-  "line_padding_bottom": 0,
-  "line_padding_top": 1,
-  "margin": 0,
-  "rulers": [
-    140
-  ],
-  "save_on_focus_lost": true,
-  "show_definitions": false,
-  "show_encoding": true,
-  "smart_indent": true,
-  "spell_check": false,
-  "tab_completion": false,
-  "tab_size": 2,
-  "theme": "Cobalt2.sublime-theme",
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true,
-  "wide_caret": true
+	"always_show_minimap_viewport": false,
+	"auto_indent": true,
+	"auto_match_enabled": true,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		".DS_Store",
+		"*.psd",
+		"node_modules/",
+		"vendor/",
+		"tmp/",
+		"log/",
+		"coverage/"
+	],
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_extra_width": 0,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
+	"default_encoding": "UTF-8",
+	"detect_indentation": true,
+	"drag_text": true,
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": true,
+	"fold_buttons": true,
+	"font_options":
+	[
+		"no_round"
+	],
+	"font_size": 14,
+	"gutter": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_numbers": true,
+	"line_padding_bottom": 0,
+	"line_padding_top": 1,
+	"margin": 0,
+	"rulers":
+	[
+		140
+	],
+	"save_on_focus_lost": true,
+	"show_definitions": false,
+	"show_encoding": true,
+	"smart_indent": true,
+	"spell_check": false,
+	"tab_completion": false,
+	"tab_size": 2,
+	"theme": "Cobalt2.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true
 }
