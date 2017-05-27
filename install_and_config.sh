@@ -38,11 +38,12 @@ brew bundle check # Check everything anything to install/upgrade
 brew cask cleanup # Delete cask downloads
 
 # Install Ruby + Bundler & Rubocop
-rbenv install 2.3.1
-rbenv global 2.3.1
+rbenv install 2.4.1
+rbenv global 2.4.1
 gem install bundler
 gem install rubocop
 gem install rubocop-rspec
+gem install rubocop-thread_safety
 
 # Use Sexy Bash Prompt https://github.com/twolfson/sexy-bash-prompt
 (cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
