@@ -42,6 +42,7 @@ alias fs="foreman start"
 
 # Dev
 alias s='subl'
+alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
 
 # Heroku Belt
 alias hl='heroku logs -t -a'

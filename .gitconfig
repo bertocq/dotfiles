@@ -81,6 +81,10 @@
   # Github
   PRW = "!hub pull-request --push --edit -F ~/.github_template.md -l 'Work in Progress' --browse"
   PRR = "!hub pull-request --push --edit -F ~/.github_template.md -l 'Ready for Review' --browse"
+
+  # Ctags
+  ctags = !.git/hooks/ctags
+
 [diff]
   compactionHeuristic = true
   renames = copies
@@ -119,3 +123,5 @@
           end\n\
           File.open(%(%A), %(w)) {|f| f.write(b)}\n\
           exit 1 if b.include?(%(<)*%L)'"
+[init]
+  templatedir = ~/.git_template
