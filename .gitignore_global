@@ -8,3 +8,4 @@ ToDo.md
 .env
 Backup.postman_dump
 .byebug_history
+/coverage
