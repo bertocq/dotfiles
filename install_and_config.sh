@@ -43,7 +43,6 @@ rbenv global 2.4.1
 gem install bundler
 gem install rubocop
 gem install rubocop-rspec
-gem install rubocop-thread_safety
 
 # Use Sexy Bash Prompt https://github.com/twolfson/sexy-bash-prompt
 (cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
