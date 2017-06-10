@@ -80,7 +80,7 @@
   unstage = reset HEAD --
 
   # Github
-  PRW = "!hub pull-request --push --edit -F ~/.github_template.md -l 'Work in Progress' --browse"
+  PR = "!hub pull-request --push --edit -F ~/.github_template.md --browse"
   PRR = "!hub pull-request --push --edit -F ~/.github_template.md -l 'Ready for Review' --browse"
 
   # Ctags
