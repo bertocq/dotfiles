@@ -6,8 +6,10 @@
 	"installed_packages":
 	[
 		"AlignTab",
+		"Better CoffeeScript",
 		"Clickable URLs",
 		"Cobalt2 Flat Theme",
+		"Color Highlighter",
 		"Compare Side-By-Side",
 		"DotENV",
 		"EditorConfig",
@@ -21,6 +23,7 @@
 		"Pretty JSON",
 		"Pretty YAML",
 		"RuboCop",
+		"SCSS",
 		"SideBarEnhancements",
 		"Status Bar File Size",
 		"Text Pastry",
