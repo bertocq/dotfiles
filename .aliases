@@ -26,6 +26,8 @@ alias rpo='git rpo'
 alias clearb='git clearb'
 alias ru='git ru'
 alias rubo='git rubo'
+alias cop='rubocop -a `git diff --name-only master..HEAD`'
+alias onlycop='rubocop -a --only'
 
 # Ruby
 alias be='bundle exec'
@@ -63,4 +65,4 @@ alias wifi='wifi-password'
 alias cmds="sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n50"
 alias btime="pmset -g batt | awk '/^ /{print \$5}'"
 alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
-alias slack_theme='killall Slack; curl https://gist.githubusercontent.com/bertocq/b11df700f7829e71630b6bbeb6ebd7b1/raw/5b6c282515650a1f3da5f11b6065a5722ae9c457/slack_dark_theme.js | cat >> ~/../../Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/index.js; open -a Slack'
+alias slack_theme='killall Slack; curl https://gist.githubusercontent.com/bertocq/b11df700f7829e71630b6bbeb6ebd7b1/raw/85f2f38307a2641d1aff443eb8e0eb262a098519/slack_dark_theme.js | cat >> ~/../../Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/index.js; open -a Slack'
