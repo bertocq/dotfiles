@@ -79,6 +79,10 @@
   undo = reset --soft HEAD~1                   # Undo last commit (affects HEAD only)
   unstage = reset HEAD --
 
+  # Rebasing
+  ri = rebase -i
+  rc = rebase --continue
+
   # Github
   PR = "!hub pull-request --push --edit -F ~/.github_template.md --browse"
   PRR = "!hub pull-request --push --edit -F ~/.github_template.md -l 'Ready for Review' --browse"
