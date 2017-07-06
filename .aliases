@@ -2,6 +2,7 @@
 
 # Bash
 alias ll='ls -la'
+alias la='ls -A'
 alias reload="source ~/.bash_profile"
 
 # Git
