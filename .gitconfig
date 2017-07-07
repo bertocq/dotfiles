@@ -62,6 +62,7 @@
   gd = "! git diff --color | diff-so-fancy"
   gdf = "!sh -c \" git diff --color $1 | diff-so-fancy\" -"
   gds = "! git diff --staged --color | diff-so-fancy"
+  gdsf = "!sh -c \" git diff --staged --color $1 | diff-so-fancy\" -"
 
   # Rubocop
   ru = "! git status --porcelain | cut -c4- | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a"
