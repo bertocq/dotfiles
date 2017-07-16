@@ -11,6 +11,7 @@
   old = red strike
 [core]
   excludesfile = ~/.gitignore_global
+  attributesfile = ~/.gitattributes
   autocrlf = input
   editor = subl -w -n
   whitespace = trailing-space,space-before-tab
