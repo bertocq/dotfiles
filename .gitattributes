@@ -2,5 +2,6 @@
 *.ru diff=ruby
 *.rake diff=ruby
 Gemfile* diff=ruby
+Gemfile.lock merge=bundlelock
 *.md whitespace=trailing-space,tab-in-indent
 db/schema.rb merge=railsschema
