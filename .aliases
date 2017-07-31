@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Bash
-alias ll='ls -la'
-alias la='ls -A'
+alias ll='exa -lah'
+alias la='ls -la'
 alias reload="source ~/.bash_profile"
 
 # Git
