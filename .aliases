@@ -4,6 +4,7 @@
 alias ll='exa -lah'
 alias la='ls -la'
 alias reload="source ~/.bash_profile"
+alias cat='ccat'
 
 # Git
 alias g='git'
