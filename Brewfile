@@ -13,6 +13,7 @@ brew "bash-completion@2"
 brew "brew-pip"
 brew "ghc"
 brew "cabal-install"
+brew "ccat"
 brew "chromedriver", restart_service: true
 brew "coreutils"
 brew "ctags"
