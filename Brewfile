@@ -18,7 +18,6 @@ brew "chromedriver", restart_service: true
 brew "coreutils"
 brew "ctags"
 brew "diff-so-fancy"
-brew "elasticsearch@2.4", restart_service: true
 brew "libpng"
 brew "openssl"
 brew "wxmac"
