@@ -63,7 +63,7 @@ alias hr='heroku restart -a'
 
 # OSX
 alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
-alias update='sudo softwareupdate -ia; brew doctor; brew upgrade; brew update; brew prune; brew cask cleanup; mas upgrade; gem update --system; brewfile'
+alias update='sudo softwareupdate -ia; brew doctor; brew update; brew upgrade; brew prune; brew cask cleanup; mas upgrade; gem update --system; brewfile'
 alias wifi='wifi-password'
 alias brewfile='brew bundle dump --force'
 alias cmds="sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n50"
