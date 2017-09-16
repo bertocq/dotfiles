@@ -27,7 +27,6 @@ brew "coreutils"
 brew "ctags"
 brew "diff-so-fancy"
 brew "wxmac"
-brew "elixir"
 brew "ffmpeg"
 brew "libxml2"
 brew "xz"
@@ -50,7 +49,6 @@ brew "nginx", restart_service: true
 brew "nvm"
 brew "phantomjs"
 brew "postgresql", restart_service: true
-brew "postgis"
 brew "rabbitmq", restart_service: true
 brew "ruby-build"
 brew "rbenv"
