@@ -100,6 +100,7 @@ cask "telegram"
 cask "trailer"
 cask "transmission"
 cask "xscope"
+mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
