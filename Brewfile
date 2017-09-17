@@ -42,17 +42,17 @@ brew "jq"
 brew "libyaml"
 brew "makedepend"
 brew "mas"
-brew "mongodb", restart_service: true
+brew "mongodb"
 brew "mysql"
 brew "openssl@1.1"
-brew "nginx", restart_service: true
+brew "nginx"
 brew "nvm"
 brew "phantomjs"
 brew "postgresql", restart_service: true
-brew "rabbitmq", restart_service: true
+brew "rabbitmq"
 brew "ruby-build"
 brew "rbenv"
-brew "redis", restart_service: true
+brew "redis"
 brew "ruby"
 brew "shellcheck"
 brew "the_silver_searcher"
