@@ -72,7 +72,7 @@
   rubop = "!sh -c \"git diff --name-only HEAD..$1 | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop \" -"
 
   # Submodules
-  su = pull --recurse-submodules
+  sub = pull --recurse-submodules
   sup = !git submodule update && git submodule foreach git checkout master && git submodule foreach git pull origin master
 
   # Reverting
