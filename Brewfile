@@ -78,8 +78,6 @@ cask "dropbox"
 cask "duet"
 cask "firefox"
 cask "fman"
-cask "font-hack"
-cask "garmin-express"
 cask "gimp"
 cask "gitter"
 cask "google-chrome"
@@ -102,9 +100,10 @@ cask "telegram"
 cask "trailer"
 cask "transmission"
 cask "xscope"
+cask "caskroom/drivers/garmin-express"
+cask "caskroom/fonts/font-hack"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
