@@ -28,6 +28,7 @@ brew "coreutils"
 brew "ctags"
 brew "diff-so-fancy"
 brew "wxmac"
+brew "erlang"
 brew "ffmpeg"
 brew "libxml2"
 brew "xz"
@@ -104,7 +105,6 @@ cask "xscope"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
 mas "iMovie", id: 408981434
-mas "Install macOS Sierra", id: 1127487414
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
