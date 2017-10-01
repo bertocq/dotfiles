@@ -8,6 +8,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>Default Arrangement Name</key>
 	<string>ConsulMadrid</string>
 	<key>Default Bookmark Guid</key>
@@ -150,7 +152,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAczGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAc7Gdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -169,11 +171,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>354 289 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 139 606 456 0 0 1280 778 </string>
+	<string>269 139 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>50 175 796 473 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>49 0 1231 778 0 0 1280 778 </string>
+	<string>49 16 1228 762 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>49 3 1228 775 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -816,7 +818,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>6CC1079C-6CB0-4062-A6FA-53EA9C72F1A4</string>
 	<key>NoSyncLastTipTime</key>
-	<real>528028788.45307797</real>
+	<real>528213751.09720802</real>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -900,6 +902,8 @@
 		<string>0067</string>
 		<string>0068</string>
 		<string>0069</string>
+		<string>0070</string>
+		<string>0071</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<true/>
@@ -953,7 +957,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-25T11:24:39Z</date>
+	<date>2017-09-27T09:15:19Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -15412,6 +15416,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.1</string>
+	<string>3.1.2</string>
 </dict>
 </plist>
