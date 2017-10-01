@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Bash
-alias ll='exa -lah'
-alias la='ls -la'
+alias ll='ls -la'
 alias reload="source ~/.bash_profile"
 alias cat='ccat'
 
