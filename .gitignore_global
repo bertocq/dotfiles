@@ -1,7 +1,6 @@
 .DS_Store
 *.sublime-workspace
 *.sublime-project
-*.tmTheme
 ToDo.md
 /todo
 *.todo
