@@ -43,7 +43,7 @@ alias rc='rails c'
 alias rs='rails s'
 alias rf='redis-cli flushall'
 alias fs="foreman start"
-
+alias db_reset='rake db:drop && rake db:create && rake db:migrate && rake db:migrate RAILS_ENV=test && rake db:dev_seed'
 # Dev
 alias s='subl'
 alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
