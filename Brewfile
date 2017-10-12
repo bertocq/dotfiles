@@ -19,7 +19,6 @@ brew "ccat"
 brew "chromedriver", restart_service: true
 brew "ctags"
 brew "diff-so-fancy"
-brew "libpng"
 brew "openssl"
 brew "wxmac"
 brew "erlang"
