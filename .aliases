@@ -43,7 +43,8 @@ alias rc='rails c'
 alias rs='rails s'
 alias rf='redis-cli flushall'
 alias fs="foreman start"
-alias db_reset='rake db:drop && rake db:create && rake db:migrate && rake db:migrate RAILS_ENV=test && rake db:dev_seed'
+alias dbreset='rake db:drop && rake db:create && rake db:migrate && rake db:migrate RAILS_ENV=test && rake db:dev_seed'
+
 # Dev
 alias s='subl'
 alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
@@ -68,4 +69,3 @@ alias brewfile='brew bundle dump --force'
 alias cmds="sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n50"
 alias btime="pmset -g batt | awk '/^ /{print \$5}'"
 alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
-alias slack_theme='killall Slack; curl https://gist.githubusercontent.com/bertocq/b11df700f7829e71630b6bbeb6ebd7b1/raw/85f2f38307a2641d1aff443eb8e0eb262a098519/slack_dark_theme.js | cat >> ~/../../Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/index.js; open -a Slack'
