@@ -100,6 +100,7 @@ cask "transmission"
 cask "xscope"
 cask "caskroom/drivers/garmin-express"
 cask "caskroom/fonts/font-hack"
+cask "caskroom/versions/google-chrome-canary"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
 mas "iMovie", id: 408981434
