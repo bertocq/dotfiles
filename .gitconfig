@@ -78,7 +78,7 @@
   # Reverting
   revert = reset HEAD~
   reset = reset HEAD^ --mixed
-  undo = reset --soft HEAD~1                   # Undo last commit (affects HEAD only)
+  undo = reset --soft HEAD~1 # Undo last commit (affects HEAD only)
   unstage = reset HEAD --
 
   # Rebasing
