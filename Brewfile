@@ -105,6 +105,7 @@ cask "caskroom/versions/google-chrome-canary"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
 mas "iMovie", id: 408981434
+mas "Install macOS High Sierra", id: 0
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
