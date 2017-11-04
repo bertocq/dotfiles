@@ -2,10 +2,10 @@
 *.sublime-workspace
 *.sublime-project
 ToDo.md
-/todo
 *.todo
+/todo
 /ignore
-.env
-Backup.postman_dump
-.byebug_history
 /coverage
+.env
+.byebug_history
+Backup.postman_dump
