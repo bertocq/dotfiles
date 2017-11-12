@@ -44,6 +44,9 @@ gem install bundler
 gem install rubocop
 gem install rubocop-rspec
 
+rm ~/.bundle/config
+ln -s ~/dotfiles/.bundle/config ~/.bundle/config
+
 # Use Sexy Bash Prompt https://github.com/twolfson/sexy-bash-prompt
 (cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
 
