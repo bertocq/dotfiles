@@ -3,7 +3,7 @@
 # install_and_config.sh
 # - Creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 # - Updates macos sofware and XCode dev tools
-# - Installs Homebrew, Cask, Mas and a list of apps based on Brewfile
+# - Installs Homebrew, Cask and a list of apps based on Brewfile
 # - Installs Ruby along some gems
 # - Configs multiple macos default variables
 # - Ask confirmation to config  Divvy shortcuts
@@ -29,7 +29,7 @@ sudo softwareupdate -ia
 # XCode dev tools install
 xcode-select --install
 
-# Install Homebrew and use Brewfile with Cask and Mas
+# Install Homebrew and use Brewfile with Cask
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 brew tap Homebrew/bundle # https://github.com/Homebrew/homebrew-bundle
