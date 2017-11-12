@@ -40,9 +40,3 @@ chrome://extensions > Keyboard shortcuts
 
 ## macos Shortcut:
 > Preferences > Keyboard > Shortcuts > Keyboard > Move focus to next window > Cmd+¡
-
-## Periodically update Brewfile
-```
-cd ~/dotfiles
-brew bundle dump --force
-```
