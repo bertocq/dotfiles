@@ -44,6 +44,7 @@ alias rs='rails s'
 alias rf='redis-cli flushall'
 alias fs="foreman start"
 alias dbreset='rake db:drop && rake db:create && rake db:migrate && rake db:migrate RAILS_ENV=test && rake db:dev_seed'
+alias clearlocales='find config/locales/ -empty -delete; git checkout -- config/locales/custom/.keep'
 
 # Dev
 alias s='subl'
