@@ -16,3 +16,6 @@ vendor/*/vendor/ruby/
 
 # Ignore environment config file
 .env
+
+# Ignore default ignore folder
+/ignore
