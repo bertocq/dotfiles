@@ -25,7 +25,7 @@ brew "chromedriver", restart_service: true
 brew "coreutils"
 brew "ctags"
 brew "diff-so-fancy"
-brew "docker", link: false
+brew "docker"
 brew "docker-machine", restart_service: true
 brew "libyaml"
 brew "docker-compose"
