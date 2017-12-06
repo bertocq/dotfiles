@@ -15,6 +15,7 @@
   autocrlf = input
   editor = subl -w -n
   whitespace = trailing-space,space-before-tab
+  compression = -1
 [alias]
   aliases=!git config -l | grep '^alias' | cut -c 7- | sort
 
