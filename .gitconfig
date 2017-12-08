@@ -94,6 +94,7 @@
   ctags = !.git/hooks/ctags
 
 [diff]
+  # Turn on an experimental heuristic that should make the diff easier to read
   compactionHeuristic = true
   renames = copies
   mnemonicprefix = true
@@ -108,6 +109,7 @@
   rebase = true
 [commit]
   template = ~/.gitmessage
+  verbose = true
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
