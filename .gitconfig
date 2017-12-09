@@ -127,6 +127,11 @@
   stat = true
 [rerere]
   enabled = true
+[status]
+  # In `git status`, show all files underneath a new directory when the
+  # directory is untracked. Or, in other words, don't show untracked directories
+  # as a single line.
+  showUntrackedFiles = all
 [merge "bundlelock"]
   name = bundle lock
   driver = bundle lock
