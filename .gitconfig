@@ -98,6 +98,7 @@
   compactionHeuristic = true
   renames = copies
   mnemonicprefix = true
+  colorMoved = plain # Display moved lines of code with different color
 [diff-so-fancy]
   markEmptyLines = true
   changeHunkIndicators = true
