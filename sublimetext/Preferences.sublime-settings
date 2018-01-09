@@ -43,7 +43,7 @@
 	[
 		"no_round"
 	],
-	"font_size": 15,
+	"font_size": 18,
 	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
@@ -63,7 +63,8 @@
 	"margin": 0,
 	"rulers":
 	[
-		140
+		80,
+		100
 	],
 	"save_on_focus_lost": true,
 	"show_definitions": false,
@@ -75,5 +76,6 @@
 	"theme": "Cobalt2.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"wide_caret": true
+	"wide_caret": true,
+	"word_wrap": false
 }
