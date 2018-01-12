@@ -7,7 +7,7 @@ AllCops:
   Exclude:
     - db/schema.rb
 Metrics/LineLength:
-  Max: 140
+  Max: 100
 Documentation:
   Enabled: false
 Rails:
