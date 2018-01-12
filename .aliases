@@ -29,7 +29,7 @@ alias clearb='git clearb'
 alias ru='git ru'
 alias rubo='git rubo'
 alias cop='rubocop -a `git diff --name-only master..HEAD`'
-alias onlycop='rubocop -a --only'
+alias solocop='rubocop -a --only'
 
 # Ruby
 alias be='bundle exec'
