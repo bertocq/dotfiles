@@ -2,6 +2,6 @@
 	"check_for_rbenv": true,
 	"check_for_rvm": false,
 	"mark_issues_in_view": true,
-	"rbenv_path": "/usr/local/Cellar/rbenv/1.1.0/bin/rbenv",
+	"rbenv_path": "/usr/local/Cellar/rbenv/1.1.1/bin/rbenv",
   "show_auto_correct_warning": false
 }
