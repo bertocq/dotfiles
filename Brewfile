@@ -53,6 +53,7 @@ brew "postgresql", restart_service: true
 brew "rabbitmq"
 brew "ruby-build"
 brew "rbenv"
+brew "rbenv-default-gems"
 brew "redis"
 brew "ruby"
 brew "shellcheck"
