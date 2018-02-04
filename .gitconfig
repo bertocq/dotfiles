@@ -1,6 +1,6 @@
 [user]
-  name = Bertocq
   email = bertocq@gmail.com
+  name = Bertocq
 [color]
   ui = true
 [color "branch"]
@@ -10,81 +10,91 @@
 [color "diff"]
   old = red strike
 [core]
-  excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes
   autocrlf = input
-  editor = subl -w -n
-  whitespace = trailing-space,space-before-tab
   compression = -1
+  editor = subl -w -n
+  excludesfile = ~/.gitignore_global
+  whitespace = trailing-space,space-before-tab
 [alias]
   aliases=!git config -l | grep '^alias' | cut -c 7- | sort
 
   # Status
-  st = status -s
   lg = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
+  st = status -s
 
   # Pull
+  fu = fetch upstream
   p = pull --rebase
 
   # Staging
   s = stash
-  ss = show stash
-  su = stash --include-untracked
   sa = stash apply
+  sc = "!git stash && git stash drop" # Just destroy everything in working directory & staging area
   sd = stash drop
   sp = stash pop
-  sc = "!git stash && git stash drop"
+  ss = show stash
+  su = stash --include-untracked
 
   # Branches
   ba = branch -a
-  bs = branch -vv
   bd = branch -D
+  bs = branch -vv
+  clearb = "! git branch --merged | xargs git branch -d"
   co = checkout
   cob = checkout -b
-  db = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -"
+  db = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -" # Delete remote branch
+  getmaster = git branch --track master origin/master # Grab master again after messing up
+  mab = "!git pull && git checkout $1 && git pull && git merge @{-1} --no-edit && git push && git checkout @{-1}"
+  mr = "!git checkout master && git pull && git checkout @{-1} && git rebase origin/master"
   pb = "!sh -c 'git push --set-upstream origin $1' -"
   pu = ![[ $(git config "branch.$(git symbolic-ref --short HEAD).merge") = '' ]] && git push -u origin $(git symbolic-ref --short HEAD) || git push
-  clearb = "! git branch --merged | xargs git branch -d"
   rpo = remote prune origin
-  mr = "!git checkout master && git pull && git checkout @{-1} && git rebase origin/master"
-  mab = "!git pull && git checkout $1 && git pull && git merge @{-1} --no-edit && git push && git checkout @{-1}"
 
   # Commits
-  ci = commit
-  cp = cherry-pick
-  cm = commit -m
   ca = commit --amend
+  cae = commit --allow-empty
   can = commit --amend --no-edit
+  ci = commit
+  cm = commit -m
   cn = commit --no-edit
-  ucm = reset --soft HEAD^
-  it = !git init && git commit -m “root” --allow-empty
+  cp = cherry-pick
+  cpa = cherry-pick --abort
+  cpc = cherry-pick --continue
   csha = !git rev-parse HEAD | pbcopy # copy sha of last commit
+  it = !git init && git commit -m “root” --allow-empty
+  ucm = reset --soft HEAD^
 
   # Diff
+  ## Changes in working directory
   gd = "! git diff --color | diff-so-fancy"
+  ## Changes in working directory for a particular file passed as argument
   gdf = "!sh -c \" git diff --color $1 | diff-so-fancy\" -"
+  ## Changes in staging area
   gds = "! git diff --staged --color | diff-so-fancy"
+  ## Changes in staging area for a particular file passed as argument
   gdsf = "!sh -c \" git diff --staged --color $1 | diff-so-fancy\" -"
 
   # Rubocop
+  ## Rubocop autocorrect on files in working directory & staging area
   ru = "! git status --porcelain | cut -c4- | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a"
-  rubo = "! git status --porcelain | cut -c4- | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop"
-  rup = "!sh -c \"git diff --name-only HEAD..$1 | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a\" -"
-  rubop = "!sh -c \"git diff --name-only HEAD..$1 | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop \" -"
+  ## Rubocop autocorrect on files in diff between current branch and the one passed as argument
+  rud = "!sh -c \"git diff --name-only HEAD..$1 | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a\" -"
 
   # Submodules
   sub = pull --recurse-submodules
   sup = !git submodule update && git submodule foreach git checkout master && git submodule foreach git pull origin master
 
   # Reverting
-  revert = reset HEAD~
   reset = reset HEAD^ --mixed
+  revert = reset HEAD~
   undo = reset --soft HEAD~1 # Undo last commit (affects HEAD only)
   unstage = reset HEAD --
 
   # Rebasing
-  ri = rebase -i
+  ra = rebase --abort
   rc = rebase --continue
+  ri = rebase -i
 
   # Github
   PR = "!hub pull-request --push --edit -F ~/.github_template.md --browse"
@@ -94,14 +104,13 @@
   ctags = !.git/hooks/ctags
 
 [diff]
-  # Turn on an experimental heuristic that should make the diff easier to read
-  compactionHeuristic = true
-  renames = copies
-  mnemonicprefix = true
   colorMoved = plain # Display moved lines of code with different color
+  compactionHeuristic = true # Turn on experimental heuristic to make the diff easier to read
+  mnemonicprefix = true
+  renames = copies
 [diff-so-fancy]
-  markEmptyLines = true
   changeHunkIndicators = true
+  markEmptyLines = true
   stripLeadingSymbols = true
   useUnicodeRuler = true
 [push]
@@ -113,8 +122,8 @@
   verbose = true
 [filter "lfs"]
   clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
   required = true
+  smudge = git-lfs smudge -- %f
 [credential]
   helper = osxkeychain
 [github]
@@ -122,8 +131,8 @@
 [fetch]
   prune = true
 [branch]
-  autosetuprebase = always
   autosetupmerge = true
+  autosetuprebase = always
 [merge]
   stat = true
 [rerere]
@@ -150,6 +159,4 @@
   templatedir = ~/.git_template
 [rebase]
   autosquash = true
-  # Automatically stash before rebasing. This makes it possible to rebase with
-  # changes in the repo.
-  autostash = true
+  autostash = true # Automatically stash before rebasing, to rebase with changes in the repo.
