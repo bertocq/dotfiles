@@ -27,10 +27,9 @@ alias PRO='~./dotfiles/github-pull-request'
 alias go='git browse'
 alias rpo='git rpo'
 alias clearb='git clearb'
-alias ru='git ru'
-alias rubo='git rubo'
-alias cop='rubocop -a `git diff --name-only master..HEAD`'
-alias solocop='rubocop -a --only'
+alias ru='git ru' # rubocop autocorrections on working dir & staging area
+alias cop='rubocop -a `git diff --name-only master..HEAD`' # rubocop over branch
+alias solocop='rubocop -a --only' # autocorrect a single cop by name as argument
 
 # Ruby
 alias be='bundle exec'
@@ -44,7 +43,8 @@ alias rc='rails c'
 alias rs='rails s'
 alias rf='redis-cli flushall'
 alias fs="foreman start"
-alias dbreset='rake db:drop && rake db:create && rake db:migrate && rake db:migrate RAILS_ENV=test && rake db:dev_seed'
+alias dbmigrate='rake db:migrate; rake db:migrate RAILS_ENV=test'
+alias dbreset='rake db:drop; rake db:create; dbmigrate; rake db:dev_seed'
 alias clearlocales='find config/locales/ -empty -delete; git checkout -- config/locales/custom/.keep'
 alias sitemap="rake sitemap:refresh:no_ping"
 
@@ -66,11 +66,12 @@ alias hr='heroku restart -a'
 
 # OSX
 alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
-alias update='sudo softwareupdate -ia; brew doctor; brew update; brew upgrade; brew cleanup; brew prune; brew cask cleanup; gem update --system; brewfile'
+alias brewfile='brew bundle dump --force'
+alias brew_maintenance='brew doctor; brew update; brew upgrade; brew cleanup; brew prune; brew cask cleanup; brewfile'
+alias update='sudo softwareupdate -ia; brew_maintenance; gem update --system'
 alias cmds="sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n50"
 alias btime="pmset -g batt | awk '/^ /{print \$5}'"
 alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 
 # Tools
 alias wifi='wifi-password'
-alias brewfile='brew bundle dump --force'
