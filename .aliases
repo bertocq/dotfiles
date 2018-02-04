@@ -1,48 +1,59 @@
 #!/bin/bash
 
 # Bash
-alias ll='ls -la'
-alias reload="source ~/.bash_profile"
+alias c='ccat'
 alias cat='ccat'
+alias cp='cp -iv' # Asks for confirmation if overwritting existing file
+alias ll='ls -la'
+alias mv='mv -iv' # Asks for confirmation if overwritting existing file
+alias reload="source ~/.bash_profile"
+alias rm='rm -iv' # Asks for confirmation
 
 # Git
-alias g='git'
-alias gs='git st'
-alias gd='git gd'
-alias gds='git gds'
-alias gdf='git gdf'
-alias gdsf='git gdsf'
+## Commiting
 alias ga='git add'
 alias gaa='git add .'
 alias gai='git add -i'
-alias gl='git lg'
 alias gcm='git cm'
-alias gucm='git ucm'
+## History
+alias gl='git log'
+alias go='git browse'
+## Maintenance
+alias clearb='git clearb'
+alias ggc='git gc --auto' # Remember Housekeeping!
+alias rpo='git rpo'
+## Pushing & Pulling
 alias p='git p'
 alias P='git push'
-alias PU='git pu'
-alias PUF='git push -f'
 alias PR="git PR"
 alias PRO='~./dotfiles/github-pull-request'
-alias go='git browse'
-alias rpo='git rpo'
-alias clearb='git clearb'
-alias ru='git ru' # rubocop autocorrections on working dir & staging area
+alias PU='git pu'
+alias PUF='git push -f'
+## Rubocoping
 alias cop='rubocop -a `git diff --name-only master..HEAD`' # rubocop over branch
+alias ru='git ru' # rubocop autocorrections on working dir & staging area
 alias solocop='rubocop -a --only' # autocorrect a single cop by name as argument
+## Status
+alias cgs='clear; git st' # Clear screen and git status
+alias gd='git gd'
+alias gdf='git gdf'
+alias gds='git gds'
+alias gdsf='git gdsf'
+alias gs='git st'
 
 # Ruby
 alias be='bundle exec'
 alias br='bundle exec rake'
+## RSpec
 alias sp='bundle exec rspec'
 alias spt='bundle exec rspec --tag'
 alias spc='bundle exec rspec --color --format documentation --require spec_helper --require rails_helper spec'
 alias spr='bundle exec rspec --order rand'
 alias sps='bundle exec rspec --seed'
+## Console
 alias rc='rails c'
 alias rs='rails s'
-alias rf='redis-cli flushall'
-alias fs="foreman start"
+## Maintenance
 alias dbmigrate='rake db:migrate; rake db:migrate RAILS_ENV=test'
 alias dbreset='rake db:drop; rake db:create; dbmigrate; rake db:dev_seed'
 alias clearlocales='find config/locales/ -empty -delete; git checkout -- config/locales/custom/.keep'
@@ -53,25 +64,27 @@ alias s='subl'
 alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
 
 # Heroku Belt
-alias hl='heroku logs -t -a'
+alias ha='heroku apps'
 alias hb='heroku run bash -a'
 alias hc='heroku run console -a'
 alias hce='heroku run iex -S mix -a'
-alias ha='heroku apps'
 alias hco='heroku config -a'
 alias hcos='heroku config:set'
 alias hcou='heroku config:unset'
+alias hl='heroku logs -t -a'
 alias hps='heroku pg:psql -a'
 alias hr='heroku restart -a'
 
 # OSX
-alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
-alias brewfile='brew bundle dump --force'
-alias brew_maintenance='brew doctor; brew update; brew upgrade; brew cleanup; brew prune; brew cask cleanup; brewfile'
-alias update='sudo softwareupdate -ia; brew_maintenance; gem update --system'
-alias cmds="sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n50"
 alias btime="pmset -g batt | awk '/^ /{print \$5}'"
+alias cmds="sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n50"
 alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
+alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
+## Maintenance
+alias brew_maintenance='brew doctor; brew update; brew upgrade; brew cleanup; brew prune; brew cask cleanup; brewfile'
+alias brewfile='brew bundle dump --force'
+alias update='sudo softwareupdate -ia; brew_maintenance; gem update --system'
 
 # Tools
 alias wifi='wifi-password'
+alias tra='trans'
