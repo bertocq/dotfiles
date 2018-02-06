@@ -1,10 +1,5 @@
 # My Config script and setup instructions 👹
 
-## Little snitch installation
-```
-open /usr/local/Caskroom/little-snitch/3.7.2/Little\ Snitch\ Installer.app
-```
-
 ## Nokigiri on MacOS sierra
 ```
 bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2
