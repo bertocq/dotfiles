@@ -41,7 +41,7 @@ alias gds='git gds'
 alias gdsf='git gdsf'
 alias gs='git st'
 
-# Ruby
+# Rails
 alias be='bundle exec'
 alias br='bundle exec rake'
 ## RSpec
@@ -58,6 +58,11 @@ alias dbmigrate='rake db:migrate; rake db:migrate RAILS_ENV=test'
 alias dbreset='rake db:drop; rake db:create; dbmigrate; rake db:dev_seed'
 alias clearlocales='find config/locales/ -empty -delete; git checkout -- config/locales/custom/.keep'
 alias sitemap="rake sitemap:refresh:no_ping"
+## Capistrano deployment
+alias dep_pre="bundle exec cap preproduction deploy"
+alias dep_pre_br='f(){ bundle exec cap preproduction deploy branch="$1"; unset -f f; }; f'
+alias dep_PRO="bundle exec cap preproduction deploy"
+
 
 # Dev
 alias s='subl'
