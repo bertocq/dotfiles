@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Count the number of chars for a given string
+# String can come as an argument or the pasteboard content will be used
+string = ARGV[0] || `pbpaste`
+puts string.size
