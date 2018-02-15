@@ -4,6 +4,10 @@ if [ -f ~/.aliases ]; then
    source ~/.aliases
 fi
 
+if [[ -d ~/bin ]]; then
+  export PATH=~/bin:$PATH
+fi
+
 eval "$(rbenv init -)"
 eval "$(hub alias -s)"
 

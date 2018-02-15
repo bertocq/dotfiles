@@ -20,6 +20,8 @@ for file in $files; do
   ln -s ~/dotfiles/"$file" ~/"$file"
 done
 
+ln -s ~/dotfiles/bin ~/bin
+
 # Get latest version of git-completion script for bash
 wget https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -O ~/git-completion.bash
 
