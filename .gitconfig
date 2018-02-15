@@ -30,7 +30,7 @@
   # Staging
   s = stash
   sa = stash apply
-  sc = "!git stash && git stash drop" # Just destroy everything in working directory & staging area
+  sc = "!git su && git sd" # Destroy files in working dir & staging area
   sd = stash drop
   sp = stash pop
   ss = show stash
@@ -43,7 +43,7 @@
   clearb = "! git branch --merged | xargs git branch -d"
   co = checkout
   cob = checkout -b
-  db = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -" # Delete remote branch
+  db = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -" # Delete local & remote branch
   br = "!sh -c 'git checkout --track origin/$1' -" # Gets a branch from remote
   getmaster = git branch --track master origin/master # Grab master again after messing up
   mab = "!git pull && git checkout $1 && git pull && git merge @{-1} --no-edit && git push && git checkout @{-1}"
