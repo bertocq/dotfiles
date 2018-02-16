@@ -40,6 +40,14 @@ mkcd () {
   cd "$1"
 }
 
+# Avoid duplicates in bash history, share between terminals & increase history memory & file sizes
+# https://unix.stackexchange.com/a/18443
+HISTSIZE=10000
+HISTFILESIZE=100000
+export HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+
 export EDITOR="subl -w"
 export GIT_EDITOR="subl -w"
 
