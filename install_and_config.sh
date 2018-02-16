@@ -10,7 +10,7 @@
 ############################
 
 # list files that should be symlinked
-files=".aliases .bash_profile .bash_prompt .bashrc .editorconfig .git_template .gitattributes .gitconfig .gitignore_global
+files=".aliases .bash_profile .bash_prompt .bashrc .editorconfig .gemrc .git_template .gitattributes .gitconfig .gitignore_global
 .gitmessage .rubocop.yml .ruby-version .unused.yml Brewfile com.googlecode.iterm2.plist"
 
 # create symlinks on ~/ for each file
