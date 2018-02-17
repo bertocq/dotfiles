@@ -19,3 +19,5 @@ vendor/*/vendor/ruby/
 
 # Ignore default ignore folder
 /ignore
+
+default.profraw
