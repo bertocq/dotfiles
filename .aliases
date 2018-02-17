@@ -88,7 +88,7 @@ alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
 ## Maintenance
 alias brew_maintenance='brew doctor; brew update; brew upgrade; brew cleanup; brew prune; brew cask cleanup; brewfile'
 alias brewfile='brew bundle dump --force'
-alias update='sudo softwareupdate -ia; brew_maintenance; gem update --system'
+alias update='sudo softwareupdate -ia; brew_maintenance; gem update --system; mas upgrade'
 
 # Tools
 alias wifi='wifi-password'
