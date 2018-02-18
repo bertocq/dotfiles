@@ -20,6 +20,7 @@ alias gcm='git commit'
 alias gl='git log'
 alias go='git browse'
 ## Maintenance
+alias cleanup="clearb;rpo;ggc"
 alias clearb='git clearb'
 alias ggc='git gc --auto' # Remember Housekeeping!
 alias rpo='git rpo'
