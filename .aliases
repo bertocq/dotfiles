@@ -55,6 +55,7 @@ alias sps='bundle exec rspec --seed'
 ## Console
 alias rc='rails c'
 alias rs='rails s'
+alias rg='rails generate'
 ## Maintenance
 alias dbmigrate='rake db:migrate; rake db:migrate RAILS_ENV=test'
 alias dbreset='rake db:drop; rake db:create; dbmigrate; rake db:dev_seed'
