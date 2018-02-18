@@ -61,3 +61,16 @@ export PS1="$PS1\$(git-radar --bash --fetch): "
 function title {
     echo -ne "\033]0;"$*"\007"
 }
+
+# Colored man pages
+# Source: https://github.com/arturoherrero/dotfiles/blob/master/system/environment.sh
+man() {
+  env \
+  LESS_TERMCAP_mb=$'\E[01;31m' \
+  LESS_TERMCAP_md=$'\E[01;38;5;208m' \
+  LESS_TERMCAP_me=$'\E[0m' \
+  LESS_TERMCAP_se=$'\E[0m' \
+  LESS_TERMCAP_ue=$'\E[0m' \
+  LESS_TERMCAP_us=$'\E[04;38;5;111m' \
+  man "$@"
+}
