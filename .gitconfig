@@ -56,8 +56,6 @@
   ca = commit --amend
   cae = commit --allow-empty
   can = commit --amend --no-edit
-  ci = commit
-  cm = commit -m
   cn = commit --no-edit
   cp = cherry-pick
   cpa = cherry-pick --abort
