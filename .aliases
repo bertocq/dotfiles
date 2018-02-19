@@ -68,7 +68,8 @@ alias sitemap="rake sitemap:refresh:no_ping"
 alias dep_pre="bundle exec cap preproduction deploy"
 alias dep_pre_br='f(){ bundle exec cap preproduction deploy branch="$1"; unset -f f; }; f'
 alias dep_PRO="bundle exec cap preproduction deploy"
-
+## Jekyll
+alias js='bundle exec jekyll serve --watch'
 
 # Dev
 alias s='subl'
