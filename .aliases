@@ -42,6 +42,9 @@ alias gdf='git gdf'
 alias gds='git gds'
 alias gdsf='git gdsf'
 alias gs='git st'
+## Master
+alias com='git co master; p'
+alias grm='git rebase master'
 
 # Rails
 alias be='bundle exec'
