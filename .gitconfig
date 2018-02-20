@@ -28,13 +28,12 @@
   p = pull --rebase
 
   # Staging
-  s = stash
+  s = stash --include-untracked
   sa = stash apply
-  sc = "!git su && git sd" # Destroy files in working dir & staging area
+  sc = "!git s && git sd" # Destroy files in working dir & staging area
   sd = stash drop
   sp = stash pop
   ss = show stash
-  su = stash --include-untracked
 
   # Branches
   ba = branch -a
