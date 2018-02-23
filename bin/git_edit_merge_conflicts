@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Edit all files with merge conflicts
+# Source: https://github.com/deivid-rodriguez/dotfiles/blob/master/dotfiles/config/git/edit
+
+top_level=$(git rev-parse --show-toplevel)
+files=$(git diff --name-only --diff-filter=U)
+
+if test -z "$files"
+then
+  echo "There's no conflicts in the current working tree"
+else
+  (cd "$top_level" && echo "$files" | xargs subl -n . )
+fi

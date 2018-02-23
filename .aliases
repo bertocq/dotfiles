@@ -11,6 +11,7 @@ alias rm='rm -iv' # Asks for confirmation when removing a file
 
 # Git
 alias g='git'
+alias gemc='git_edit_merge_conflicts'
 ## Commiting
 alias ga='git ga'
 alias gaa='git gaa'
