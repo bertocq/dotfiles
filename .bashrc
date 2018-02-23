@@ -28,6 +28,14 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Run twolfson/sexy-bash-prompt
 . ~/.bash_prompt
+export PROMPT_SYNCED_SYMBOL=" 👌"
+export PROMPT_DIRTY_SYNCED_SYMBOL=" ✏️"
+export PROMPT_UNPUSHED_SYMBOL=" ☝️"
+export PROMPT_DIRTY_UNPUSHED_SYMBOL=" 🚀"
+export PROMPT_UNPULLED_SYMBOL=" 👇"
+export PROMPT_DIRTY_UNPULLED_SYMBOL=" 📥"
+export PROMPT_UNPUSHED_UNPULLED_SYMBOL=" ↕️"
+export PROMPT_DIRTY_UNPUSHED_UNPULLED_SYMBOL=" 💩"
 
 # Add git completion
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
