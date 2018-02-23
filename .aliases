@@ -114,3 +114,4 @@ alias update='sudo softwareupdate -ia; brew_maintenance; gem update --system; ma
 alias wifi='wifi-password'
 alias esen='trans es:'
 alias enes='trans :es'
+alias pu='paste_unindented'
