@@ -20,12 +20,18 @@
   aliases=!git config -l | grep '^alias' | cut -c 7- | sort
 
   # Status
-  lg = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
+  gl = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
   st = status -s
+  gsp = "!git status --porcelain | cut -c4-" # List all changed files without status symbols
 
   # Pull
   fu = fetch upstream
   p = pull --rebase
+
+  # Adding
+  ga = add
+  gaa = add .
+  gai = add -i
 
   # Staging
   s = stash --include-untracked
@@ -53,31 +59,20 @@
 
   # Commits
   ca = commit --amend
-  cae = commit --allow-empty
   can = commit --amend --no-edit
-  cn = commit --no-edit
+  cae = commit --allow-empty
+  cne = commit --no-edit
   cp = cherry-pick
   cpa = cherry-pick --abort
   cpc = cherry-pick --continue
   csha = !git rev-parse HEAD | pbcopy # copy sha of last commit
-  it = !git init && git commit -m “root” --allow-empty
-  ucm = reset --soft HEAD^
 
   # Diff
-  ## Changes in working directory
-  gd = "! git diff --color | diff-so-fancy"
-  ## Changes in working directory for a particular file passed as argument
-  gdf = "!sh -c \" git diff --color $1 | diff-so-fancy\" -"
-  ## Changes in staging area
-  gds = "! git diff --staged --color | diff-so-fancy"
-  ## Changes in staging area for a particular file passed as argument
-  gdsf = "!sh -c \" git diff --staged --color $1 | diff-so-fancy\" -"
-
-  # Rubocop
-  ## Rubocop autocorrect on files in working directory & staging area
-  ru = "! git status --porcelain | cut -c4- | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a"
-  ## Rubocop autocorrect on files in diff between current branch and the one passed as argument
-  rud = "!sh -c \"git diff --name-only --diff-filter=d $1..HEAD | grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a\" -"
+  gd = "! git diff --color | diff-so-fancy" # Changes in working directory files
+  gdf = "!sh -c \" git diff --color $1 | diff-so-fancy\" -" # Changes in working dir for a file (name as arg)
+  gds = "! git diff --staged --color | diff-so-fancy" # Changes in staging area files
+  gdsf = "!sh -c \" git diff --staged --color $1 | diff-so-fancy\" -" # Changes in staging area for a file (name as arg)
+  gdm = diff --name-only --diff-filter=d master..HEAD # Files changed between current branch and master, excluding deleted
 
   # Submodules
   sub = pull --recurse-submodules
@@ -86,6 +81,7 @@
   # Reverting
   reset = reset HEAD^ --mixed
   revert = reset HEAD~
+  ucm = reset --soft HEAD^
   undo = reset --soft HEAD~1 # Undo last commit (affects HEAD only)
   unstage = reset HEAD --
 
