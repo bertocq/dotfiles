@@ -45,7 +45,7 @@
   ba = branch -a
   bd = branch -D
   bs = branch -vv
-  clearb = "! git branch --merged | grep -v master | xargs git branch -d"
+  clearb = "!git branch --merged | grep -v master | xargs git branch -d"
   co = checkout
   cob = checkout -b
   db = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -" # Delete local & remote branch
@@ -68,9 +68,9 @@
   csha = !git rev-parse HEAD | pbcopy # copy sha of last commit
 
   # Diff
-  gd = "! git diff --color | diff-so-fancy" # Changes in working directory files
+  gd = "!git diff --color | diff-so-fancy" # Changes in working directory files
   gdf = "!sh -c \" git diff --color $1 | diff-so-fancy\" -" # Changes in working dir for a file (name as arg)
-  gds = "! git diff --staged --color | diff-so-fancy" # Changes in staging area files
+  gds = "!git diff --staged --color | diff-so-fancy" # Changes in staging area files
   gdsf = "!sh -c \" git diff --staged --color $1 | diff-so-fancy\" -" # Changes in staging area for a file (name as arg)
   gdm = diff --name-only --diff-filter=d master..HEAD # Files changed between current branch and master, excluding deleted
 
