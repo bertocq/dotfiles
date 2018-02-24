@@ -45,7 +45,7 @@
   ba = branch -a
   bd = branch -D
   bs = branch -vv
-  clearb = "! git branch --merged | xargs git branch -d"
+  clearb = "! git branch --merged | grep -v master | xargs git branch -d"
   co = checkout
   cob = checkout -b
   db = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -" # Delete local & remote branch
