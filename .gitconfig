@@ -93,6 +93,7 @@
   ra = rebase --abort
   rc = rebase --continue
   ri = rebase -i
+  rb = "!git rebase -i `git merge-base master HEAD`" # Interactively rebase all the commits on the current branch
 
   # Github
   PR = "!hub pull-request --push --edit -F ~/.github_template.md --browse"
