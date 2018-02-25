@@ -22,7 +22,8 @@ alias go='git browse'
 alias PR='git PR'
 alias PRO='~./dotfiles/github-pull-request'
 ## History
-alias gl='git gl'
+alias gl='git gl -30'
+alias gla='git gl'
 alias gll='git log'
 alias up='git up'
 ## Maintenance
