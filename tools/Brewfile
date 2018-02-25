@@ -11,8 +11,6 @@ tap "homebrew/services"
 tap "homebrew/versions"
 tap "joshuaclayton/formulae"
 tap "michaeldfallen/formula"
-brew "pcre"
-brew "pkg-config"
 brew "autoconf"
 brew "bash"
 brew "bash-completion@2"
@@ -28,19 +26,20 @@ brew "openssl"
 brew "wxmac"
 brew "erlang"
 brew "ffmpeg"
-brew "libxml2"
-brew "sqlite"
+brew "pcre"
 brew "gifsicle"
 brew "git"
 brew "gnupg"
 brew "gnupg@1.4"
 brew "graphviz"
+brew "sqlite"
 brew "xz"
 brew "python3"
 brew "httpie"
 brew "hub"
 brew "imagemagick"
 brew "jq"
+brew "libxml2"
 brew "libyaml"
 brew "makedepend"
 brew "mas"
@@ -50,6 +49,7 @@ brew "nginx"
 brew "nvm"
 brew "openssl@1.1"
 brew "phantomjs"
+brew "pkg-config"
 brew "postgresql", restart_service: true
 brew "rabbitmq"
 brew "ruby-build"
@@ -113,8 +113,8 @@ cask "caskroom/versions/google-chrome-canary"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
 mas "iMovie", id: 408981434
+mas "Install macOS High Sierra", id: 0
 mas "Keynote", id: 409183694
-mas "macOS High Sierra", id: Install
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Proxie", id: 897814548
