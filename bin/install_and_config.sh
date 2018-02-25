@@ -9,21 +9,34 @@
 # - Ask confirmation to config  Divvy shortcuts
 ############################
 
-# list files that should be symlinked
-files=".aliases .bash_profile .bash_prompt .bashrc .editorconfig .gemrc .git_template .gitattributes .gitconfig .gitignore_global
-.gitmessage .rubocop.yml .ruby-version .unused.yml Brewfile com.googlecode.iterm2.plist"
-
-# create symlinks on ~/ for each file
-for file in $files; do
-  echo "Creating symlink to $file in home directory."
-  rm ~/"$file"
-  ln -s ~/dotfiles/"$file" ~/"$file"
-done
-
+## Bash
+ln -s ~/dotfiles/bash/.aliases ~/.aliases
+rm ~/.bash_profile
+ln -s ~/dotfiles/bash/.bash_profile ~/.bash_profile
+ln -s ~/dotfiles/bash/.bash_prompt ~/.bash_prompt
+rm ~/.bashrc
+ln -s ~/dotfiles/bash/.bashrc ~/.bashrc
 ln -s ~/dotfiles/bin ~/bin
+## Tools
+ln -s ~/dotfiles/tools/.editorconfig ~/.editorconfig
+ln -s ~/dotfiles/tools/Brewfile ~/Brewfile
+ln -s ~/dotfiles/tools/.unused.yml ~/.unused.yml
+ln -s ~/dotfiles/tools/com.googlecode.iterm2.plist ~/com.googlecode.iterm2.plist
+## Ruby
+ln -s ~/dotfiles/ruby/.gemrc ~/.gemrc
+ln -s ~/dotfiles/ruby/.ruby-version ~/.ruby-version
+ln -s ~/dotfiles/ruby/.rubocop.yml ~/.rubocop.yml
+## Git
+ln -s ~/dotfiles/git/.git_template ~/.git_template
+ln -s ~/dotfiles/git/.gitattributes ~/.gitattributes
+ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/git/.gitignore_global ~/.gitignore_global
+ln -s ~/dotfiles/git/.gitmessage ~/.gitmessage
+ln -s ~/dotfiles/git/.github_template.md ~/.github_template.md
+wget https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -O ~/dotfiles/git/git-completion.bash
+ln -s ~/dotfiles/git/git-completion.bash ~/git-completion.bash
 
 # Get latest version of git-completion script for bash
-wget https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -O ~/git-completion.bash
 
 # Update firmware
 sudo softwareupdate -ia
@@ -47,7 +60,7 @@ gem install rubocop
 gem install rubocop-rspec
 
 rm ~/.bundle/config
-ln -s ~/dotfiles/.bundle/config ~/.bundle/config
+ln -s ~/dotfiles/ruby/.bundle/config ~/.bundle/config
 
 # Use Sexy Bash Prompt https://github.com/twolfson/sexy-bash-prompt
 (cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
