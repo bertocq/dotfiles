@@ -20,9 +20,12 @@
   aliases=!git config -l | grep '^alias' | cut -c 7- | sort
 
   # Status
-  gl = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
   st = status -s
   gsp = "!git status --porcelain | cut -c4-" # List all changed files without status symbols
+
+  # Log
+  gl = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
+  up = "!git gl origin/\"$(git current-branch)\"..HEAD" # Unpushed commits on current branch
 
   # Pull
   fu = fetch upstream

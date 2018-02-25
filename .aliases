@@ -23,6 +23,7 @@ alias PR='git PR'
 alias PRO='~./dotfiles/github-pull-request'
 ## History
 alias gl='git gl'
+alias up='git up'
 ## Maintenance
 alias cleanup='clearb;rpo;ggc'
 alias clearb='git clearb'
