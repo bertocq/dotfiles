@@ -17,16 +17,16 @@ export NVM_DIR="$HOME/.nvm"
 # Add Homebrew’s sbin to PATH
 export PATH=/usr/local/sbin:$PATH
 
-# Just in case https://github.com/lionheart/openradar-mirror/issues/15361 keeps being an issue
-# { eval `ssh-agent`; ssh-add -A; } &>/dev/null
-
+# Add command-not-found for Homebrew
+## https://github.com/Homebrew/homebrew-command-not-found
 if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
-# set bash colors
+# Set bash colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Run twolfson/sexy-bash-prompt
+## https://github.com/twolfson/sexy-bash-prompt
 . ~/.bash_prompt
 export PROMPT_SYNCED_SYMBOL=" 👌"
 export PROMPT_DIRTY_SYNCED_SYMBOL=" ✏️"
@@ -37,16 +37,15 @@ export PROMPT_DIRTY_UNPULLED_SYMBOL=" 📥"
 export PROMPT_UNPUSHED_UNPULLED_SYMBOL=" ↕️"
 export PROMPT_DIRTY_UNPUSHED_UNPULLED_SYMBOL=" 💩"
 
+# Add Git-radar to prompt
+## https://github.com/michaeldfallen/git-radar
+export PS1="$PS1\$(git-radar --bash --fetch): "
+
 # Add git completion
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source ~/git-completion.bash
+# Complete git commnads when using `g` alias
 complete -o default -o nospace -F _git g
-
-### create directory and cd into it
-mkcd () {
-  mkdir "$1"
-  cd "$1"
-}
 
 # Avoid duplicates in bash history & increase history memory & file sizes
 HISTSIZE=10000
@@ -59,12 +58,15 @@ export GIT_EDITOR="subl -w"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-### Git-radar https://github.com/michaeldfallen/git-radar
-export PS1="$PS1\$(git-radar --bash --fetch): "
-
 ### Used to change terminal tab title
 function title {
     echo -ne "\033]0;"$*"\007"
+}
+
+### create directory and cd into it
+mkcd () {
+  mkdir "$1"
+  cd "$1"
 }
 
 # Colored man pages
