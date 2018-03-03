@@ -22,7 +22,7 @@ alias go='git browse'
 alias PR='git PR'
 alias PRO='~./dotfiles/github-pull-request'
 ## History
-alias gl='git gl -30'
+alias gl='git gl -20'
 alias gla='git gl'
 alias gll='git log'
 alias up='git up'
@@ -74,9 +74,11 @@ alias dbreset='r db:drop; r db:create; dbmigrate; r db:dev_seed'
 alias clearlocales='find config/locales/ -empty -delete; git checkout -- config/locales/custom/.keep'
 alias sitemap="r sitemap:refresh:no_ping"
 ## Capistrano deployment
-alias dep_pre='be cap preproduction deploy'
-alias dep_pre_br='f(){ be cap preproduction deploy branch="$1"; unset -f f; }; f'
-alias dep_PRO='be cap preproduction deploy'
+pre_deploy="$be cap preproduction deploy"
+alias dep_pre="$pre_deploy:cleanup; $pre_deploy"
+alias dep_pre_br='f(){ dep_pre branch="$1"; unset -f f; }; f'
+pro_deploy='be cap production deploy'
+alias dep_PRO="$pro_deploy:cleanup; $pro_deploy"
 ## Jekyll
 alias js='be jekyll serve --watch'
 
