@@ -21,3 +21,6 @@ vendor/*/vendor/ruby/
 /ignore
 
 default.profraw
+
+# Ignore new rails credentials key file
+master.key
