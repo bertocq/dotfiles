@@ -29,8 +29,9 @@ alias up='git up'
 ## Maintenance
 alias cleanup='clearb;rpo;ggc'
 alias clearb='git clearb'
-alias ggc='git gc --auto' # Remember Housekeeping!
+alias ggc='git gc --auto'
 alias rpo='git rpo'
+alias ggca='git gc --aggressive'
 ## Master branch actions
 alias com='git co master; p'
 alias grm='git rebase master'
