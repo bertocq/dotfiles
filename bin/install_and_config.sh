@@ -113,6 +113,12 @@ chflags nohidden ~/Library
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
+# Disable Spell Check in Every Application system-wide
+defaults write com.apple.notes NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Disable Shadow for Window Screenshots
+defaults write com.apple.screencapture disable-shadow -bool TRUE
+killall SystemUIServer
 
 # Computer Name
 scutil --set ComputerName "bcq"
