@@ -89,9 +89,6 @@ alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
 ## Madrid
 alias sshadd='ssh decideproxy ssh-add'
 alias upstream_pull='git co master;git pull;git pull;git bd upstream;git cob upstream;git fetch upstream;git merge upstream/master'
-alias consul_diff='open https://github.com/AyuntamientoMadrid/consul/compare/master...consul:master'
-alias pr_upstream='open https://github.com/AyuntamientoMadrid/consul/compare/master...upstream'
-alias pr_to_pro='open https://github.com/AyuntamientoMadrid/consul/compare/stable...master'
 
 # Heroku Belt
 alias ha='heroku apps'
