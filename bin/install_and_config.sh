@@ -120,6 +120,15 @@ defaults write com.apple.notes NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write com.apple.screencapture disable-shadow -bool TRUE
 killall SystemUIServer
 
+# Disable press-and-hold for keys in favor of key repeat.
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Set a really fast key repeat.
+defaults write NSGlobalDomain KeyRepeat -int 0
+
+# Always open everything in Finder's list view.
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+
 # Computer Name
 scutil --set ComputerName "bcq"
 scutil --set LocalHostName "bcq"
