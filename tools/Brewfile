@@ -65,6 +65,7 @@ brew "heroku/brew/heroku"
 brew "joshuaclayton/formulae/unused"
 brew "michaeldfallen/formula/git-radar"
 cask "appcleaner"
+cask "bose-updater"
 cask "caprine"
 cask "caption"
 cask "charles"
@@ -105,6 +106,7 @@ cask "trailer"
 cask "transmission"
 cask "virtualbox"
 cask "xscope"
+cask "zwift"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
 mas "iMovie", id: 408981434
