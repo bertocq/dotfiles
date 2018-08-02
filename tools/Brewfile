@@ -34,3 +34,4 @@ cask "sublime-text"
 cask "telegram"
 cask "transmission"
 cask "zwift"
+mas "WhatsApp", id: 1147396723
