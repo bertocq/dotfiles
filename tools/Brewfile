@@ -29,12 +29,10 @@ cask "iterm2"
 cask "keka"
 cask "libreoffice"
 cask "mendeley"
-cask "parallels"
 cask "skype"
 cask "spotify"
 cask "sublime-text"
 cask "telegram"
 cask "transmission"
 cask "zwift"
-mas "Install macOS Sierra", id: 1127487414
 mas "WhatsApp", id: 1147396723
