@@ -114,7 +114,7 @@ alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
 
 ## Maintenance
 alias bw='brew'
-alias brew_maintenance='bw doctor; bw update; bw upgrade; bw cleanup; bw prune; bw cask cleanup; brewfile'
+alias brew_maintenance='bw doctor; bw update; bw upgrade; bw cleanup; bw prune; bw cleanup; brewfile'
 alias bb='bw bundle --global'
 alias brewfile='bb; bb dump --force; bb cleanup --force; bb check; bb dump --force'
 alias update='sudo softwareupdate -ia; mas upgrade; brew_maintenance; gem update --system'

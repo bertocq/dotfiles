@@ -50,7 +50,7 @@ brew doctor
 brew tap Homebrew/bundle # https://github.com/Homebrew/homebrew-bundle
 brew bundle install
 brew bundle check # Check everything anything to install/upgrade
-brew cask cleanup # Delete cask downloads
+brew cleanup # Delete cask downloads
 
 # Install Ruby + Bundler & Rubocop
 rbenv install 2.4.1
