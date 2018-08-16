@@ -50,7 +50,7 @@ brew doctor
 brew tap Homebrew/bundle # https://github.com/Homebrew/homebrew-bundle
 brew bundle install
 brew bundle check # Check everything anything to install/upgrade
-brew cask cleanup # Delete cask downloads
+brew cleanup # Delete cask downloads
 
 # Install Ruby + Bundler & Rubocop
 rbenv install 2.4.1
@@ -122,9 +122,6 @@ killall SystemUIServer
 
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
-
-# Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 0
 
 # Always open everything in Finder's list view.
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
