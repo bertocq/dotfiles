@@ -72,12 +72,8 @@ alias sps='sp --seed'
 alias rc='rails c'
 alias rs='rails s'
 alias rg='rails generate'
-## Maintenance
-alias r='rake'
-alias dbmigrate='r db:migrate; r db:migrate RAILS_ENV=test'
-alias dbreset='r db:drop; r db:create; dbmigrate; r db:dev_seed'
-alias clearlocales='find config/locales/ -empty -delete; git checkout -- config/locales/custom/.keep'
-alias sitemap="r sitemap:refresh:no_ping"
+alias dbmigrate='rake db:migrate; rake db:migrate RAILS_ENV=test'
+alias dbreset='rake db:drop; rake db:create; dbmigrate; rake db:seed'
 ## Capistrano deployment
 pre_deploy="$be cap preproduction deploy"
 alias dep_pre="$pre_deploy:cleanup; $pre_deploy"
