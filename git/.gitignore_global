@@ -24,3 +24,6 @@ default.profraw
 
 # Ignore new rails credentials key file
 master.key
+
+# Byebug history
+.byebug_history
