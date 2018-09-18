@@ -180,7 +180,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>354 289 620 392 0 0 1280 778 </string>
+	<string>314 117 700 622 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
@@ -980,11 +980,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-04T18:05:27Z</date>
+	<date>2018-09-16T18:35:29Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>TabStyle</key>
 	<integer>3</integer>
 	<key>TimeBetweenBlinks</key>
@@ -3187,6 +3187,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.0beta6</string>
+	<string>3.2.1beta4</string>
 </dict>
 </plist>
