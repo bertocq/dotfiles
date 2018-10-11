@@ -38,3 +38,7 @@ chrome://extensions > Keyboard shortcuts
 
 ## macOS Matrix RedPill ScreenSaver
 https://github.com/lpar/RedPill
+
+## Unhide Garmin Fenix 3 Newfiles hidden folder
+cd /Volumes/GARMIN/GARMIN
+sudo chflags nohidden ./NEWFILES
