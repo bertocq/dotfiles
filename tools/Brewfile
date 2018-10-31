@@ -27,6 +27,7 @@ brew "ctags"
 brew "diff-so-fancy"
 brew "elasticsearch@2.4", restart_service: true
 brew "ffmpeg"
+brew "fzf"
 brew "gifsicle"
 brew "git"
 brew "gnupg"

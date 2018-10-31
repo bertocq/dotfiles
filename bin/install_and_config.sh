@@ -52,6 +52,9 @@ brew bundle install
 brew bundle check # Check everything anything to install/upgrade
 brew cleanup # Delete cask downloads
 
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
+
 # Install Ruby + Bundler & Rubocop
 rbenv install 2.4.1
 rbenv global 2.4.1

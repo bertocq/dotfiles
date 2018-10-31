@@ -88,5 +88,8 @@ man() {
   LESS_TERMCAP_us=$'\E[04;38;5;111m' \
   man "$@"
 }
-# Overwrite macos old sqlite3 with homebrew installation
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Overwrite macos old sqlite3
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
