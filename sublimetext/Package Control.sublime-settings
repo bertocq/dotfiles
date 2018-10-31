@@ -2,11 +2,11 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"0_package_control_loader"
 	],
 	"installed_packages":
 	[
 		"AlignTab",
-		"Better CoffeeScript",
 		"Clickable URLs",
 		"Cobalt2 Flat Theme",
 		"Compare Side-By-Side",
@@ -14,7 +14,6 @@
 		"DotENV",
 		"Download Source",
 		"EditorConfig",
-		"Elixir",
 		"Fix Mac Path",
 		"Git Commit Message Syntax",
 		"Github Tools",
