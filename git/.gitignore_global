@@ -27,3 +27,5 @@ master.key
 
 # Byebug history
 .byebug_history
+
+Procfile.local
