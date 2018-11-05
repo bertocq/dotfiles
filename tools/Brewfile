@@ -25,7 +25,7 @@ brew "ccat"
 brew "coreutils"
 brew "ctags"
 brew "diff-so-fancy"
-brew "elasticsearch@2.4", restart_service: true
+brew "elasticsearch@2.4", restart_service: true, link: true
 brew "ffmpeg"
 brew "fzf"
 brew "gifsicle"
@@ -35,29 +35,32 @@ brew "gnupg@1.4"
 brew "graphviz"
 brew "httpie"
 brew "hub"
-brew "imagemagick"
+brew "imagemagick", link: false
+brew "imagemagick@6", link: true
 brew "jq"
 brew "libxml2"
 brew "pcre"
 brew "lighttpd"
 brew "makedepend"
-brew "mas"
 brew "mongodb"
-brew "mysql"
+brew "mysql@5.7", restart_service: true, link: true
 brew "nginx"
 brew "node"
 brew "nvm"
-brew "openssl@1.1"
 brew "pkg-config"
-brew "postgresql", restart_service: true
+brew "postgresql"
+brew "psgrep"
+brew "pv"
 brew "ruby-build"
 brew "rbenv"
 brew "rbenv-default-gems"
 brew "rbenv-vars"
-brew "redis"
+brew "redis", restart_service: true
 brew "ruby"
+brew "s3cmd"
 brew "shellcheck"
 brew "the_silver_searcher"
+brew "tldr"
 brew "translate-shell"
 brew "webkit2png"
 brew "wget"
@@ -82,6 +85,7 @@ cask "disk-inventory-x"
 cask "divvy"
 cask "dropbox"
 cask "duet"
+cask "filezilla"
 cask "firefox"
 cask "fman"
 cask "font-hack"
@@ -89,6 +93,7 @@ cask "garmin-express"
 cask "gimp"
 cask "google-chrome"
 cask "google-chrome-canary"
+cask "grammarly"
 cask "iina"
 cask "image2icon"
 cask "iterm2"
@@ -112,11 +117,3 @@ cask "transmission"
 cask "virtualbox"
 cask "xscope"
 cask "zwift"
-mas "Battery Indicator", id: 1206020918
-mas "FreeMemory Pro", id: 486967844
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Proxie", id: 897814548
-mas "WhatsApp", id: 1147396723
