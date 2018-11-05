@@ -137,6 +137,8 @@
 	</dict>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>JobName</key>
+	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -184,9 +186,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 469 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>82 161 796 486 0 0 1280 777 </string>
+	<string>1701 162 796 486 1280 -250 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>49 0 1225 777 0 0 1280 777 </string>
+	<string>1280 -250 1680 1027 1280 -250 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>49 3 1228 775 0 0 1280 778 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -980,7 +982,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-30T20:07:18Z</date>
+	<date>2018-11-03T21:34:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
