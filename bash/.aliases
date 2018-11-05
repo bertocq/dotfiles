@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Bash
-alias c='ccat'
-alias cat='ccat'
+alias c='bat'
+alias cat='bat'
 alias cp='cp -iv' # Asks for confirmation if overwritting existing file
 alias ll='ls -al'
 alias mv='mv -iv' # Asks for confirmation if overwritting existing file
