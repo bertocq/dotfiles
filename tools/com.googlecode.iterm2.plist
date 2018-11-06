@@ -182,13 +182,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1770 53 700 622 1280 -250 1680 1027 </string>
+	<string>312 116 700 622 0 0 1280 777 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 469 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1701 162 796 486 1280 -250 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 -250 1680 1027 1280 -250 1680 1027 </string>
+	<string>45 0 1235 777 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>49 3 1228 775 0 0 1280 778 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -982,11 +982,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-03T21:34:26Z</date>
+	<date>2018-11-06T12:11:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>TabStyle</key>
 	<integer>3</integer>
 	<key>TimeBetweenBlinks</key>
