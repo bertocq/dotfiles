@@ -63,10 +63,9 @@ alias b='bundle'
 alias be='b exec'
 alias br='be rake'
 ## RSpec
-alias sp='be rspec'
+alias sp='be rspec --order rand'
 alias spt='sp --tag'
 alias spc='sp --color --format documentation --require spec_helper --require rails_helper spec'
-alias spr='sp --order rand'
 alias sps='sp --seed'
 ## Rails
 alias rc='rails c'
