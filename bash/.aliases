@@ -81,6 +81,15 @@ pro_deploy='be cap production deploy'
 alias dep_PRO="$pro_deploy:cleanup; $pro_deploy"
 ## Jekyll
 alias js='be jekyll serve --watch'
+## Foreman
+alias fs='foreman start'
+alias fss=' foreman start -m all=1,search=0'
+## Elasticsearch
+alias estop='brew services stop elasticsearch@5.6'
+alias estart='brew services start elasticsearch@5.6'
+
+## Brew services
+alias bws='brew services list'
 
 # Dev
 alias s='subl'
