@@ -41,5 +41,12 @@
   { "keys": ["super+shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
   { "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
-  { "keys": ["super+j"], "command": "join_lines" }
+  { "keys": ["super+j"], "command": "join_lines" },
+  {
+      "keys": ["command+control+w"],
+      "command": "toggle_setting",
+      "args": {
+          "setting": "word_wrap"
+      }
+  }
  ]
