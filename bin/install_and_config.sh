@@ -9,6 +9,15 @@
 # - Ask confirmation to config  Divvy shortcuts
 ############################
 
+# Update firmware
+sudo softwareupdate -ia
+
+# XCode dev tools install
+xcode-select --install
+
+## Clone repo via HTTPS
+git clone https://github.com/bertocq/dotfiles.git ~/dotfiles && cd ~/dotfiles
+
 ## Bash
 ln -s ~/dotfiles/bash/.aliases ~/.aliases
 rm ~/.bash_profile
@@ -33,16 +42,9 @@ ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -s ~/dotfiles/git/.gitmessage ~/.gitmessage
 ln -s ~/dotfiles/git/.github_template.md ~/.github_template.md
+# Get latest version of git-completion script for bash
 wget https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -O ~/dotfiles/git/git-completion.bash
 ln -s ~/dotfiles/git/git-completion.bash ~/git-completion.bash
-
-# Get latest version of git-completion script for bash
-
-# Update firmware
-sudo softwareupdate -ia
-
-# XCode dev tools install
-xcode-select --install
 
 # Install Homebrew and use Brewfile with Cask
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -86,6 +88,9 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Change screenshots format
 defaults write com.apple.screencapture type jpg
+
+# Change screenshots destination folder
+defaults write com.apple.screencapture location ~/Downloads
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
