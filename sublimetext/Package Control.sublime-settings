@@ -2,20 +2,20 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"0_package_control_loader"
 	],
 	"installed_packages":
 	[
-		"AlignTab",
+		"Babel",
 		"Clickable URLs",
 		"Cobalt2 Flat Theme",
 		"Compare Side-By-Side",
 		"Copy Relative Path",
-		"DotENV",
-		"Download Source",
 		"EditorConfig",
 		"Fix Mac Path",
 		"Git Commit Message Syntax",
 		"Github Tools",
+		"GitHubinator",
 		"Indent XML",
 		"MoveTab",
 		"Package Control",
@@ -23,11 +23,9 @@
 		"Pretty JSON",
 		"Pretty YAML",
 		"RuboCop",
-		"RubyTest",
 		"SCSS",
 		"SideBarEnhancements",
 		"Smart Path Copy",
-		"Status Bar File Size",
 		"Text Pastry",
 		"Theme - Cobalt2"
 	]
