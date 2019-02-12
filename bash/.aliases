@@ -74,12 +74,6 @@ alias rs='rails s'
 alias rg='rails generate'
 alias dbmigrate='rake db:migrate; rake db:migrate RAILS_ENV=test'
 alias dbreset='rake db:drop; rake db:create; dbmigrate; rake db:seed'
-## Capistrano deployment
-pre_deploy="$be cap preproduction deploy"
-alias dep_pre="$pre_deploy:cleanup; $pre_deploy"
-alias dep_pre_br='f(){ dep_pre branch="$1"; unset -f f; }; f'
-pro_deploy='be cap production deploy'
-alias dep_PRO="$pro_deploy:cleanup; $pro_deploy"
 ## Jekyll
 alias js='be jekyll serve --watch'
 ## Foreman
@@ -95,9 +89,6 @@ alias bws='brew services list'
 # Dev
 alias s='subl'
 alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
-## Madrid
-alias sshadd='ssh decideproxy ssh-add'
-alias upstream_pull='git co master;git pull;git pull;git bd upstream;git cob upstream;git fetch upstream;git merge upstream/master'
 
 # Heroku Belt
 alias ha='heroku apps'
@@ -110,6 +101,11 @@ alias hcou='heroku config:unset'
 alias hl='heroku logs -t -a'
 alias hps='heroku pg:psql -a'
 alias hr='heroku restart -a'
+## Bebanjo
+alias sshadd='ssh-add ~/.ssh/id_berto_bebanjo'
+alias omo='open http://localhost:4001'
+alias ose='open http://localhost:4002'
+alias oid='open http://localhost:4000'
 
 # OSX
 alias btime="pmset -g batt | awk '/^ /{print \$5}'"
