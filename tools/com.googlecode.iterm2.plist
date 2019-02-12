@@ -186,13 +186,13 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>586 426 400 129 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1770 53 700 622 1280 -250 1680 1027 </string>
+	<string>312 116 700 622 0 0 1280 777 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 469 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>44 227 796 486 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>49 0 1225 777 0 0 1280 777 </string>
+	<string>44 0 1236 777 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>49 3 1228 775 0 0 1280 778 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -988,11 +988,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-12-17T16:52:58Z</date>
+	<date>2019-02-08T12:53:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>TabStyle</key>
 	<integer>3</integer>
 	<key>TimeBetweenBlinks</key>
@@ -9698,6 +9698,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.7beta1</string>
+	<string>3.2.7beta4</string>
 </dict>
 </plist>
