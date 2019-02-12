@@ -93,3 +93,6 @@ man() {
 
 # Overwrite macos old sqlite3
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+# BeBanjo's toolbelt
+eval "$(/Users/bertocq/work/bebanjo/dev/bj/bin/bj init -)"
