@@ -90,17 +90,6 @@ alias bws='brew services list'
 alias s='subl'
 alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
 
-# Heroku Belt
-alias ha='heroku apps'
-alias hb='heroku run bash -a'
-alias hc='heroku run console -a'
-alias hce='heroku run iex -S mix -a'
-alias hco='heroku config -a'
-alias hcos='heroku config:set'
-alias hcou='heroku config:unset'
-alias hl='heroku logs -t -a'
-alias hps='heroku pg:psql -a'
-alias hr='heroku restart -a'
 ## Bebanjo
 alias sshadd='ssh-add ~/.ssh/id_berto_bebanjo'
 alias omo='open http://localhost:4001'
