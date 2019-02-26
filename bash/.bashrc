@@ -11,9 +11,6 @@ fi
 eval "$(rbenv init -)"
 eval "$(hub alias -s)"
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 # Add Homebrew’s sbin to PATH
 export PATH=/usr/local/sbin:$PATH
 
