@@ -31,6 +31,7 @@ ln -s ~/dotfiles/tools/.editorconfig ~/.editorconfig
 ln -s ~/dotfiles/tools/.Brewfile ~/.Brewfile
 ln -s ~/dotfiles/tools/.unused.yml ~/.unused.yml
 ln -s ~/dotfiles/tools/com.googlecode.iterm2.plist ~/com.googlecode.iterm2.plist
+ln -s ~/dotfiles/sublimetext/.SideBarEnhancements.optout ~/.SideBarEnhancements.optout
 ## Ruby
 ln -s ~/dotfiles/ruby/.gemrc ~/.gemrc
 ln -s ~/dotfiles/ruby/.ruby-version ~/.ruby-version
