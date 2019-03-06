@@ -55,6 +55,7 @@ brew "redis", restart_service: true
 brew "ruby", link: true
 brew "s3cmd"
 brew "shellcheck"
+brew "task"
 brew "the_silver_searcher"
 brew "tldr"
 brew "translate-shell"

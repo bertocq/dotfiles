@@ -115,3 +115,13 @@ alias esen='trans es:'
 alias enes='trans :es'
 alias pu='paste_unindented'
 alias yta='youtube-dl -f 140 -o "~/Downloads/%(title)s.%(ext)s"'
+
+## Taskwarrior
+alias t='task'
+alias ta='task add'
+alias tu='task undo'
+alias td='task $1 done'
+alias tm='task $1 modify'
+alias tl='task info +LATEST' # Shows the info of the lastest added task
+alias tan='task $1 annotate $2' # Adds a simple annotation
+alias today='task +TODAY list' # Shows what's for today

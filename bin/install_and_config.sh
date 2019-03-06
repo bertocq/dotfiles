@@ -32,6 +32,8 @@ ln -s ~/dotfiles/tools/.Brewfile ~/.Brewfile
 ln -s ~/dotfiles/tools/.unused.yml ~/.unused.yml
 ln -s ~/dotfiles/tools/com.googlecode.iterm2.plist ~/com.googlecode.iterm2.plist
 ln -s ~/dotfiles/sublimetext/.SideBarEnhancements.optout ~/.SideBarEnhancements.optout
+ln -s ~/dotfiles/tools/taskwarrior/.taskrc ~/.taskrc
+git clone git@github.com:bertocq/tasks.git ~/.tasks
 ## Ruby
 ln -s ~/dotfiles/ruby/.gemrc ~/.gemrc
 ln -s ~/dotfiles/ruby/.ruby-version ~/.ruby-version
