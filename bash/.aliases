@@ -125,3 +125,4 @@ alias tm='task $1 modify'
 alias tl='task info +LATEST' # Shows the info of the lastest added task
 alias tan='task $1 annotate $2' # Adds a simple annotation
 alias today='task +TODAY list' # Shows what's for today
+alias ts='task synchronize' # Uses on-launch hook to sync with private repo
