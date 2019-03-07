@@ -93,3 +93,7 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 # BeBanjo's toolbelt
 eval "$(/Users/bertocq/work/bebanjo/dev/bj/bin/bj init -)"
+
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
