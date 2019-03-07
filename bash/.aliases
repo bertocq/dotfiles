@@ -9,6 +9,7 @@ alias mv='mv -iv' # Asks for confirmation if overwritting existing file
 alias reload='source ~/.bash_profile'
 alias rm='rm -iv' # Asks for confirmation when removing a file
 alias f='open -a Finder ./' # Opens current directory with macos Finder
+alias rmrf='rm -rf'
 
 # Git
 alias g='git'
