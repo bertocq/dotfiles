@@ -18,7 +18,7 @@
   // "font_face": "Consolas",
   "draw_indent_guides": false,
   "line_numbers": false,
-  "gutter": false,
+  "gutter": true,
   "margin": 2,
   "tab_size": 2,
   "translate_tabs_to_spaces": true,

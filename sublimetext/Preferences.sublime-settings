@@ -1,5 +1,6 @@
 {
 	"always_show_minimap_viewport": false,
+	"auto_complete": false,
 	"auto_indent": true,
 	"auto_match_enabled": true,
 	"binary_file_patterns":
@@ -20,7 +21,6 @@
 		".DS_Store",
 		"*.psd",
 		"node_modules/",
-		"vendor/",
 		"tmp/",
 		"log/",
 		"coverage/"
