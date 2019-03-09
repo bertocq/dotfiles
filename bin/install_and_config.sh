@@ -35,6 +35,8 @@ ln -s ~/dotfiles/sublimetext/.SideBarEnhancements.optout ~/.SideBarEnhancements.
 ln -s ~/dotfiles/tools/taskwarrior/.taskrc ~/.taskrc
 git clone git@github.com:bertocq/tasks.git ~/.tasks
 ln -s ~/dotfiles/tools/taskwarrior/hooks ~/.tasks/hooks
+ln -s ~/.tasks/notes ~/dotfiles/notes
+
 ## Ruby
 ln -s ~/dotfiles/ruby/.gemrc ~/.gemrc
 ln -s ~/dotfiles/ruby/.ruby-version ~/.ruby-version
