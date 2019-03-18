@@ -26,7 +26,6 @@ context.sports=+road or +mtb or +cycling or +core or +running or +nutrition
 
 # Date Formats
 dateformat=D-M-Y
-holiday=DMY
 dateformat.edit=D-M-Y H:N:S
 dateformat.info=D-M-Y H:N:S
 
