@@ -75,6 +75,7 @@ alias rc='rails c'
 alias rs='rails s'
 alias rg='rails generate'
 alias dbmigrate='rake db:migrate; rake db:migrate RAILS_ENV=test'
+alias dbrollback='rake db:rollback; rake db:rollback RAILS_ENV=test'
 alias dbreset='rake db:drop; rake db:create; dbmigrate; rake db:seed'
 ## Jekyll
 alias js='be jekyll serve --watch'
