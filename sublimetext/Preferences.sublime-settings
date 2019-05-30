@@ -20,10 +20,13 @@
 		"*.zip",
 		".DS_Store",
 		"*.psd",
+    ".byebug_history",
 		"node_modules/",
-		"vendor/",
 		"tmp/",
 		"log/",
+    "vendor/bundle",
+    "vendor/cache",
+    "vendor/metadata-*",
 		"coverage/"
 	],
 	"bold_folder_labels": true,
@@ -44,7 +47,7 @@
 	[
 		"no_round"
 	],
-	"font_size": 18,
+	"font_size": 17,
 	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
