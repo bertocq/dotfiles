@@ -117,7 +117,9 @@ alias wifi='wifi-password'
 alias esen='trans es:'
 alias enes='trans :es'
 alias pu='paste_unindented'
-alias yta='youtube-dl -f 140 -o "~/Downloads/%(title)s.%(ext)s"'
+alias yt='youtube-dl'
+alias yta='youtube-dl -f 140 -o "~/Downloads/VideoMusic/%(title)s.%(ext)s"'
+alias ytv='youtube-dl -f 22 -o "~/Downloads/%(title)s.%(ext)s"'
 
 ## Taskwarrior
 alias t='task'
