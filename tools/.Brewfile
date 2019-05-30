@@ -24,6 +24,7 @@ brew "coreutils"
 brew "ctags"
 brew "diff-so-fancy"
 brew "elasticsearch@5.6", restart_service: true, link: true
+brew "eslint"
 brew "ffmpeg"
 brew "fzf"
 brew "git"
@@ -108,12 +109,12 @@ cask "transmission"
 cask "virtualbox"
 cask "xscope"
 cask "zwift"
-mas "com.apple.iMovieApp", id: 408981434
-mas "com.apple.iWork.Keynote", id: 409183694
-mas "com.apple.iWork.Numbers", id: 409203825
-mas "com.apple.iWork.Pages", id: 409201541
-mas "com.helloresolven.GIF-Brewery-3", id: 1081413713
-mas "com.rockysandstudio.FreeMemory-Pro", id: 486967844
-mas "com.sindresorhus.Battery-Indicator", id: 1206020918
-mas "desktop.WhatsApp", id: 1147396723
-mas "us.patr0n.cellist", id: 897814548
+mas "Battery Indicator", id: 1206020918
+mas "FreeMemory Pro", id: 486967844
+mas "GIF Brewery 3", id: 1081413713
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Proxie", id: 897814548
+mas "WhatsApp", id: 1147396723
