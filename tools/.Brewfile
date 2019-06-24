@@ -105,6 +105,7 @@ cask "telegram"
 cask "trainerroad"
 cask "transmission"
 cask "virtualbox"
+cask "whatpulse"
 cask "xscope"
 cask "zwift"
 mas "Battery Indicator", id: 1206020918
