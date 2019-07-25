@@ -11,6 +11,7 @@ alias rmrf='rm -rf'
 # Git
 alias g='git'
 alias gemc='git_edit_merge_conflicts'
+alias galias='git config --get-regexp alias'
 ## Commiting
 alias ga='git ga'
 alias gaa='git gaa'
