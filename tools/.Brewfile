@@ -41,6 +41,7 @@ brew "lighttpd"
 brew "makedepend"
 brew "mas"
 brew "mysql@5.7", restart_service: true, link: true
+brew "neofetch"
 brew "newsboat"
 brew "nginx"
 brew "pkg-config"
