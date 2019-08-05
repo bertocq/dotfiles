@@ -24,6 +24,7 @@ brew "coreutils"
 brew "ctags"
 brew "diff-so-fancy"
 brew "elasticsearch@5.6", restart_service: true, link: true
+brew "node"
 brew "eslint"
 brew "ffmpeg"
 brew "fzf"
