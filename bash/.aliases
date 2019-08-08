@@ -111,6 +111,7 @@ alias brew_maintenance='bw doctor; bw update; bw upgrade; bw cleanup -s; rm -rf 
 alias bb='bw bundle --global'
 alias brewfile='(cd ~/dotfiles/tools; bb dump --force; bb cleanup --force; bb check; bb dump --force)'
 alias update='gem update --system; brew cask upgrade; brew_maintenance; sudo softwareupdate -ia; mas upgrade'
+alias freedisk='diskutil secureErase freespace 0 /' # Afterwards: Reboot; Disk Utility "First Aid"
 
 # Tools
 alias wifi='wifi-password'
