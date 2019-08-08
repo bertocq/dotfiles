@@ -28,4 +28,8 @@ master.key
 # Byebug history
 .byebug_history
 
+# Foreman
 Procfile.local
+
+# Mysql Dumps
+*.sql.gz
