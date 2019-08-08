@@ -61,7 +61,7 @@ alias solocop='rubocop -a --only' # autocorrect using a single cop by name (pass
 # Bundle
 alias b='bundle'
 alias be='b exec'
-alias br='be rake'
+alias ber='be rake'
 ## RSpec
 alias sp='be rspec --order rand'
 alias spd='be rspec --order rand --format documentation'
@@ -74,9 +74,9 @@ alias spm='sp `git ls-files -m \*_spec.rb`'
 alias rc='rails c'
 alias rs='rails s'
 alias rg='rails generate'
-alias dbmigrate='rake db:migrate; rake db:migrate RAILS_ENV=test'
-alias dbrollback='rake db:rollback; rake db:rollback RAILS_ENV=test'
-alias dbreset='rake db:drop; rake db:create; dbmigrate; rake db:seed'
+alias dbmigrate='ber db:migrate; ber db:migrate RAILS_ENV=test'
+alias dbrollback='ber db:rollback; ber db:rollback RAILS_ENV=test'
+alias dbreset='ber db:drop; ber db:create; dbmigrate; ber db:seed'
 ## Jekyll
 alias js='be jekyll serve --watch'
 ## Foreman
