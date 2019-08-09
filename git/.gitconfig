@@ -51,7 +51,7 @@
   bd = branch -D
   bdr = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -" # Delete local & remote branch
   bs = branch -vv
-  clearb = "!git branch --merged | grep -v master | xargs git branch -d"
+  clearb = "!git branch --merged | grep -v "(^*|master|stable)" | xargs git branch -d"
   co = checkout
   cob = checkout -b
   br = "!sh -c 'git checkout --track origin/$1' -" # Gets a branch from remote
