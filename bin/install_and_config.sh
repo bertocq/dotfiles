@@ -73,6 +73,10 @@ gem install rubocop-rspec
 rm ~/.bundle/config
 ln -s ~/dotfiles/ruby/.bundle/config ~/.bundle/config
 
+mkdir ~/Downloads/music
+mkdir ~/Downloads/video
+mkdir ~/Downloads/screenshots
+
 # Use Sexy Bash Prompt https://github.com/twolfson/sexy-bash-prompt
 (cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
 
@@ -96,7 +100,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.screencapture type jpg
 
 # Change screenshots destination folder
-defaults write com.apple.screencapture location ~/Downloads
+defaults write com.apple.screencapture location ~/Downloads/screenshots
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
