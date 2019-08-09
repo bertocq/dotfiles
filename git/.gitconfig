@@ -78,7 +78,8 @@
   gdf = "!sh -c \" git diff --color $1 | diff-so-fancy\" -" # Changes in working dir for a file (name as arg)
   gds = "!git diff --staged --color | diff-so-fancy" # Changes in staging area files
   gdsf = "!sh -c \" git diff --staged --color $1 | diff-so-fancy\" -" # Changes in staging area for a file (name as arg)
-  gdm = diff --name-only --diff-filter=d master..HEAD # Files changed between current branch and master, excluding deleted
+  gdmaster = diff --name-only --diff-filter=d master..HEAD # Files changed between current branch and master, excluding deleted
+  gdstable = diff --name-only --diff-filter=d stable..HEAD # Files changed between current branch and master, excluding deleted
 
   # Submodules
   sub = pull --recurse-submodules
