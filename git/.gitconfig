@@ -58,7 +58,7 @@
   br = "!sh -c 'git checkout --track origin/$1' -" # Gets a branch from remote
   getmaster = git branch --track master origin/master # Grab master again after messing up
   mab = "!git pull && git checkout $1 && git pull && git merge @{-1} --no-edit && git push && git checkout @{-1}"
-  mr = "!git checkout master && git pull && git checkout @{-1} && git rebase origin/master"
+  ms = "!git checkout stable && git pull && git checkout @{-1} && git merge origin/stable"
   pb = "!sh -c 'git push --set-upstream origin $1' -"
   pu = ![[ $(git config "branch.$(git current-branch).merge") = '' ]] && git push -u origin $(git current-branch) || git push
   rpo = remote update --prune # Removes merged branches from all remotes
