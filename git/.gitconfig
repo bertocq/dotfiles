@@ -42,6 +42,7 @@
   sa = stash apply
   sc = "!git s && git sd" # Destroy files in working dir & staging area
   sd = stash drop
+  spu = stash push # Use like git spu /path/to/files
   sp = stash pop
   ss = show stash
 
