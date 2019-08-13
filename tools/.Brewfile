@@ -1,4 +1,3 @@
-tap "caskformula/caskformula"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
