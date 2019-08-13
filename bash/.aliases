@@ -112,6 +112,7 @@ alias bb='bw bundle --global'
 alias brewfile='(cd ~/dotfiles/tools; bb dump --force; bb cleanup --force; bb check; bb dump --force)'
 alias update='gem update --system; brew cask upgrade; brew_maintenance; sudo softwareupdate -ia; mas upgrade'
 alias freedisk='diskutil secureErase freespace 0 /' # Afterwards: Reboot; Disk Utility "First Aid"
+alias diskusage='ncdu --color dark -rr -x'
 
 # Tools
 alias wifi='wifi-password'
