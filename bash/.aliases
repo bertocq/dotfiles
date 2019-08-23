@@ -33,9 +33,6 @@ alias clearb='git clearb'
 alias ggc='git gc --auto'
 alias rpo='git rpo'
 alias ggca='git gc --aggressive'
-# Empty the Trash on all mounted volumes and the main HDD
-# Also, clear Apple’s System Logs to improve shell startup speed
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 ## Master branch actions
 alias com='git co master; p'
 alias grm='git rebase master'
@@ -114,6 +111,9 @@ alias brewfile='(cd ~/dotfiles/tools; bb dump --force; bb cleanup --force; bb ch
 alias update='gem update --system; brew cask upgrade; brew_maintenance; sudo softwareupdate -ia; mas upgrade'
 alias freedisk='diskutil secureErase freespace 0 /' # Afterwards: Reboot; Disk Utility "First Aid"
 alias diskusage='ncdu --color dark -rr -x'
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Tools
 alias wifi='wifi-password'
