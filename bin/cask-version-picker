@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# https://habd.as/post/brew-install-missing-formulas/
+CASK=chromium
+# Pick a commit hash from https://github.com/Homebrew/homebrew-cask/commits/master/Casks/chromium.rb
+COMMIT=7af98a34ae345229062c2aaff6f90d6dbe40027f # Version: 77.0.3827.0. Snapshot: 669507
+RAW_PATH=https://raw.githubusercontent.com/Homebrew/homebrew-cask
+brew cask list | grep -c ${CASK} && brew cask uninstall ${CASK} # only uninstall if already installed
+brew cask install ${RAW_PATH}/${COMMIT}/Casks/${CASK}.rb
+ls /usr/local/Caskroom/chromium/ # print current snapshot number
+/Applications/Chromium.app/Contents/MacOS/Chromium --version # print current version
+
