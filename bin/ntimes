@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Run a command N times like `run 5 <command>`. Useful to execute flaky tests
+# Source: https://www.shellhacks.com/linux-repeat-command-n-times-bash-loop/
+
+times=$1
+shift
+for n in $(seq $times); do
+  $@
+done
