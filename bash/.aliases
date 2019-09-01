@@ -121,8 +121,9 @@ alias esen='trans es:'
 alias enes='trans :es'
 alias pu='paste_unindented'
 alias yt='youtube-dl'
-alias yta='youtube-dl -f 140 -o "~/Downloads/music/%(title)s.%(ext)s" '
-alias ytv='youtube-dl -f 22 -o "~/Downloads/video/%(title)s.%(ext)s" '
+alias yta='yt -f 140 -o "~/Downloads/music/%(title)s.%(ext)s" '
+alias ytv='yt -f 22 -o "~/Downloads/video/%(title)s.%(ext)s" '
+alias ytf='yt -F'
 alias sys='neofetch'
 
 ## Taskwarrior
