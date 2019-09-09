@@ -43,7 +43,6 @@ brew "mas"
 brew "mysql@5.7", link: true
 brew "ncdu"
 brew "neofetch"
-brew "newsboat"
 brew "nginx"
 brew "pkg-config"
 brew "postgresql"
