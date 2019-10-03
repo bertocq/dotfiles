@@ -91,12 +91,6 @@ alias bws='brew services list'
 alias s='subl'
 alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
 
-## Bebanjo
-alias sshadd='ssh-add ~/.ssh/id_berto_bebanjo'
-alias omo='open http://localhost:4001'
-alias ose='open http://localhost:4002'
-alias oid='open http://localhost:4000'
-
 # OSX
 alias btime="pmset -g batt | awk '/^ /{print \$5}'"
 alias cmds="sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n50"
