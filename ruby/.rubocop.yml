@@ -3,7 +3,7 @@ require: rubocop-rspec
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.5.6
   Exclude:
     - db/schema.rb
 Metrics/LineLength:
