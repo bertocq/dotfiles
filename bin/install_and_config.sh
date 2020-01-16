@@ -41,6 +41,8 @@ ln -s ~/.tasks/notes ~/dotfiles/notes
 ln -s ~/dotfiles/ruby/.gemrc ~/.gemrc
 ln -s ~/dotfiles/ruby/.ruby-version ~/.ruby-version
 ln -s ~/dotfiles/ruby/.rubocop.yml ~/.rubocop.yml
+ln -s ~/dotfiles/ruby/.irbrc ~/.irbrc
+
 ## Git
 ln -s ~/dotfiles/git/.git_template ~/.git_template
 ln -s ~/dotfiles/git/.gitattributes ~/.gitattributes
