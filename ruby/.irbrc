@@ -68,10 +68,10 @@ def rails_prompt
 end
 
 IRB.conf[:PROMPT][:RAILS_EMOJI] = {
-  :PROMPT_I => "#{rails_prompt}\u{1F479} > ",
-  :PROMPT_N => "#{rails_prompt}\u{1F914} > ",
-  :PROMPT_S => "#{rails_prompt}\u{1F60F} > ",
-  :PROMPT_C => "#{rails_prompt}\u{1F605} > ",
+  :PROMPT_I => "#{rails_prompt}\u{1F479} > ", # default prompt
+  :PROMPT_N => "#{rails_prompt}\u{1F914} > ", # unknown continuation
+  :PROMPT_S => "#{rails_prompt}\u{1F60F} > ", # continuated string
+  :PROMPT_C => "#{rails_prompt}\u{1F605} > ", # continuated statement
   :RETURN   => "  => %s\n"
 }
 
