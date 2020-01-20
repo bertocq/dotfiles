@@ -1,8 +1,9 @@
-# Inspired by @the-spectator
-# https://dev.to/thespectator/making-your-rails-console-interesting-pdc
+require 'irb/completion'
 
 IRB.conf[:SAVE_HISTORY] = 1000
 
+# IRB Prompt inspired by @the-spectator
+# https://dev.to/thespectator/making-your-rails-console-interesting-pdc
 def app_prompt
   rails_klass = Rails.application.class
 
