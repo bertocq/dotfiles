@@ -72,7 +72,8 @@ IRB.conf[:PROMPT][:RAILS_EMOJI] = {
   :PROMPT_N => "#{rails_prompt}\u{1F914} > ", # unknown continuation
   :PROMPT_S => "#{rails_prompt}\u{1F60F} > ", # continuated string
   :PROMPT_C => "#{rails_prompt}\u{1F605} > ", # continuated statement
-  :RETURN   => "  => %s\n"
+  :RETURN   => "  => %s\n",
+  :AUTO_INDENT => true
 }
 
 IRB.conf[:PROMPT_MODE] = :RAILS_EMOJI
