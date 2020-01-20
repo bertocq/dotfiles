@@ -1,7 +1,6 @@
 # Inspired by @the-spectator
 # https://dev.to/thespectator/making-your-rails-console-interesting-pdc
 
-# This gem needs to installed
 def app_prompt
   rails_klass = Rails.application.class
 
