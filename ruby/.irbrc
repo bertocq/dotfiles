@@ -1,6 +1,8 @@
 # Inspired by @the-spectator
 # https://dev.to/thespectator/making-your-rails-console-interesting-pdc
 
+IRB.conf[:SAVE_HISTORY] = 1000
+
 def app_prompt
   rails_klass = Rails.application.class
 
