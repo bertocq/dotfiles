@@ -195,7 +195,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>46 83 224 275 0 0 3440 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>677 918 400 129 0 0 3440 1417 </string>
+	<string>1542 966 400 129 0 0 3440 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1392 596 700 622 0 0 3440 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
@@ -205,7 +205,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>45 0 1695 1417 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>46 0 1234 777 0 0 1280 777 </string>
+	<string>1415 0 2025 1417 0 0 3440 1417 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -1039,13 +1039,18 @@
 		<string>3.3.0beta11</string>
 		<string>3.3.2beta1</string>
 		<string>3.3.0beta12</string>
+		<string>3.3.7beta1</string>
 		<string>3.3.0beta13</string>
+		<string>3.3.7beta3</string>
 		<string>3.3.0beta15</string>
 		<string>3.3.3beta2</string>
 		<string>3.3.0beta16</string>
 		<string>3.3.5beta3</string>
+		<string>3.3.7beta2</string>
 		<string>3.3.4beta1</string>
 		<string>3.3.2beta2</string>
+		<string>3.3.7beta4</string>
+		<string>3.3.8beta1</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -1072,7 +1077,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>528213751.09720802</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>61</integer>
+	<integer>75</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -1783,32 +1788,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>best</string>
-		<string>only</string>
-		<string>sound</string>
-		<string>task</string>
-		<string>aniver</string>
-		<string>external id</string>
-		<string>External ID changed from No External ID to</string>
-		<string>788154795527</string>
-		<string>4481246527</string>
-		<string>4575979527</string>
-	</array>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>chrome</string>
-		<string>back</string>
-		<string>cover</string>
-		<string>curse</string>
-		<string>described</string>
-		<string>Type a valid coordinate for the ship bow, like "B2": Type a valid orientation, like "vertical" or "horizontal": 	A</string>
-		<string>player</string>
-		<string>git </string>
-		<string>runs</string>
-		<string>@grid[</string>
-	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>505093963.46504098</real>
 	<key>NoSyncTipsDisabled</key>
@@ -1943,11 +1922,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-03T13:21:35Z</date>
+	<date>2020-01-02T09:22:28Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SoundForEsc</key>
@@ -8307,6 +8286,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.5beta3</string>
+	<string>3.3.8beta1</string>
 </dict>
 </plist>
