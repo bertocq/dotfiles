@@ -113,6 +113,7 @@
   compactionHeuristic = true # Turn on experimental heuristic to make the diff easier to read
   mnemonicprefix = true
   renames = copies
+  noprefix = true # Removes `a/` and `b/` from filepaths when displaying a diff
 [diff-so-fancy]
   changeHunkIndicators = true
   markEmptyLines = true
