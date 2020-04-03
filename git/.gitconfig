@@ -27,6 +27,7 @@
   # Log
   gl = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>'
   up = "!git gl origin/\"$(git current-branch)\"..HEAD" # Unpushed commits on current branch
+  glf = log --all --source -- # List all commits that changed a file
 
   # Pull
   fu = fetch upstream
@@ -76,6 +77,7 @@
   # Diff
   gd = "!git diff --color | diff-so-fancy" # Changes in working directory files
   gdf = "!sh -c \" git diff --color $1 | diff-so-fancy\" -" # Changes in working dir for a file (name as arg)
+  gf = whatchanged -p # Git history for a file (name as arg)
   gds = "!git diff --staged --color | diff-so-fancy" # Changes in staging area files
   gdsf = "!sh -c \" git diff --staged --color $1 | diff-so-fancy\" -" # Changes in staging area for a file (name as arg)
   gdmaster = diff --name-only --diff-filter=d master..HEAD # Files changed between current branch and master, excluding deleted

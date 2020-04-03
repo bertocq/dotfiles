@@ -26,6 +26,7 @@ alias PRO='~./dotfiles/github-pull-request'
 alias gl='git gl -20'
 alias gla='git gl'
 alias gll='git log'
+alias glf='git glf'
 alias up='git up'
 ## Maintenance
 alias cleanup='clearb;rpo;ggc'
@@ -50,6 +51,7 @@ alias gdsf='git gdsf'
 alias gs='git st'
 
 # Ruby
+alias r='ruby'
 ## Rubocoping
 alias fix_ruby="grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a"
 alias ru='git gsp | fix_ruby' # autocorrect ruby files listed on working directory & staging area
