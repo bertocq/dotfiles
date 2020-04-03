@@ -9,54 +9,105 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "joshuaclayton/formulae"
 tap "michaeldfallen/formula"
+# Automatic configure script builder
 brew "autoconf"
+# Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Programmable completion for Bash 4.1+
 brew "bash-completion@2"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Install pip packages as homebrew formulae
 brew "brew-pip"
+# Glorious Glasgow Haskell Compilation System
 brew "ghc"
+# Command-line interface for Cabal and Hackage
 brew "cabal-install"
+# Library for command-line editing
 brew "readline"
-brew "openssl"
+# Like cat but displays content with syntax highlighting
 brew "ccat"
+# GNU File, Shell, and Text utilities
 brew "coreutils"
+# Reimplementation of ctags(1)
 brew "ctags"
+# Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# Distributed revision control system
 brew "git"
+# GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# GNU Pretty Good Privacy (PGP) package
 brew "gnupg@1.4"
+# Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Improved top (interactive process viewer)
 brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Add GitHub support to git on the command-line
 brew "hub"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# International domain name library
+brew "libidn"
+# GNOME XML library
 brew "libxml2"
+# Small memory footprint, flexible web-server
 brew "lighttpd"
+# Creates dependencies in makefiles
 brew "makedepend"
+# Mac App Store command-line interface
 brew "mas"
+# NCurses Disk Usage
 brew "ncdu"
+# Fast, highly customisable system info script
 brew "neofetch"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx"
+# Manage compile and link flags for libraries
 brew "pkg-config"
+# Object-relational database system
 brew "postgresql"
+# Install various Ruby versions and implementations
 brew "ruby-build"
+# Ruby version manager
 brew "rbenv"
+# Auto-installs gems for Ruby installs
 brew "rbenv-default-gems"
+# Adds basic gemset support to rbenv
 brew "rbenv-gemset"
+# Safely sets global and per-project environment variables
 brew "rbenv-vars"
+# Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Feature-rich console based todo list manager
 brew "task"
+# Code-search similar to ack
 brew "the_silver_searcher"
+# Simplified and community-driven man pages
 brew "tldr"
+# Terminal multiplexer
+brew "tmux"
+# Command-line translator using Google Translate and more
 brew "translate-shell"
+# Create screenshots of webpages from the terminal
 brew "webkit2png"
+# Internet file retriever
 brew "wget"
+# Show the current WiFi network password
 brew "wifi-password"
+# Cross-platform C++ GUI toolkit (wxWidgets for macOS)
 brew "wxmac"
+# Download YouTube videos from the command-line
 brew "youtube-dl"
-brew "heroku/brew/heroku"
+# A command line tool to identify unused code.
 brew "joshuaclayton/formulae/unused"
 brew "michaeldfallen/formula/git-radar"
 cask "adobe-air-beta"
@@ -67,7 +118,6 @@ cask "choosy"
 cask "chromedriver"
 cask "chromium"
 cask "coconutbattery"
-cask "commandq"
 cask "contexts"
 cask "digikam"
 cask "divvy"
@@ -75,24 +125,26 @@ cask "dropbox"
 cask "eqmac"
 cask "filezilla"
 cask "firefox"
+cask "flux"
 cask "font-hack"
 cask "garmin-express"
-cask "garmin-virb-edit"
 cask "gimp"
 cask "google-chrome"
 cask "google-chrome-canary"
 cask "grammarly"
+cask "handbrake"
 cask "iina"
 cask "image2icon"
 cask "iterm2"
-cask "java8"
 cask "kap"
 cask "keka"
+cask "kitty"
 cask "libreoffice"
 cask "mactracker"
 cask "postman"
 cask "qutebrowser"
 cask "sequel-pro"
+cask "skype"
 cask "slack"
 cask "spotify"
 cask "sublime-text"
@@ -102,6 +154,7 @@ cask "transmission"
 cask "virtualbox"
 cask "whatpulse"
 cask "xscope"
+cask "zoomus"
 cask "zwift"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
