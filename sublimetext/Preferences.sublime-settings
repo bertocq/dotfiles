@@ -69,7 +69,8 @@
 	[
 		50,
 		72,
-		120
+		120,
+		140
 	],
 	"save_on_focus_lost": true,
 	"show_definitions": false,
