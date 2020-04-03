@@ -6,6 +6,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -195,7 +197,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>46 83 224 275 0 0 3440 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1542 966 400 129 0 0 3440 1417 </string>
+	<string>420 762 400 129 0 0 3440 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1392 596 700 622 0 0 3440 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
@@ -1034,23 +1036,26 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.3beta1</string>
-		<string>3.3.0beta10</string>
+		<string>3.3.8beta3</string>
 		<string>3.3.5beta2</string>
-		<string>3.3.0beta11</string>
 		<string>3.3.2beta1</string>
-		<string>3.3.0beta12</string>
 		<string>3.3.7beta1</string>
-		<string>3.3.0beta13</string>
 		<string>3.3.7beta3</string>
-		<string>3.3.0beta15</string>
 		<string>3.3.3beta2</string>
+		<string>3.3.8beta4</string>
 		<string>3.3.0beta16</string>
+		<string>3.3.0beta15</string>
 		<string>3.3.5beta3</string>
+		<string>3.3.0beta13</string>
+		<string>3.3.0beta12</string>
+		<string>3.3.0beta11</string>
+		<string>3.3.0beta10</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4beta1</string>
 		<string>3.3.2beta2</string>
 		<string>3.3.7beta4</string>
 		<string>3.3.8beta1</string>
+		<string>3.3.8beta5</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -1077,7 +1082,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>528213751.09720802</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>75</integer>
+	<integer>84</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -1922,11 +1927,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-02T09:22:28Z</date>
+	<date>2020-01-28T09:09:43Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SoundForEsc</key>
@@ -8286,6 +8291,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8beta1</string>
+	<string>3.3.8beta5</string>
 </dict>
 </plist>
