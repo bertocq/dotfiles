@@ -158,6 +158,8 @@
           end\n\
           File.open(%(%A), %(w)) {|f| f.write(b)}\n\
           exit 1 if b.include?(%(<)*%L)'"
+[diff "rspec"]
+  xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
 [init]
   templatedir = ~/.git_template
 [rebase]
