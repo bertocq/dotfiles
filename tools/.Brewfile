@@ -13,7 +13,7 @@ tap "michaeldfallen/formula"
 brew "autoconf"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
-# Programmable completion for Bash 4.1+
+# Programmable completion for Bash 4.2+
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -33,6 +33,8 @@ brew "coreutils"
 brew "ctags"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -42,7 +44,7 @@ brew "git"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # GNU Pretty Good Privacy (PGP) package
-brew "gnupg@1.4"
+brew "gnupg@1.4", link: false
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Improved top (interactive process viewer)
@@ -71,8 +73,6 @@ brew "ncdu"
 brew "neofetch"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Object-relational database system
 brew "postgresql"
 # Install various Ruby versions and implementations
@@ -122,7 +122,6 @@ cask "contexts"
 cask "digikam"
 cask "divvy"
 cask "dropbox"
-cask "eqmac"
 cask "filezilla"
 cask "firefox"
 cask "flux"
@@ -141,7 +140,6 @@ cask "keka"
 cask "kitty"
 cask "libreoffice"
 cask "mactracker"
-cask "postman"
 cask "qutebrowser"
 cask "sequel-pro"
 cask "skype"
@@ -149,13 +147,10 @@ cask "slack"
 cask "spotify"
 cask "sublime-text"
 cask "telegram"
-cask "trainerroad"
 cask "transmission"
 cask "virtualbox"
-cask "whatpulse"
 cask "xscope"
 cask "zoomus"
-cask "zwift"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
 mas "GIF Brewery 3", id: 1081413713
