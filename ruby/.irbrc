@@ -20,7 +20,7 @@ end
 # target log path for irb history
 def log_path
   rails_root = Rails.root
-  "#{rails_root}/log/.irb-save-history"
+  "#{rails_root}/log/.irb-history"
 end
 
 def env_prompt
