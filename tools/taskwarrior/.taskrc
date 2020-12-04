@@ -40,3 +40,9 @@ uda.reviewed.label=Reviewed
 
 # Search
 search.case.sensitive=no
+
+# User Defined Attributes for Relative Recurrence
+uda.relativeRecurrenceDue.type=string
+uda.relativeRecurrenceDue.label=Rel. Rec. Due
+uda.relativeRecurrenceWait.type=string
+uda.relativeRecurrenceWait.label=Rel. Rec. Wait

@@ -1,0 +1,60 @@
+# #!/usr/bin/env ruby
+
+# ## A- Cambiar a on-modify y conseguir leer el json de entrada correctamente
+# ## B- Tirar con lo actual... ¿con o replica de scheduled? diria que NO
+# ## y usar la funcion calc para sacar fechas concretas https://github.com/JensErat/task-relative-recur/blob/master/on-modify.relative-recur#L24
+
+# def done_command?
+#   command_arg = ARGV[2].split(':')
+#   command_arg.kind_of?(Array) && command_arg[1] == 'done'
+# end
+
+# def read_task_id
+#   ARGV[1].split(' ')[2]
+# end
+
+# def exec(bash_command)
+#   # stdout_str, stderr_str, status = Open3.capture3(bash_command)
+#   # puts "stdout is: #{stdout_str}"
+#   # puts "stderr is: #{stderr_str}"
+#   # puts "status is: #{status}"
+#   # stdout_str
+#   IO.popen(bash_command, &:gets)
+# end
+
+# def read_attr(task_id, attr_name)
+#   puts("task _get #{task_id}.#{attr_name}")
+#   exec("task _get #{task_id}.#{attr_name}")
+# end
+
+# def calc(end_value)
+#   exec("task rc.verbose=nothing rc.date.iso=yes calc #{end_value}")
+# end
+
+# if done_command?
+#   task_id = read_task_id
+#   puts "It's a donneeee!"
+
+#   due = read_attr(task_id, "relativeRecurrenceDue")
+#   wait = read_attr(task_id, "relativeRecurrenceWait")
+#   puts "#{due} && #{wait}"
+#   unless due.empty? && wait.empty?
+#     end_value = '08-03-2019' #READ IF YOU CAN
+#     add_task_command = "task add #{read_attr(task_id, "description")}"
+#     add_task_command << " due:#{calc(end_value)}+#{due} relativeRecurrenceDue:#{due}" unless due.empty?
+#     add_task_command << " wait:#{calc(end_value)}+#{wait} relativeRecurrenceWait:#{wait}" unless wait.empty?
+#     priority = read_attr(task_id, "priority")
+#     add_task_command << " priority:#{priority}" unless priority.empty?
+#     tags = read_attr(task_id, "tags")
+#     add_task_command << " #{tags.split(',').map! {|x| "+#{x}"}.join(' ')}" unless tags.empty?
+#     project = read_attr(task_id, "project")
+#     add_task_command << " project:#{project}" unless project.empty?
+
+#     puts add_task_command
+#     exec(add_task_command)
+#     puts "Task added"
+#   end
+#   puts "FIN"
+# end
+
+# # ta Depilacion relativeRecurrenceDue:15d relativeRecurrenceWait:1w
