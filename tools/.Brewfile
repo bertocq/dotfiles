@@ -7,7 +7,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/command-not-found"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "joshuaclayton/formulae"
 tap "michaeldfallen/formula"
 tap "unused-code/formulae"
 # Automatic configure script builder
@@ -44,8 +43,6 @@ brew "fzf"
 brew "git"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# GNU Pretty Good Privacy (PGP) package
-brew "gnupg@1.4", link: false
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Improved top (interactive process viewer)
@@ -142,6 +139,7 @@ cask "keka"
 cask "kitty"
 cask "mactracker"
 cask "qutebrowser"
+cask "screen"
 cask "sequel-pro"
 cask "signal"
 cask "skype"
