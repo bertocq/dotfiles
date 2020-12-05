@@ -83,6 +83,12 @@ man() {
   man "$@"
 }
 
+# Print directories size
+# Source: https://diamantidis.github.io/2020/01/04/find-large-files-from-command-line
+dirsize() {
+  du -ah "$1" | sort -rh | head -n 20
+}
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Overwrite macos old sqlite3
