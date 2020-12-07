@@ -167,3 +167,7 @@
 [rebase]
   autosquash = true
   autostash = true # Automatically stash before rebasing, to rebase with changes in the repo.
+[pager]
+	log = sed \"s/^\\([^-+ ]*\\)[-+ ]/\\\\1/\"
+	show = sed \"s/^\\([^-+ ]*\\)[-+ ]/\\\\1/\"
+	diff = sed \"s/^\\([^-+ ]*\\)[-+ ]/\\\\1/\"
