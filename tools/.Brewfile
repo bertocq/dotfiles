@@ -25,6 +25,8 @@ brew "ghc"
 brew "cabal-install"
 # Library for command-line editing
 brew "readline"
+# Command-line interface for SQLite
+brew "sqlite"
 # Like cat but displays content with syntax highlighting
 brew "ccat"
 # GNU File, Shell, and Text utilities
