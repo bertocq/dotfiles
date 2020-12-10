@@ -54,6 +54,8 @@ ln -s ~/dotfiles/git/.github_template.md ~/.github_template.md
 # Get latest version of git-completion script for bash
 curl -L https://raw.github.com/git/git/master/contrib/completion/git-completion.bash > ~/dotfiles/git/.git-completion.bash
 ln -s ~/dotfiles/git/git-completion.bash ~/git-completion.bash
+curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/dotfiles/git/git-prompt.sh
+ln -s ~/dotfiles/git/git-prompt.sh ~/git-prompt.sh
 
 # Install Homebrew and use Brewfile with Cask
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

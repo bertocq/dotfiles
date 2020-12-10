@@ -109,3 +109,14 @@ export XDG_CACHE_HOME=$HOME"/.cache"
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/bertocq/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+
+# https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+# source ~/git-completion.bash
+# source ~/git-prompt.sh
+# export GIT_PS1_SHOWDIRTYSTATE="true"
+# export GIT_PS1_SHOWSTASHSTATE="true"
+# export GIT_PS1_SHOWUNTRACKEDFILES="true"
+# export GIT_PS1_SHOWUPSTREAM="auto"
+# export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+
