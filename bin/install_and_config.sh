@@ -52,7 +52,7 @@ ln -s ~/dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -s ~/dotfiles/git/.gitmessage ~/.gitmessage
 ln -s ~/dotfiles/git/.github_template.md ~/.github_template.md
 # Get latest version of git-completion script for bash
-wget https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -O ~/dotfiles/git/git-completion.bash
+curl -L https://raw.github.com/git/git/master/contrib/completion/git-completion.bash > ~/dotfiles/git/.git-completion.bash
 ln -s ~/dotfiles/git/git-completion.bash ~/git-completion.bash
 
 # Install Homebrew and use Brewfile with Cask
