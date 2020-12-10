@@ -47,7 +47,7 @@ export PS1="$PS1\$(git-radar --bash --fetch): "
 
 # Add git completion
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-source ~/git-completion.bash
+source ~/.git-completion.bash
 # Complete git commnads when using `g` alias
 complete -o default -o nospace -F _git g
 
@@ -111,8 +111,8 @@ export XDG_CACHE_HOME=$HOME"/.cache"
 HEROKU_AC_BASH_SETUP_PATH=/Users/bertocq/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
 
 # https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-# source ~/git-completion.bash
-# source ~/git-prompt.sh
+# source ~/.git-completion.bash
+# source ~/.git-prompt.sh
 # export GIT_PS1_SHOWDIRTYSTATE="true"
 # export GIT_PS1_SHOWSTASHSTATE="true"
 # export GIT_PS1_SHOWUNTRACKEDFILES="true"
