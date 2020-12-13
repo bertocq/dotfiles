@@ -19,11 +19,7 @@ export PATH=/usr/local/sbin:$PATH
 if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
 # Make Homebrew’s completions available in bash
-if type brew 2&>/dev/null; then
-  for completion_file in $(brew --prefix)/etc/bash_completion.d/*; do
-    source "$completion_file"
-  done
-fi
+[[ -r "#{etc}/profile.d/bash_completion.sh" ]] && . "#{etc}/profile.d/bash_completion.sh"
 
 # Set bash colors
 export CLICOLOR=1
