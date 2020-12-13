@@ -19,7 +19,6 @@ alias gai='git gai'
 alias gc='git commit'
 alias gcm='git commit -m'
 ## Github
-alias go='git browse'
 alias PR='git PR'
 alias PRO='~./dotfiles/github-pull-request'
 ## History

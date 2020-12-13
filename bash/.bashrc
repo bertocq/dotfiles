@@ -9,7 +9,6 @@ if [[ -d ~/bin ]]; then
 fi
 
 eval "$(rbenv init -)"
-eval "$(hub alias -s)"
 
 # Add Homebrew’s sbin to PATH
 export PATH=/usr/local/sbin:$PATH
