@@ -95,6 +95,7 @@
   ucm = reset --soft HEAD^
   undo = reset --soft HEAD~1 # Undo last commit (affects HEAD only)
   unstage = reset HEAD --
+  undelete = "!git status -s | awk '/^ D/ { print $2 }' | xargs git checkout --" # undo file deletions
 
   # Rebasing
   ra = rebase --abort
