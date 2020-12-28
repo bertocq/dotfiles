@@ -42,3 +42,7 @@ https://github.com/lpar/RedPill
 ## Unhide Garmin Fenix 3 Newfiles hidden folder
 cd /Volumes/GARMIN/GARMIN
 sudo chflags nohidden ./NEWFILES
+
+## Configure iTerm editor
+go to iTerm -> Preferences -> Profiles -> Advanced -> Semantic History
+from the dropdown, choose Open with Editor and from the right dropdown choose your editor of choice
