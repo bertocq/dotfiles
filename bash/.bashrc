@@ -26,15 +26,15 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Run twolfson/sexy-bash-prompt
 ## https://github.com/twolfson/sexy-bash-prompt
-. ~/.bash_prompt
 export PROMPT_SYNCED_SYMBOL=" 👌"
-export PROMPT_DIRTY_SYNCED_SYMBOL=" ✏️"
-export PROMPT_UNPUSHED_SYMBOL=" ☝️"
-export PROMPT_DIRTY_UNPUSHED_SYMBOL=" 🚀"
+export PROMPT_DIRTY_SYNCED_SYMBOL=" ✍️"
+export PROMPT_UNPUSHED_SYMBOL=" 👆"
+export PROMPT_DIRTY_UNPUSHED_SYMBOL=" 🖕"
 export PROMPT_UNPULLED_SYMBOL=" 👇"
-export PROMPT_DIRTY_UNPULLED_SYMBOL=" 📥"
+export PROMPT_DIRTY_UNPULLED_SYMBOL=" 👎"
 export PROMPT_UNPUSHED_UNPULLED_SYMBOL=" ↕️"
 export PROMPT_DIRTY_UNPUSHED_UNPULLED_SYMBOL=" 💩"
+. ~/.bash_prompt
 
 # Add Git-radar to prompt
 ## https://github.com/michaeldfallen/git-radar
