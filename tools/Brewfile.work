@@ -1,0 +1,164 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/command-not-found"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "michaeldfallen/formula"
+tap "unused-code/formulae"
+# Automatic configure script builder
+brew "autoconf"
+# Library for command-line editing
+brew "readline"
+# Command-line interface for SQLite
+brew "sqlite"
+# Client for Amazon Elastic Beanstalk web service
+brew "aws-elasticbeanstalk"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 4.2+
+brew "bash-completion@2"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Install pip packages as homebrew formulae
+brew "brew-pip"
+# Glorious Glasgow Haskell Compilation System
+brew "ghc"
+# Command-line interface for Cabal and Hackage
+brew "cabal-install"
+# Like cat but displays content with syntax highlighting
+brew "ccat"
+# Cross-platform make
+brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Reimplementation of ctags(1)
+brew "ctags"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Go dependency management tool
+brew "dep"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Isolated development environments using Docker
+brew "docker-compose"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU multiple precision arithmetic library
+brew "gmp"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+# Library and utilities for processing GIFs
+brew "giflib"
+# Distributed revision control system
+brew "git"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# Improved top (interactive process viewer)
+brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Add GitHub support to git on the command-line
+brew "hub"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick@6", link: true
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# International domain name library
+brew "libidn"
+# GNOME XML library
+brew "libxml2"
+# Small memory footprint, flexible web-server
+brew "lighttpd"
+# Creates dependencies in makefiles
+brew "makedepend"
+# Mac App Store command-line interface
+brew "mas"
+# Open source relational database management system
+brew "mysql@5.7", restart_service: true, link: true
+# NCurses Disk Usage
+brew "ncdu"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx"
+# Platform built on V8 to build network applications
+brew "node"
+# Manage multiple Node.js versions
+brew "nvm"
+# Development kit for the Java programming language
+brew "openjdk@11"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# Object-relational database system
+brew "postgresql"
+# Install various Ruby versions and implementations
+brew "ruby-build"
+# Ruby version manager
+brew "rbenv"
+# Auto-installs gems for Ruby installs
+brew "rbenv-default-gems"
+# Adds basic gemset support to rbenv
+brew "rbenv-gemset"
+# Safely sets global and per-project environment variables
+brew "rbenv-vars"
+# Persistent key-value database, with built-in net interface
+brew "redis", restart_service: true
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Code-search similar to ack
+brew "the_silver_searcher"
+# Simplified and community-driven man pages
+brew "tldr"
+# Terminal multiplexer
+brew "tmux"
+# Command-line translator using Google Translate and more
+brew "translate-shell"
+# Create screenshots of webpages from the terminal
+brew "webkit2png"
+# Internet file retriever
+brew "wget"
+# Show the current WiFi network password
+brew "wifi-password"
+# Cross-platform C++ GUI toolkit (wxWidgets for macOS)
+brew "wxmac"
+# JavaScript package manager
+brew "yarn"
+brew "michaeldfallen/formula/git-radar"
+cask "appcleaner"
+cask "choosy"
+cask "chromedriver"
+cask "coconutbattery"
+cask "contexts"
+cask "divvy"
+cask "docker"
+cask "firefox"
+cask "flux"
+cask "font-hack"
+cask "gimp"
+cask "google-chrome"
+cask "google-chrome-canary"
+cask "grammarly"
+cask "iterm2"
+cask "kap"
+cask "keka"
+cask "mactracker"
+cask "paw"
+cask "screen"
+cask "sequel-pro"
+cask "skype"
+cask "slack"
+cask "soundsource"
+cask "spotify"
+cask "sublime-text"
+cask "zoom"
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
