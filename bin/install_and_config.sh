@@ -48,8 +48,10 @@ ln -s ~/dotfiles/ruby/.irbrc ~/.irbrc
 ln -s ~/dotfiles/git/.git_template ~/.git_template
 ln -s ~/dotfiles/git/.gitattributes ~/.gitattributes
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/git/.gitconfig.work ~/.gitconfig.work
 ln -s ~/dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -s ~/dotfiles/git/.gitmessage ~/.gitmessage
+ln -s ~/dotfiles/git/.gitmessage.work ~/.gitmessage.work
 ln -s ~/dotfiles/git/.github_template.md ~/.github_template.md
 # Get latest version of git-completion script for bash
 curl -L https://raw.github.com/git/git/master/contrib/completion/git-completion.bash > ~/dotfiles/git/.git-completion.bash
