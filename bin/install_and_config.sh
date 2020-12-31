@@ -28,7 +28,6 @@ ln -s ~/dotfiles/bash/.bashrc ~/.bashrc
 ln -s ~/dotfiles/bin ~/bin
 ## Tools
 ln -s ~/dotfiles/tools/.editorconfig ~/.editorconfig
-ln -s ~/dotfiles/tools/.Brewfile ~/.Brewfile
 ln -s ~/dotfiles/tools/.unused.yml ~/.unused.yml
 ln -s ~/dotfiles/tools/com.googlecode.iterm2.plist ~/com.googlecode.iterm2.plist
 ln -s ~/dotfiles/sublimetext/.SideBarEnhancements.optout ~/.SideBarEnhancements.optout
