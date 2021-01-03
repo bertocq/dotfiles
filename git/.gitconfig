@@ -8,7 +8,17 @@
   local = green
   remote = white
 [color "diff"]
-  old = red strike
+  old = red bold
+  meta = 11
+  frag = magenta bold
+  commit = yellow bold
+  new = green bold
+  whitespace = red reverse
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [core]
   attributesfile = ~/.gitattributes
   autocrlf = input
@@ -17,6 +27,7 @@
   excludesfile = ~/.gitignore_global
   whitespace = trailing-space,space-before-tab
   ignorecase = false
+  pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
   aliases=!git config -l | grep '^alias' | cut -c 7- | sort
 
