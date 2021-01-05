@@ -15,6 +15,9 @@ sudo softwareupdate -ia
 # XCode dev tools install
 xcode-select --install
 
+# Allow apps from unidentified developers without macos asking every single time
+sudo spctl --master-disable
+
 ## Clone repo via HTTPS
 git clone https://github.com/bertocq/dotfiles.git ~/dotfiles && cd ~/dotfiles
 
