@@ -1,13 +1,14 @@
 if defined?(PryByebug)
-  Pry.commands.alias_command 'cc', 'continue'
-  Pry.commands.alias_command 'ss', 'step'
-  Pry.commands.alias_command 'nn', 'next'
-  Pry.commands.alias_command 'ff', 'finish'
+  Pry.commands.alias_command 'c', 'continue'
+  Pry.commands.alias_command 'w', 'whereami'
+  Pry.commands.alias_command 'n', 'next'
+  Pry.commands.alias_command 's', 'step'
+  Pry.commands.alias_command 'f', 'finish'
 end
 
-Pry.commands.alias_command 'ee', 'exit'
-Pry.commands.alias_command 'sh', 'show-source'
-Pry.commands.alias_command 'dd', 'disable-pry'
+Pry.commands.alias_command 'e', 'exit'
+Pry.commands.alias_command 's', 'show-source'
+Pry.commands.alias_command 'd', 'disable-pry'
 
 begin
   require 'awesome_print'
