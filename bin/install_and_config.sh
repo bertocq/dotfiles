@@ -153,6 +153,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Always open everything in Finder's list view.
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
+# Disable font smoothing. 0: disable 1: light 2: medium (default) 3: strong
+defaults -currentHost write -g AppleFontSmoothing -int 0
+
 # Computer Name
 scutil --set ComputerName "bcq"
 scutil --set LocalHostName "bcq"
