@@ -8,22 +8,22 @@
         "revision": "72f41aae9b14d3603dd6d9a4e6bdecd871b5310a"
       },
       "homebrew/cask": {
-        "revision": "fcf25ad3761600aa2dad237d5866b6a8b2809799"
+        "revision": "386226dec82b38366a6626b2f4fb021dfc9e42e6"
       },
       "homebrew/cask-drivers": {
-        "revision": "e534935261bf911ffb19f8f6dd8a2cce6c9d5a16"
+        "revision": "59d7a6880ca1096c44627aba91ba9bb042bffe39"
       },
       "homebrew/cask-fonts": {
-        "revision": "2317c54e4f52f3ff01f2a9f83ebc67b9483538e8"
+        "revision": "49d3f9868dce335d8ac0606f7aff864bbc5eb2ca"
       },
       "homebrew/cask-versions": {
-        "revision": "3ae77657dd5b0ae9b2e133ec8e34241ef10b578c"
+        "revision": "51fa382895944b1c1fa7ce4141b2eda21e708505"
       },
       "homebrew/command-not-found": {
         "revision": "fbda0cb51e256b622a3dc67a1974afe309d40605"
       },
       "homebrew/core": {
-        "revision": "ebf42bd33d8e9f8ffd86d6015b69defe30aba700"
+        "revision": "c24f7a4ecb788d751584de5ce9e974bb29b29917"
       },
       "homebrew/services": {
         "revision": "7a7d7416d8a4573b358649f39504057f6d5b1c8c"
@@ -600,26 +600,26 @@
         }
       },
       "imagemagick": {
-        "version": "7.0.10-56",
+        "version": "7.0.10-57",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
           "files": {
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-56.big_sur.bottle.tar.gz",
-              "sha256": "e395512f8b491d26e3210865fe36ec26891b58ed5f31fc69fdade6d548069cd2"
+              "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-57.big_sur.bottle.tar.gz",
+              "sha256": "18e8a537a56c803a9de55cd4648c6ea494b0773023c0dee5c99ca613cd2556ca"
             },
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-56.arm64_big_sur.bottle.tar.gz",
-              "sha256": "47fc0e378ae14f726426b44368830df7f3ffb419af64a2c2f5596649343c4646"
+              "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-57.arm64_big_sur.bottle.tar.gz",
+              "sha256": "42e3c057f9964915f36bb89a583a00afc5a7bc5c1ac858f989f66025348968eb"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-56.catalina.bottle.tar.gz",
-              "sha256": "64df851ec1f2b8fc7e9a236be67a929706153417bdd6d2c23e643e90875a48b4"
+              "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-57.catalina.bottle.tar.gz",
+              "sha256": "7936d7d8f54d6716f54b9b29dbe763a6513ff2225c8576e58a5ff3913946a1de"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-56.mojave.bottle.tar.gz",
-              "sha256": "926ecd981fa238a2e369574f09e64cf38b299fc46cbc3337cb0e139f22c8c010"
+              "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-57.mojave.bottle.tar.gz",
+              "sha256": "bcf266ec77ef3081bc98145e82bcf5fa54422c24c275e47b2b66e5d7fa03b10e"
             }
           }
         }
@@ -1269,7 +1269,7 @@
         }
       },
       "chromium": {
-        "version": "841414",
+        "version": "841854",
         "options": {
           "full_name": "chromium"
         }
@@ -1495,6 +1495,12 @@
         "options": {
           "full_name": "soundsource"
         }
+      },
+      "qgis": {
+        "version": "3.16.1",
+        "options": {
+          "full_name": "qgis"
+        }
       }
     },
     "mas": {
@@ -1539,9 +1545,9 @@
   "system": {
     "macos": {
       "mojave": {
-        "HOMEBREW_VERSION": "2.7.2-71-g16c50d5",
+        "HOMEBREW_VERSION": "2.7.2-80-g6968c19",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "ebf42bd33d8e9f8ffd86d6015b69defe30aba700",
+        "Homebrew/homebrew-core": "c24f7a4ecb788d751584de5ce9e974bb29b29917",
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "10.3",
         "macOS": "10.14.6"
