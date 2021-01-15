@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+=begin
+A hook to make sure that all staged .rb files are syntatically correct.
+The hook tries to run `ruby -c file_path` for all those files and
+prints outs the errors if any and halts the commit.
+If you want to use this pre-commit, simply copy the code and create a
+file called 'pre-commit' inside your .git/hooks directory.
+Ensure to make file executable as well `chmod +x .git/hooks/pre-commit`
+=end
+
+# SyntaxChecker validates the syntax of all files
+class SyntaxChecker
+  require 'open3'
+
+  PASS_MSG = 'pre-commit - ruby syntax check passed'.freeze
+  FAIL_MSG = 'pre-commit - ruby syntax check failed'.freeze
+
+  class << self
+    def perform
+      staged_files = `git diff --name-only --staged`
+      staged_ruby_files = staged_files.split("\n")
+      pick_rb_files(staged_ruby_files)
+      return if staged_ruby_files.empty?
+
+      errors = run_syntax_check(staged_ruby_files)
+      return p PASS_MSG  if errors.empty?
+
+      p FAIL_MSG, errors and exit 1
+    end
+
+    private
+
+    def pick_rb_files(files)
+      files.select! { |f| f[-3] == '.' && f[-2] == 'r' && f[-1] == 'b' }
+    end
+
+    def run_syntax_check(files)
+      errors = ''
+      files.each do |file_path|
+        next unless File.exist?(file_path) # do not try to check removed files
+
+        cmd = "ruby -c #{file_path}"
+        Open3.popen3(cmd) do |_in, _out, err|
+          err_text = err.read.to_s
+          errors += err_text unless err_text.empty?
+        end
+      end
+      errors
+    end
+  end
+end
+
+SyntaxChecker.perform

@@ -58,6 +58,7 @@ curl -L https://raw.github.com/git/git/master/contrib/completion/git-completion.
 ln -s ~/dotfiles/git/.git-completion.bash ~/.git-completion.bash
 curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/dotfiles/git/.git-prompt.sh
 ln -s ~/dotfiles/git/.git-prompt.sh ~/.git-prompt.sh
+ln -s ~/.git/hooks ~/dotfiles/git/hooks
 
 # Install Homebrew and use Brewfile with Cask
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

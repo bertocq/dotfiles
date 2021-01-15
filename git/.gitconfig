@@ -28,6 +28,7 @@
   whitespace = trailing-space,space-before-tab
   ignorecase = false
   pager = diff-so-fancy | less --tabs=4 -RFX
+  hooksPath = /.git/hooks
 [alias]
   aliases=!git config -l | grep '^alias' | cut -c 7- | sort
 
