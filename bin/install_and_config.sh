@@ -23,11 +23,9 @@ git clone https://github.com/bertocq/dotfiles.git ~/dotfiles && cd ~/dotfiles
 
 ## Bash
 ln -s ~/dotfiles/bash/.aliases ~/.aliases
-rm ~/.bash_profile
-ln -s ~/dotfiles/bash/.bash_profile ~/.bash_profile
+ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
 ln -s ~/dotfiles/bash/.bash_prompt ~/.bash_prompt
-rm ~/.bashrc
-ln -s ~/dotfiles/bash/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 ln -s ~/dotfiles/bin ~/bin
 ## Tools
 ln -s ~/dotfiles/tools/.editorconfig ~/.editorconfig
@@ -79,8 +77,7 @@ gem install bundler
 gem install rubocop
 gem install rubocop-rspec
 
-rm ~/.bundle/config
-ln -s ~/dotfiles/ruby/.bundle/config ~/.bundle/config
+ln -sf ~/dotfiles/ruby/.bundle/config ~/.bundle/config
 
 mkdir ~/Downloads/music
 mkdir ~/Downloads/video
@@ -162,8 +159,7 @@ scutil --set LocalHostName "bcq"
 scutil --set HostName "bcq"
 
 # Use own SublimeText config
-rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s ~/dotfiles/sublimetext ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -sf ~/dotfiles/sublimetext ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 # Divvy shortcuts setup: (will prompt on Safari to confirm)
 open -a Safari "$(< ~/dotfiles/.divvy)"
