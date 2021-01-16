@@ -14,7 +14,7 @@
 data.location=~/.tasks
 
 # Color themes https://taskwarrior.org/docs/themes.html
-include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/dark-256.theme
+# include /usr/local/Cellar/task/2.5.3/share/doc/task/rc/dark-256.theme
 
 # Default start is Sunday
 weekstart=monday
