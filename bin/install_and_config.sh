@@ -27,6 +27,7 @@ ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
 ln -s ~/dotfiles/bash/.bash_prompt ~/.bash_prompt
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 ln -s ~/dotfiles/bin ~/bin
+
 ## Tools
 ln -s ~/dotfiles/tools/.editorconfig ~/.editorconfig
 ln -s ~/dotfiles/tools/.unused.yml ~/.unused.yml
@@ -38,6 +39,8 @@ ln -s ~/dotfiles/tools/taskwarrior/.taskrc ~/.taskrc
 git clone git@github.com:bertocq/tasks.git ~/.tasks
 ln -s ~/dotfiles/tools/taskwarrior/hooks ~/.tasks/hooks
 ln -s ~/.tasks/notes ~/dotfiles/notes
+ln -s ~/dotfiles/tools/translate-shell/init.trans ~/.config/translate-shell/init.trans
+ln -s ~/dotfiles/tools/translate-shell/theme.trans ~/.config/translate-shell/theme.trans
 
 ## Ruby
 ln -s ~/dotfiles/ruby/.gemrc ~/.gemrc

@@ -1,0 +1,6 @@
+{
+ :verbose         true
+ :show-original   false
+ :indent          1
+ :theme           "theme.trans"
+}

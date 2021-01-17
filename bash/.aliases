@@ -115,8 +115,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 
 # Tools
 alias wifi='wifi-password'
-alias esen='trans es:'
-alias enes='trans :es'
+alias esen='trans es:en'
+alias enes='trans en:es'
+alias def='trans -d'
 alias pu='paste_unindented'
 alias yt='youtube-dl'
 alias yta='yt -f 140 -o "~/Downloads/music/%(title)s.%(ext)s" '
