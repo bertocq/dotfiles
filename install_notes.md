@@ -2,7 +2,7 @@
 
 ## If work setup
 
-export BREWFILE=.work
+export ENV_SUFFIX=.work
 
 ## Nokigiri on MacOS sierra
 ```
