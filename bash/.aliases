@@ -104,7 +104,7 @@ alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
 alias bw='brew'
 alias brew_maintenance='bw doctor; bw update; bw upgrade; bw cleanup -s; rm -rf "$(brew --cache)"; brewfile'
 alias brewfile='(brew_bundle_dump; brew_bundle cleanup --force; brew_bundle check; brew_bundle; brew_bundle_dump)'
-alias brew_bundle='bw bundle --file=~/dotfiles/tools/Brewfile$BREWFILE'
+alias brew_bundle='bw bundle --file=~/dotfiles/tools/Brewfile$BREWFILE_SUFFIX'
 alias brew_bundle_dump='brew_bundle dump --force --describe'
 alias update='sudo softwareupdate -ia; gem update --system; brew upgrade --cask; brew_maintenance; mas upgrade'
 alias freedisk='diskutil secureErase freespace 0 /' # Afterwards: Reboot; Disk Utility "First Aid"
