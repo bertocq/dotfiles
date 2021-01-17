@@ -186,4 +186,5 @@
 	diff = sed \"s/^\\([^-+ ]*\\)[-+ ]/\\\\1/\"
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-
+[includeIf "gitdir:~/workspace/"]
+  path = ~/.gitconfig.work
