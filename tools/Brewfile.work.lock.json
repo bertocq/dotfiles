@@ -5,22 +5,22 @@
         "revision": "c3034215ab5a315fbde19cf2524a257d4578f692"
       },
       "homebrew/cask": {
-        "revision": "668d0e8e67c2d8d5f9d86c295d8a4a99ca6b6bd2"
+        "revision": "7746c088769fa4d427868021848b28135caa44cb"
       },
       "homebrew/cask-drivers": {
-        "revision": "49f141b073f640870eeee1cc7d33beabfe88d419"
+        "revision": "35dd8666c995a064777ac65a40928bf018374fc6"
       },
       "homebrew/cask-fonts": {
-        "revision": "368aadf59ee1f193eb18f43b2e33ba022dac25fd"
+        "revision": "4f11e0a60554a97f3178d4307ffb504d405b66d2"
       },
       "homebrew/cask-versions": {
-        "revision": "054d2957656271079c3fd1c530dd1e5b13ed8955"
+        "revision": "59286ff424802fe9c0db2cf136cfec5b37e75bee"
       },
       "homebrew/command-not-found": {
         "revision": "fbda0cb51e256b622a3dc67a1974afe309d40605"
       },
       "homebrew/core": {
-        "revision": "a5c4f3ae2c4354d34b6355f162f12268f1cdc7b0"
+        "revision": "c07ff0b4f57d8509e9a162502fc6e9e0a019b748"
       },
       "homebrew/services": {
         "revision": "fe00fcc4df63744f2240312f58b5ffdc2f203af0"
@@ -129,26 +129,26 @@
         }
       },
       "aws-elasticbeanstalk": {
-        "version": "3.19.2_1",
+        "version": "3.19.3",
         "bottle": {
           "cellar": ":any",
           "prefix": "/usr/local",
           "files": {
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/aws-elasticbeanstalk-3.19.2_1.big_sur.bottle.tar.gz",
-              "sha256": "665585db115e65f850fb9ba0dc61e5db70477a75ac9e621727377e9b2cc56e55"
+              "url": "https://homebrew.bintray.com/bottles/aws-elasticbeanstalk-3.19.3.big_sur.bottle.tar.gz",
+              "sha256": "653ea8a1f2d18e3a20b61d7b8916b95a48137504b0011410d82dae008e1e558c"
             },
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/aws-elasticbeanstalk-3.19.2_1.arm64_big_sur.bottle.tar.gz",
-              "sha256": "2df427b7811edba430e96430c4424c747a6c758c6d5b3109ffcc75ad505296a1"
+              "url": "https://homebrew.bintray.com/bottles/aws-elasticbeanstalk-3.19.3.arm64_big_sur.bottle.tar.gz",
+              "sha256": "59aae0027adbbd7ec7de9671095696c6ad3cc94fb923e521812370293df8234d"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/aws-elasticbeanstalk-3.19.2_1.catalina.bottle.tar.gz",
-              "sha256": "db6db3ecc962a7da8a57dfa25b1f9b32404cdebd9777815edbb42c31c51535ef"
+              "url": "https://homebrew.bintray.com/bottles/aws-elasticbeanstalk-3.19.3.catalina.bottle.tar.gz",
+              "sha256": "047fda58d7dae648cf89f2f26b075eea994052f741ac1550638f4291f005b417"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/aws-elasticbeanstalk-3.19.2_1.mojave.bottle.tar.gz",
-              "sha256": "0c4578e3cbc966243f385bcfb90e545434a00b36dafbf7745456dbd4cb97c43d"
+              "url": "https://homebrew.bintray.com/bottles/aws-elasticbeanstalk-3.19.3.mojave.bottle.tar.gz",
+              "sha256": "39ff2f2ce5316e8a79971674b718d5b08f38372dd52f8359257d9e319bf1c6ef"
             }
           }
         }
@@ -798,26 +798,26 @@
         }
       },
       "imagemagick@6": {
-        "version": "6.9.11-57",
+        "version": "6.9.11-58",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
           "files": {
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/imagemagick%406-6.9.11-57.big_sur.bottle.tar.gz",
-              "sha256": "3eaa84f3f2a2e40efdec7bbd1ddd41609276958c06e2ea422419118865ab62a1"
+              "url": "https://homebrew.bintray.com/bottles/imagemagick%406-6.9.11-58.big_sur.bottle.tar.gz",
+              "sha256": "054ed31b45da49f8d06e181284df7f3793eba606119cf011778bb6f619893aef"
             },
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/imagemagick%406-6.9.11-57.arm64_big_sur.bottle.tar.gz",
-              "sha256": "c301fcbeee267e5d21dbce75262eaa02d2eda7090e34d248f205e25eab84d2ed"
+              "url": "https://homebrew.bintray.com/bottles/imagemagick%406-6.9.11-58.arm64_big_sur.bottle.tar.gz",
+              "sha256": "91eb3e962f1d0808d7b1393b4b0ad4e53d610c27b7b35f829180b2976d6c8a59"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/imagemagick%406-6.9.11-57.catalina.bottle.tar.gz",
-              "sha256": "c33250c46ef3b9f96ff14f8ab85abee824e1a576a7fb1234a735ee154d1378d2"
+              "url": "https://homebrew.bintray.com/bottles/imagemagick%406-6.9.11-58.catalina.bottle.tar.gz",
+              "sha256": "aea1deefef0b85752333e8ae47875ef0f65f21697fb8c27bdbcebda8c6608cd2"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/imagemagick%406-6.9.11-57.mojave.bottle.tar.gz",
-              "sha256": "4111c2b6df65cf383a45afa18899f94fa371e5ed16a0df53ab428ef7ef76e5f8"
+              "url": "https://homebrew.bintray.com/bottles/imagemagick%406-6.9.11-58.mojave.bottle.tar.gz",
+              "sha256": "df3139425dbfbb67a4578a37031d514582ae1909c62ed057b5974373236065b8"
             }
           }
         },
@@ -1112,6 +1112,10 @@
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/openjdk%4011-11.0.9.big_sur.bottle.tar.gz",
               "sha256": "610ed0bd964812cdce0f6e1a4b8c06fd867861c72be7ebff9f674362ba48b7b9"
+            },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/openjdk%4011-11.0.9.arm64_big_sur.bottle.tar.gz",
+              "sha256": "0257d7e29927678e60372f6d34153f9efb9e28d0d9eac7d80cddac131c6129a9"
             },
             "catalina": {
               "url": "https://homebrew.bintray.com/bottles/openjdk%4011-11.0.9.catalina.bottle.tar.gz",
@@ -1705,9 +1709,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "2.7.4-27-g053ca17",
+        "HOMEBREW_VERSION": "2.7.5-10-g8869208",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "a5c4f3ae2c4354d34b6355f162f12268f1cdc7b0",
+        "Homebrew/homebrew-core": "c07ff0b4f57d8509e9a162502fc6e9e0a019b748",
         "CLT": "12.0.32.27",
         "Xcode": "12.0",
         "macOS": "11.1"
