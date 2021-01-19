@@ -39,6 +39,7 @@ ln -s ~/dotfiles/tools/taskwarrior/.taskrc ~/.taskrc
 git clone git@github.com:bertocq/tasks.git ~/.tasks
 ln -s ~/dotfiles/tools/taskwarrior/hooks ~/.tasks/hooks
 ln -s ~/.tasks/notes ~/dotfiles/notes
+mkdir ~/.config/translate-shell/
 ln -s ~/dotfiles/tools/translate-shell/init.trans ~/.config/translate-shell/init.trans
 ln -s ~/dotfiles/tools/translate-shell/theme.trans ~/.config/translate-shell/theme.trans
 
