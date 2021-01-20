@@ -79,7 +79,7 @@
 
   # Commits
   ca = commit --amend
-  can = commit --amend --no-edit
+  can = commit --amend --no-edit --no-verify
   cae = commit --allow-empty
   cne = commit --no-edit
   cp = cherry-pick
