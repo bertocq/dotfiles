@@ -7,8 +7,8 @@ docker run -it --env USER --rm  \
   -w /usr/src/app returnly-pronto:latest \
   bash
 else
-docker run -it --env USER --rm  \
+docker run -i --env USER --rm  \
   -v "$PWD":/usr/src/app        \
   -w /usr/src/app returnly-pronto:latest \
-  bash -c 'NODE_PATH=$(npm root --global) PRONTO_VERBOSE=true pronto run -c origin/master'
+  bash -c 'NODE_PATH=$(npm root --global) PRONTO_VERBOSE=true pronto run --exit-code -c origin/master'
 fi
