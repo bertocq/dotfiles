@@ -139,7 +139,6 @@
 [pull]
   rebase = true
 [commit]
-  template = ~/.gitmessage
   verbose = true # Show diff while writting commit message
 [filter "lfs"]
   clean = git-lfs clean -- %f
