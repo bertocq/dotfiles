@@ -23,7 +23,7 @@
   attributesfile = ~/.gitattributes
   autocrlf = input
   compression = -1
-  editor = subl -w -n
+  editor = subl -w
   excludesfile = ~/.gitignore_global
   whitespace = trailing-space,space-before-tab
   ignorecase = false

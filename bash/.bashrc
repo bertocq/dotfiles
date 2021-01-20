@@ -51,9 +51,6 @@ HISTSIZE=10000
 HISTFILESIZE=100000
 export HISTCONTROL=ignoredups:erasedups
 
-export EDITOR="subl -w"
-export GIT_EDITOR="subl -w"
-
 ### Used to change terminal tab title
 function title {
     echo -ne "\033]0;"$*"\007"
