@@ -54,7 +54,6 @@ ln -s ~/dotfiles/ruby/.irbrc ~/.irbrc
 ln -s ~/dotfiles/git/.git_template ~/.git_template
 ln -s ~/dotfiles/git/.gitattributes ~/.gitattributes
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/git/.gitconfig.work ~/.gitconfig.work
 ln -s ~/dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -s ~/dotfiles/git/.github_template.md ~/.github_template.md
 # Get latest version of git-completion script for bash
