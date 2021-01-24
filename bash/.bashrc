@@ -90,14 +90,9 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 
-export TASKNOTE_EDITOR="subl --wait"
-export TASKNOTE_FILE_EXT="todo"
-export TASKNOTE_FOLDER="~/.tasks/tasknotes"
-
 export XDG_DATA_HOME=$HOME"/.local/share"
 export XDG_CONFIG_HOME=$HOME"/.config"
 export XDG_CACHE_HOME=$HOME"/.cache"
-
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/bertocq/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;

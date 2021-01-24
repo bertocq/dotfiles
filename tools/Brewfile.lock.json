@@ -2,31 +2,31 @@
   "entries": {
     "tap": {
       "heroku/brew": {
-        "revision": "36ce89907d2cba2e83a6473a76989dd560479e8e"
+        "revision": "7461ceff48431bd7f8f09c7819d2aa7dd379dc5b"
       },
       "homebrew/bundle": {
-        "revision": "c3034215ab5a315fbde19cf2524a257d4578f692"
+        "revision": "ccdee2544f1ad5ca4e6862cca0107422bf51be0d"
       },
       "homebrew/cask": {
-        "revision": "c96840e21e8f7cc72628ae36919e2fa397b91683"
+        "revision": "ccd2c281a5236c16124a19535b8ec309afb88638"
       },
       "homebrew/cask-drivers": {
-        "revision": "35dd8666c995a064777ac65a40928bf018374fc6"
+        "revision": "4cb62b0cd61b37b8b9d58885aba1165cca7abb17"
       },
       "homebrew/cask-fonts": {
-        "revision": "4f11e0a60554a97f3178d4307ffb504d405b66d2"
+        "revision": "2b5547dd10a42d25819679e8955bdad4a10715d3"
       },
       "homebrew/cask-versions": {
-        "revision": "59286ff424802fe9c0db2cf136cfec5b37e75bee"
+        "revision": "2353ec91435a1b2fb077570eee9af9672f4f966a"
       },
       "homebrew/command-not-found": {
         "revision": "fbda0cb51e256b622a3dc67a1974afe309d40605"
       },
       "homebrew/core": {
-        "revision": "ed83bf05631fa9c71175a801cf79eec35c08e55e"
+        "revision": "0f44a030fd9c7f49ce31d5a6e3272e5cc6df53cb"
       },
       "homebrew/services": {
-        "revision": "fe00fcc4df63744f2240312f58b5ffdc2f203af0"
+        "revision": "594331628a5931aef28fb7e3b3c0548634a3ce2b"
       },
       "michaeldfallen/formula": {
         "revision": "988e33c1e1f9712e7f0d43a6767f7d4d47c29c9a"
@@ -307,24 +307,20 @@
           "prefix": "/usr/local",
           "files": {
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.big_sur.bottle.1.tar.gz",
-              "sha256": "ce8e32b05a59a6a7f2bd58544ff96902164780edc2a4804a1d97e11f28bc6cb6"
+              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.big_sur.bottle.2.tar.gz",
+              "sha256": "371ec57703b3646e0113331308b6e03617c2a7f91e15e113380b605455daba20"
             },
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.arm64_big_sur.bottle.1.tar.gz",
-              "sha256": "4f638cca6a59e708425aedaeea3c61fd84a69bde69833512429c206ac31dcf21"
+              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.arm64_big_sur.bottle.2.tar.gz",
+              "sha256": "e7d88d2b7a91a57dfd37c2ea14752d1bb116f25694eab1161d6e8088f7db5921"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.catalina.bottle.1.tar.gz",
-              "sha256": "f40ba727ec1bb54300c7c79804f410a62341b63f3fba41d78ef34e5d369fe9fc"
+              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.catalina.bottle.2.tar.gz",
+              "sha256": "7a97ad96dfbe6abbb5c94424518a077e040af8a77d1946ca960a5f33cd237551"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.mojave.bottle.1.tar.gz",
-              "sha256": "91cd269ea5eff54a3074e0c3cd0995911c5989a4eb87a3c27b17a765c48f494e"
-            },
-            "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.high_sierra.bottle.1.tar.gz",
-              "sha256": "25c71d9d9a156cc8dfaa52b35dad1f9d49df55e97748fb5ab9522f65aeed4dca"
+              "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.mojave.bottle.2.tar.gz",
+              "sha256": "10fbad2e35846c7e835cb979b5beb9edf07f3a9742ddcc3c28d9abd5fe9ccb1b"
             }
           }
         }
@@ -899,7 +895,7 @@
         }
       },
       "ruby-build": {
-        "version": "20201225",
+        "version": "20210119",
         "bottle": false
       },
       "rbenv": {
@@ -1209,7 +1205,32 @@
         }
       },
       "heroku/brew/heroku": null,
-      "michaeldfallen/formula/git-radar": null
+      "michaeldfallen/formula/git-radar": null,
+      "curl": {
+        "version": "7.74.0",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/curl-7.74.0.big_sur.bottle.2.tar.gz",
+              "sha256": "8189929ebd121b28fc04b5c93503cd7af1e3d5755ccfea080d47056e6068f86f"
+            },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/curl-7.74.0.arm64_big_sur.bottle.2.tar.gz",
+              "sha256": "0c9ae84590dcd9d4700fc2fe47badb20cdb6c948c1e351a8a588b23b11087556"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/curl-7.74.0.catalina.bottle.2.tar.gz",
+              "sha256": "18e818ff24895ffd9355c34f79dd92aaf220e16d71ffdef6e2a07c0a6ddb4637"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/curl-7.74.0.mojave.bottle.2.tar.gz",
+              "sha256": "eb84c59697457a6162f7275f0eff0eefc6ec03de13e467e550d35a496ca19425"
+            }
+          }
+        }
+      }
     },
     "cask": {
       "adobe-air-beta": {
@@ -1243,13 +1264,13 @@
         }
       },
       "chromedriver": {
-        "version": "87.0.4280.88",
+        "version": "88.0.4324.96",
         "options": {
           "full_name": "chromedriver"
         }
       },
       "chromium": {
-        "version": "842924",
+        "version": "845727",
         "options": {
           "full_name": "chromium"
         }
@@ -1357,7 +1378,7 @@
         }
       },
       "image2icon": {
-        "version": "2.11,844",
+        "version": "2.13,881",
         "options": {
           "full_name": "image2icon"
         }
@@ -1453,7 +1474,7 @@
         }
       },
       "virtualbox": {
-        "version": "6.1.16,140961",
+        "version": "6.1.18,142142",
         "options": {
           "full_name": "virtualbox"
         }
@@ -1477,9 +1498,27 @@
         }
       },
       "qgis": {
-        "version": "3.16.1",
+        "version": "3.16.3",
         "options": {
           "full_name": "qgis"
+        }
+      },
+      "deepl": {
+        "version": "1.13.2,124423",
+        "options": {
+          "full_name": "deepl"
+        }
+      },
+      "deltachat": {
+        "version": "1.14.1",
+        "options": {
+          "full_name": "deltachat"
+        }
+      },
+      "libreoffice": {
+        "version": "7.0.4",
+        "options": {
+          "full_name": "libreoffice"
         }
       }
     },
@@ -1525,9 +1564,9 @@
   "system": {
     "macos": {
       "mojave": {
-        "HOMEBREW_VERSION": "2.7.5-10-g8869208",
+        "HOMEBREW_VERSION": "2.7.5-138-g2c83ea7",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "ed83bf05631fa9c71175a801cf79eec35c08e55e",
+        "Homebrew/homebrew-core": "0f44a030fd9c7f49ce31d5a6e3272e5cc6df53cb",
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "10.3",
         "macOS": "10.14.6"

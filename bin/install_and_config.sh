@@ -35,10 +35,6 @@ ln -s ~/dotfiles/tools/Brewfile ~/Brewfile
 ln -s ~/dotfiles/tools/Brewfile.lock.json ~/Brewfile.lock.json
 ln -s ~/dotfiles/tools/com.googlecode.iterm2.plist ~/com.googlecode.iterm2.plist
 ln -s ~/dotfiles/sublimetext/.SideBarEnhancements.optout ~/.SideBarEnhancements.optout
-ln -s ~/dotfiles/tools/taskwarrior/.taskrc ~/.taskrc
-git clone git@github.com:bertocq/tasks.git ~/.tasks
-ln -s ~/dotfiles/tools/taskwarrior/hooks ~/.tasks/hooks
-ln -s ~/.tasks/notes ~/dotfiles/notes
 mkdir ~/.config/translate-shell/
 ln -s ~/dotfiles/tools/translate-shell/init.trans ~/.config/translate-shell/init.trans
 ln -s ~/dotfiles/tools/translate-shell/theme.trans ~/.config/translate-shell/theme.trans

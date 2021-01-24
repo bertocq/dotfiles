@@ -124,21 +124,3 @@ alias yta='yt -f 140 -o "~/Downloads/music/%(title)s.%(ext)s" '
 alias ytv='yt -f 22 -o "~/Downloads/video/%(title)s.%(ext)s" '
 alias ytf='yt -F'
 alias sys='neofetch'
-
-## Taskwarrior
-alias t='task'
-alias ta='task add'
-alias tu='task undo'
-alias td='task $1 done'
-alias tm='task $1 modify'
-alias tl='task info +LATEST' # Shows the info of the lastest added task
-alias tml='task $(task +LATEST _id) modify' # Modify the lastest added task
-alias tan='task $1 annotate' # Adds a simple annotation
-alias tanl='task $(task +LATEST _id) annotate' # Adds a simple annotation to latest added task
-alias tn='tasknote' # Opens a notes file for the task
-alias tnl='tasknote $(task +LATEST _id)' # Opens a notes file for the latest added task
-alias tnv='tasknote $1 v' # Cat's the notes file for the task
-alias today='task +TODAY list' # Shows what's for today
-alias tall='task list status:pending' # Shows all pending tasks
-alias ts='task synchronize' # Uses on-launch hook to sync with private repo
-alias tt='ta RecurrentTask relativeRecurrenceDue=15d relativeRecurrenceWait:1w'
