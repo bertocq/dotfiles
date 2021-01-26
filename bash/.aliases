@@ -82,11 +82,7 @@ alias js='be jekyll serve --watch'
 alias serve="ruby -run -ehttpd" # serves the current directory up on port 8080 over HTTP
 ## Foreman
 alias fs='foreman start'
-alias fss=' foreman start -m all=1,search=0'
-## Elasticsearch
-alias estop='brew services stop elasticsearch@5.6'
-alias estart='brew services start elasticsearch@5.6'
-
+alias fsp='bundle exec foreman start -f Procfile'
 ## Brew services
 alias bws='brew services list'
 
