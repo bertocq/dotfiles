@@ -10,5 +10,5 @@ if test -z "$files"
 then
   echo "There's no conflicts in the current working tree"
 else
-  (cd "$top_level" && echo "$files" | xargs subl -n . )
+  (cd "$top_level" && echo "$files" | xargs subl . )
 fi
