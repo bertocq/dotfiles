@@ -112,50 +112,92 @@ brew "youtube-dl"
 brew "heroku/brew/heroku"
 brew "michaeldfallen/formula/git-radar"
 cask "adobe-air-beta"
+# Application uninstaller
 cask "appcleaner"
+# Software updates for Bose products
 cask "bose-updater"
+# Finds and sets up subtitles automatically
 cask "caption"
+# Open links in any browser
 cask "choosy"
+# Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Free and open-source web browser
 cask "chromium"
+# Tool to show live information about the batteries in various devices
 cask "coconutbattery"
+# Allows switching between application windows
 cask "contexts"
+# Trains AIs to understand and translate texts
 cask "deepl"
 cask "digikam"
+# Application window manager focusing on simplicity
 cask "divvy"
+# Client for the Dropbox cloud storage service
 cask "dropbox"
 cask "filezilla"
+# Web browser
 cask "firefox"
+# Screen color temperature controller
 cask "flux"
 cask "font-hack"
 cask "garmin-express"
+# Free and open-source image editor
 cask "gimp"
+# Web browser
 cask "google-chrome"
+# Web browser
 cask "google-chrome-canary"
+# Utility to fix grammar errors and style issues in text
 cask "grammarly"
+# Open-source video transcoder
 cask "handbrake"
+# Free and open-source media player
 cask "iina"
+# Icon creator and file and folder customizer
 cask "image2icon"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Open-source screen recorder built with web technology
 cask "kap"
+# File archiver
 cask "keka"
+# GPU-based terminal emulator
 cask "kitty"
+# Password manager
+cask "lastpass"
+# Office suite
 cask "libreoffice"
+# Detailed information on every Apple product ever made
 cask "mactracker"
+# Geographic Information System
 cask "qgis"
+# Keyboard-driven, vim-like browser based on PyQt5
 cask "qutebrowser"
 cask "screen"
+# MySQL/MariaDB database management platform
 cask "sequel-pro"
+# Instant messaging application focusing on security
 cask "signal"
+# Video chat, voice call and instant messaging application
 cask "skype"
+# Team communication and collaboration software
 cask "slack"
+# Sound and audio controller
 cask "soundsource"
+# Music streaming service
 cask "spotify"
+# Text editor for code, markup and prose
 cask "sublime-text"
+# Messaging app with a focus on speed and security
 cask "telegram"
+# Open-source BitTorrent client
 cask "transmission"
+# Free and open-source hosted hypervisor for x86 virtualization
 cask "virtualbox"
+# Tools for measuring, inspecting & testing on-screen graphics and layouts
 cask "xscope"
+# Video communication and virtual meeting platform
 cask "zoom"
 mas "Battery Indicator", id: 1206020918
 mas "FreeMemory Pro", id: 486967844
