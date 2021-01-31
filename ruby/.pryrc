@@ -10,12 +10,12 @@ Pry.commands.alias_command 'e', 'exit'
 Pry.commands.alias_command 's', 'show-source'
 Pry.commands.alias_command 'd', 'disable-pry'
 
-begin
-  require 'awesome_print'
-  AwesomePrint.pry!
-rescue LoadError
-  warn "awesome_print not installed"
-end
+# begin
+#   require 'awesome_print'
+#   AwesomePrint.pry!
+# rescue LoadError
+#   warn "awesome_print not installed"
+# end
 
 Pry::Commands.command "sql", "Send sql over AR." do |query|
   if ENV['RAILS_ENV'] || defined?(Rails)
