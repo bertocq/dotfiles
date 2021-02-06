@@ -74,7 +74,7 @@
   br = "!sh -c 'git checkout --track origin/$1' -" # Gets a branch from remote
   getmaster = git branch --track master origin/master # Grab master again after messing up
   mab = "!git pull && git checkout $1 && git pull && git merge @{-1} --no-edit && git push && git checkout @{-1}"
-  ms = "!git checkout stable && git pull && git checkout @{-1} && git merge origin/stable"
+  mm = "!git checkout master && git pull && git checkout @{-1} && git merge origin/master"
   pb = "!sh -c 'git push --set-upstream origin $1' -"
   pu = ![[ $(git config "branch.$(git current-branch).merge") = '' ]] && git push -u origin $(git current-branch) || git push
   rpo = remote update --prune # Removes merged branches from all remotes
@@ -95,7 +95,6 @@
   gds = "!git diff --staged --color | diff-so-fancy" # Changes in staging area files
   gdsf = "!sh -c \" git diff --staged --color $1 | diff-so-fancy\" -" # Changes in staging area for a file (name as arg)
   gdmaster = diff --name-only --diff-filter=d master..HEAD # Files changed between current branch and master, excluding deleted
-  gdstable = diff --name-only --diff-filter=d stable..HEAD # Files changed between current branch and master, excluding deleted
 
   # Submodules
   sub = pull --recurse-submodules
@@ -114,7 +113,6 @@
   rc = rebase --continue
   ri = rebase -i
   rbm = "!git rebase -i `git merge-base master HEAD`" # Interactive rebase of all branch commits that aren't in master
-  rbs = "!git rebase -i `git merge-base stable HEAD`" # Interactive rebase of all branch commits that aren't in stable
 
   # Github
   PR = "!hub pull-request --push --edit -F ~/.github_template.md --browse"

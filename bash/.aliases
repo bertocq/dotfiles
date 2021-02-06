@@ -33,9 +33,6 @@ alias clearb='git clearb'
 alias ggc='git gc --auto'
 alias rpo='git rpo'
 alias ggca='git gc --aggressive'
-## Master branch actions
-alias com='git co master; p'
-alias grm='git rebase master'
 ## Pushing & Pulling
 alias p='git p'
 alias P='git push'
@@ -55,7 +52,6 @@ alias r='ruby'
 alias fix_ruby="grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -a"
 alias ru='git gsp | fix_ruby' # autocorrect ruby files listed on working directory & staging area
 alias rum='git gdmaster | fix_ruby' # autocorrect ruby files in diff between current branch and master
-alias rus='git gdstable | fix_ruby' # autocorrect ruby files in diff between current branch and stable
 alias solocop='rubocop -a --only' # autocorrect using a single cop by name (passed as argument)
 # Bundle
 alias b='bundle'
