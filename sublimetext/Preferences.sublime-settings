@@ -61,6 +61,7 @@
 		"draw_normal",
 		"draw_active"
 	],
+  "folder_exclude_patterns": ["node_modules", ".bundle", ".git"],
 	"line_numbers": true,
 	"line_padding_bottom": 0,
 	"line_padding_top": 1,
