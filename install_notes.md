@@ -50,3 +50,6 @@ sudo chflags nohidden ./NEWFILES
 ## Configure iTerm editor
 go to iTerm -> Preferences -> Profiles -> Advanced -> Semantic History
 from the dropdown, choose Open with Editor and from the right dropdown choose your editor of choice
+
+## Libreoffice (or any other cask) with SSL problems
+CURL_SSL_BACKEND=secure-transport HOMEBREW_NO_ENV_FILTERING=1 brew install libreoffice
