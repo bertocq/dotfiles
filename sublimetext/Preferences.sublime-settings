@@ -42,6 +42,12 @@
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": true,
 	"fold_buttons": true,
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".bundle",
+		".git"
+	],
 	"font_face": "Hack",
 	"font_options":
 	[
@@ -61,7 +67,6 @@
 		"draw_normal",
 		"draw_active"
 	],
-  "folder_exclude_patterns": ["node_modules", ".bundle", ".git"],
 	"line_numbers": true,
 	"line_padding_bottom": 0,
 	"line_padding_top": 1,
