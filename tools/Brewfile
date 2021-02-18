@@ -70,8 +70,6 @@ brew "libxml2"
 brew "lighttpd"
 # Creates dependencies in makefiles
 brew "makedepend"
-# Mac App Store command-line interface
-brew "mas"
 # NCurses Disk Usage
 brew "ncdu"
 # Fast, highly customisable system info script
@@ -201,11 +199,3 @@ cask "virtualbox"
 cask "xscope"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "Battery Indicator", id: 1206020918
-mas "FreeMemory Pro", id: 486967844
-mas "GIF Brewery 3", id: 1081413713
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Proxie", id: 897814548
