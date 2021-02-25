@@ -67,6 +67,7 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"index_files": true,
 	"line_numbers": true,
 	"line_padding_bottom": 0,
 	"line_padding_top": 1,
@@ -87,5 +88,6 @@
 	"theme": "Cobalt2.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": true,
+	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~",
 	"word_wrap": true
 }
