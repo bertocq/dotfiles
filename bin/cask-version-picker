@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # https://habd.as/post/brew-install-missing-formulas/
 CASK=chromium

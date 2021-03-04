@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ############################
 # install_and_config.sh
 # - Creates symlinks from the home directory to any desired dotfiles in ~/dotfiles

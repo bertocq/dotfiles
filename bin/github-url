@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 #/ Usage: github-url [-r <remote>] [<path>]
 #/ Make a github.com URL using the current repository's remote URLs to
 #/ determine location. When <path> is given, append it to the generated URL.
