@@ -41,6 +41,34 @@
 	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"*.ijmap",
+		"*.min.js",
+		"*.js.map",
+		"*.css.map",
+		"*.svg"
+	],
 	"fold_buttons": true,
 	"folder_exclude_patterns":
 	[
@@ -48,7 +76,6 @@
 		".bundle",
 		".git"
 	],
-  "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace", "*.ijmap", "*.min.js", "*.js.map", "*.css.map", "*.svg"],
 	"font_face": "Hack",
 	"font_options":
 	[
@@ -82,6 +109,7 @@
 	"save_on_focus_lost": true,
 	"show_definitions": false,
 	"show_encoding": true,
+	"sidebar_font_big": true,
 	"smart_indent": true,
 	"spell_check": false,
 	"tab_completion": false,
