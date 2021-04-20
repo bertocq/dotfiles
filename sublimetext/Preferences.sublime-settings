@@ -67,7 +67,9 @@
 		"*.min.js",
 		"*.js.map",
 		"*.css.map",
-		"*.svg"
+		"*.svg",
+		"en.js",
+		"*.min.css"
 	],
 	"fold_buttons": true,
 	"folder_exclude_patterns":
