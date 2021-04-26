@@ -10,8 +10,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "michaeldfallen/formula"
 tap "unused-code/formulae"
-# Automatic configure script builder
-brew "autoconf"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 4.2+
@@ -28,6 +26,8 @@ brew "cabal-install"
 brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Like cat but displays content with syntax highlighting
 brew "ccat"
 # GNU File, Shell, and Text utilities
@@ -38,8 +38,6 @@ brew "ctags"
 brew "curl"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # Play, record, convert, and stream audio and video
@@ -168,10 +166,9 @@ cask "kitty"
 cask "lastpass"
 # Office suite
 cask "libreoffice"
+cask "logitech-camera-settings"
 # Detailed information on every Apple product ever made
 cask "mactracker"
-# Geographic Information System
-cask "qgis"
 # Keyboard-driven, vim-like browser based on PyQt5
 cask "qutebrowser"
 cask "screen"
