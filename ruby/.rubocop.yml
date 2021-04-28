@@ -1,19 +1,10 @@
-# require:
-#   - rubocop-md
-#   - rubocop-performance
-#   - rubocop-rails
-#   - rubocop-rake
-#   - rubocop-rspec
-
-# AllCops:
-#   DisplayCopNames: true
-#   DisplayStyleGuide: true
-#   TargetRubyVersion: 2.6.5
-#   Exclude:
-#     - db/schema.rb
-# Metrics/LineLength:
-#   Max: 100
-# Style/Documentation:
-#   Enabled: false
-# Rails:
-#   Enabled: true
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  TargetRubyVersion: 2.7.2
+  Exclude:
+    - db/schema.rb
+Layout/LineLength:
+  Max: 140
+Style/Documentation:
+  Enabled: false
