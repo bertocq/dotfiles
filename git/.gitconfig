@@ -60,7 +60,7 @@
   ss = show stash
 
   # Branches
-  current-branch = "!git symbolic-ref --short HEAD"
+  current-branch = branch --show-current
   ba = branch -a
   bd = branch -D
   bdr = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -" # Delete local & remote branch
