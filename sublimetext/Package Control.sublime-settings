@@ -6,7 +6,6 @@
 	"installed_packages":
 	[
 		"A File Icon",
-		"Babel",
 		"Clickable URLs",
 		"Compare Side-By-Side",
 		"Copy Relative Path",
@@ -31,6 +30,6 @@
 		"Smart Path Copy",
 		"SublimeLinter-xmllint",
 		"Text Pastry",
-		"Theme - Cobalt2"
-	]
+		"Theme - Cobalt2",
+	],
 }
