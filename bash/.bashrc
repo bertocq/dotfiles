@@ -51,6 +51,7 @@ HISTSIZE=10000
 HISTFILESIZE=100000
 export HISTCONTROL=ignoredups:erasedups
 
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export EDITOR="subl -w"
 
 ### Used to change terminal tab title
