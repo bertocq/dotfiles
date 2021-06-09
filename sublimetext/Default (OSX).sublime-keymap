@@ -18,7 +18,7 @@
   { "keys": ["super+shift+v"], "command": "paste" },
   { "keys": ["super+shift+t"], "command": "reopen_last_file" },
   { "keys": ["super+v"], "command": "paste_and_indent" },
-  { "keys": ["super+k", "super+s"], "command": "toggle_side_bar" },
+  { "keys": ["super+k", "super+b"], "command": "toggle_side_bar" },
   { "keys": ["super+k", "super+m"], "command": "toggle_minimap" },
   { "keys": ["super+k", "super+u"], "command": "upper_case" },
   { "keys": ["super+k", "super+l"], "command": "lower_case" },
