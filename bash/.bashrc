@@ -13,10 +13,6 @@ eval "$(rbenv init -)"
 # Add Homebrew’s sbin to PATH
 export PATH=/usr/local/sbin:$PATH
 
-# Add command-not-found for Homebrew
-## https://github.com/Homebrew/homebrew-command-not-found
-if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
-
 # Make Homebrew’s completions available in bash
 [[ -r "#{etc}/profile.d/bash_completion.sh" ]] && . "#{etc}/profile.d/bash_completion.sh"
 
