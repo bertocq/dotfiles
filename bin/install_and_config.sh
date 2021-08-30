@@ -53,9 +53,6 @@ ln -s ~/dotfiles/git/.gitattributes ~/.gitattributes
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -s ~/dotfiles/git/.github_template.md ~/.github_template.md
-# Get latest version of git-completion script for bash
-curl -L https://raw.github.com/git/git/master/contrib/completion/git-completion.bash > ~/dotfiles/git/.git-completion.bash
-ln -s ~/dotfiles/git/.git-completion.bash ~/.git-completion.bash
 curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/dotfiles/git/.git-prompt.sh
 ln -s ~/dotfiles/git/.git-prompt.sh ~/.git-prompt.sh
 ln -s ~/.git/hooks ~/dotfiles/git/hooks
