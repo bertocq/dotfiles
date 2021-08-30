@@ -26,6 +26,7 @@ ln -s ~/dotfiles/bash/.aliases ~/.aliases
 ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
 ln -s ~/dotfiles/bash/.bash_prompt ~/.bash_prompt
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/bash/.hushlogin ~/.hushlogin
 ln -s ~/dotfiles/bin ~/bin
 
 ## Tools
