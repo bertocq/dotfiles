@@ -24,8 +24,6 @@ brew "ghc"
 brew "cabal-install"
 # Library for command-line editing
 brew "readline"
-# Command-line interface for SQLite
-brew "sqlite"
 # Manage compile and link flags for libraries
 brew "pkg-config"
 # Like cat but displays content with syntax highlighting
