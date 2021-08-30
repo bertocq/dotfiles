@@ -13,9 +13,6 @@ eval "$(rbenv init -)"
 # Add Homebrew’s sbin to PATH
 export PATH=/usr/local/sbin:$PATH
 
-# Make Homebrew’s completions available in bash
-[[ -r "#{etc}/profile.d/bash_completion.sh" ]] && . "#{etc}/profile.d/bash_completion.sh"
-
 # Set bash colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -50,28 +47,10 @@ export HISTCONTROL=ignoredups:erasedups
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export EDITOR="subl -w"
 
-### Used to change terminal tab title
-function title {
-    echo -ne "\033]0;"$*"\007"
-}
-
 ### create directory and cd into it
 mkcd () {
   mkdir "$1"
   cd "$1"
-}
-
-# Colored man pages
-# Source: https://github.com/arturoherrero/dotfiles/blob/master/system/environment.sh
-man() {
-  env \
-  LESS_TERMCAP_mb=$'\E[01;31m' \
-  LESS_TERMCAP_md=$'\E[01;38;5;208m' \
-  LESS_TERMCAP_me=$'\E[0m' \
-  LESS_TERMCAP_se=$'\E[0m' \
-  LESS_TERMCAP_ue=$'\E[0m' \
-  LESS_TERMCAP_us=$'\E[04;38;5;111m' \
-  man "$@"
 }
 
 # Print directories size
@@ -93,9 +72,6 @@ export XDG_DATA_HOME=$HOME"/.local/share"
 export XDG_CONFIG_HOME=$HOME"/.config"
 export XDG_CACHE_HOME=$HOME"/.cache"
 
-# heroku autocomplete setup
-HEROKU_AC_BASH_SETUP_PATH=/Users/bertocq/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
-
 # https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 # source ~/.git-completion.bash
 # source ~/.git-prompt.sh
@@ -104,7 +80,6 @@ HEROKU_AC_BASH_SETUP_PATH=/Users/bertocq/Library/Caches/heroku/autocomplete/bash
 # export GIT_PS1_SHOWUNTRACKEDFILES="true"
 # export GIT_PS1_SHOWUPSTREAM="auto"
 # export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-
 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
