@@ -74,7 +74,8 @@
 	"fold_buttons": true,
 	"folder_exclude_patterns":
 	[
-		"node_modules",
+		"db/var",
+    "node_modules",
 		".bundle",
 		".git"
 	],
