@@ -65,7 +65,7 @@ alias spd='sp --format documentation'
 alias spt='sp --tag'
 alias spc='sp --color --format documentation --require spec_helper --require rails_helper spec'
 alias sps='sp --seed'
-alias spb='HEADFUL=true sp'
+alias sph='HEADLESS=false sp'
 alias spm='sp `git ls-files -m \*_spec.rb`'
 ## Rails
 alias rc='rails c'
