@@ -93,7 +93,8 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"A File Icon",
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -126,5 +127,5 @@
 	"wide_caret": true,
 	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~",
 	"word_wrap": true,
-	"wrap_width_style": "min"
+	"wrap_width_style": "min",
 }
