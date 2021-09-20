@@ -32,6 +32,8 @@ brew "ccat"
 brew "coreutils"
 # Reimplementation of ctags(1)
 brew "ctags"
+# Open source suite of directory software
+brew "openldap"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Good-lookin' diffs with diff-highlight and more
@@ -42,10 +44,14 @@ brew "unbound"
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# International domain name library
+brew "libidn"
 # Distributed revision control system
 brew "git"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Improved top (interactive process viewer)
@@ -54,12 +60,14 @@ brew "htop"
 brew "httpie"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# International domain name library
-brew "libidn"
+# Network authentication protocol
+brew "krb5"
 # GNOME XML library
 brew "libxml2"
 # Small memory footprint, flexible web-server
@@ -100,14 +108,13 @@ brew "webkit2png"
 brew "wget"
 # Show the current WiFi network password
 brew "wifi-password"
-# Cross-platform C++ GUI toolkit (wxWidgets for macOS)
-brew "wxmac"
+# Cross-platform C++ GUI toolkit
+brew "wxwidgets"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 brew "michaeldfallen/formula/git-radar"
-cask "adobe-air-beta"
 # Application uninstaller
 cask "appcleaner"
 # Software updates for Bose products
@@ -126,6 +133,7 @@ cask "coconutbattery"
 cask "contexts"
 # Trains AIs to understand and translate texts
 cask "deepl"
+# Digital photo manager
 cask "digikam"
 # Application window manager focusing on simplicity
 cask "divvy"
@@ -164,9 +172,12 @@ cask "kitty"
 cask "lastpass"
 # Office suite
 cask "libreoffice"
+# Provides access to camera controls
 cask "logitech-camera-settings"
 # Detailed information on every Apple product ever made
 cask "mactracker"
+# Simple application that will prevent iTunes or Apple Music from launching
+cask "notunes"
 # Keyboard-driven, vim-like browser based on PyQt5
 cask "qutebrowser"
 cask "screen"
@@ -190,7 +201,5 @@ cask "telegram"
 cask "transmission"
 # Free and open-source hosted hypervisor for x86 virtualization
 cask "virtualbox"
-# Tools for measuring, inspecting & testing on-screen graphics and layouts
-cask "xscope"
 # Video communication and virtual meeting platform
 cask "zoom"
