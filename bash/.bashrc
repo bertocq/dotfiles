@@ -68,6 +68,10 @@ mkcd () {
   cd "$1"
 }
 
+function title {
+    echo -ne "\033]0;"$*"\007"
+}
+
 # Print directories size
 # Source: https://diamantidis.github.io/2020/01/04/find-large-files-from-command-line
 dirsize() {
