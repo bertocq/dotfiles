@@ -75,7 +75,7 @@
 	"folder_exclude_patterns":
 	[
 		"db/var",
-    "node_modules",
+		"node_modules",
 		".bundle",
 		".git"
 	],
@@ -84,7 +84,7 @@
 	[
 		"no_round"
 	],
-	"font_size": 20,
+	"font_size": 22,
 	"gutter": true,
 	"hide_new_tab_button": true,
 	"hide_tab_scrolling_buttons": true,
