@@ -39,6 +39,7 @@ ln -s ~/dotfiles/sublimetext/.SideBarEnhancements.optout ~/.SideBarEnhancements.
 mkdir ~/.config/translate-shell/
 ln -s ~/dotfiles/tools/translate-shell/init.trans ~/.config/translate-shell/init.trans
 ln -s ~/dotfiles/tools/translate-shell/theme.trans ~/.config/translate-shell/theme.trans
+ln -s ~/dotfiles/tools/.tmux.conf ~/.tmux.conf
 
 ## Ruby
 ln -s ~/dotfiles/ruby/.gemrc ~/.gemrc
