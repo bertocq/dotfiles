@@ -46,6 +46,9 @@ export EDITOR="subl -w"
 # Overwrite macos old sqlite3
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
+# Silence macos zsh promotion
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Run twolfson/sexy-bash-prompt
 ## https://github.com/twolfson/sexy-bash-prompt
 export PROMPT_SYNCED_SYMBOL=" 👌"
