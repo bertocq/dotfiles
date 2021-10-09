@@ -57,7 +57,7 @@
   sd = stash drop
   spu = stash push # Use like git spu /path/to/files
   sp = stash pop
-  ss = show stash
+  ss = stash show -p
 
   # Branches
   current-branch = branch --show-current
