@@ -131,24 +131,18 @@ cask "choosy"
 cask "chromedriver"
 # Free and open-source web browser
 cask "chromium"
-# Tool to show live information about the batteries in various devices
-cask "coconutbattery"
 # Allows switching between application windows
 cask "contexts"
-# Trains AIs to understand and translate texts
-cask "deepl"
 # Digital photo manager
 cask "digikam"
 # Application window manager focusing on simplicity
 cask "divvy"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
-cask "filezilla"
 # Web browser
 cask "firefox"
-# Screen color temperature controller
-cask "flux"
 cask "font-hack"
+# Update maps and software, sync with Garmin Connect and register your device
 cask "garmin-express"
 # Free and open-source image editor
 cask "gimp"
@@ -158,8 +152,6 @@ cask "google-chrome"
 cask "google-chrome-canary"
 # Utility to fix grammar errors and style issues in text
 cask "grammarly"
-# Open-source video transcoder
-cask "handbrake"
 # Free and open-source media player
 cask "iina"
 # Icon creator and file and folder customizer
@@ -182,11 +174,6 @@ cask "logitech-camera-settings"
 cask "mactracker"
 # Simple application that will prevent iTunes or Apple Music from launching
 cask "notunes"
-# Keyboard-driven, vim-like browser based on PyQt5
-cask "qutebrowser"
-cask "screen"
-# MySQL/MariaDB database management platform
-cask "sequel-pro"
 # Instant messaging application focusing on security
 cask "signal"
 # Video chat, voice call and instant messaging application
@@ -203,7 +190,5 @@ cask "sublime-text"
 cask "telegram"
 # Open-source BitTorrent client
 cask "transmission"
-# Free and open-source hosted hypervisor for x86 virtualization
-cask "virtualbox"
 # Video communication and virtual meeting platform
 cask "zoom"
