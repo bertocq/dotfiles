@@ -3,7 +3,7 @@
 # Bash
 alias c='bat'
 alias cat='bat'
-alias ll='ls -FGlAhp'
+alias ll='gls -GlAhp --group-directories-first --color=auto'
 alias reload='source ~/.bash_profile'
 alias f='open -a Finder ./' # Opens current directory with macos Finder
 alias rmrf='rm -rf'

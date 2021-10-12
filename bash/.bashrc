@@ -32,7 +32,7 @@ export PATH=/usr/local/sbin:$PATH
 
 # Set bash colors
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export LS_COLORS='di=32:ln=36:ex=31:or=37;41'
 
 # Avoid duplicates in bash history & increase history memory & file sizes
 HISTSIZE=10000
