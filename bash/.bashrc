@@ -39,6 +39,13 @@ HISTSIZE=10000
 HISTFILESIZE=100000
 export HISTCONTROL=ignoredups:erasedups
 
+# Customize bash behaviour
+shopt -s autocd # type directory name to cd into it
+shopt -s cdspell # correct directory name spelling errors
+shopt -s checkwinsize # adjust lines & columns after each command
+shopt -s cmdhist # store multi-line commands in single history entry
+shopt -s histappend # append to the history file instead of overwriting
+
 # Config sublimetext as default editor
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export EDITOR="subl -w"
