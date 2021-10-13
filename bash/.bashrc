@@ -35,9 +35,9 @@ export CLICOLOR=1
 export LS_COLORS='di=32:ln=36:ex=31:or=37;41'
 
 # Avoid duplicates in bash history & increase history memory & file sizes
-HISTSIZE=10000
-HISTFILESIZE=100000
-export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=10000
+export HISTFILESIZE=100000
+export HISTCONTROL=ignoreboth
 
 # Customize bash behaviour
 shopt -s autocd # type directory name to cd into it
