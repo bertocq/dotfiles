@@ -31,7 +31,7 @@ export CPPFLAGS="-I/usr/local/opt/curl/include"
 export PATH=/usr/local/sbin:$PATH
 
 # Set bash colors
-export CLICOLOR=1
+export CLICOLOR=true
 export LS_COLORS='di=32:ln=36:ex=31:or=37;41'
 
 # Avoid duplicates in bash history & increase history memory & file sizes
