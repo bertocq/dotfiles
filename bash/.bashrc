@@ -72,6 +72,9 @@ export PROMPT_DIRTY_UNPUSHED_UNPULLED_SYMBOL=" 💩"
 ## https://github.com/michaeldfallen/git-radar
 export PS1="$PS1\$(git-radar --bash --fetch): "
 
+# Colorize man pages with bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 ### create directory and cd into it
 mkcd () {
   mkdir "$1"
