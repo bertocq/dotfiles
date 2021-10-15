@@ -24,14 +24,13 @@ git clone https://github.com/bertocq/dotfiles.git ~/dotfiles && cd ~/dotfiles
 ## Bash
 ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
-ln -sf ~/dotfiles/bash/.hushlogin ~/.hushlogin
+touch ~/.hushlogin
 ln -s ~/dotfiles/bin ~/bin
 
 ## Tools
 ln -s ~/dotfiles/tools/.editorconfig ~/.editorconfig
 ln -s ~/dotfiles/tools/.unused.yml ~/.unused.yml
 ln -s ~/dotfiles/tools/Brewfile ~/Brewfile
-ln -s ~/dotfiles/tools/Brewfile.lock.json ~/Brewfile.lock.json
 ln -s ~/dotfiles/tools/com.googlecode.iterm2.plist ~/com.googlecode.iterm2.plist
 ln -s ~/dotfiles/sublimetext/.SideBarEnhancements.optout ~/.SideBarEnhancements.optout
 mkdir ~/.config/translate-shell/
