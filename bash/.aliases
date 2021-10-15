@@ -121,3 +121,12 @@ alias yta='yt -f 140 -o "~/Downloads/music/%(title)s.%(ext)s" '
 alias ytv='yt -f 22 -o "~/Downloads/video/%(title)s.%(ext)s" '
 alias ytf='yt -F'
 
+# Tmux
+alias t=tmux
+alias tl='t ls'
+alias tn='t new -s'
+alias tk='t kill-server'
+alias td='t detach'
+alias ta='t attach'
+alias tsm='~/tmux/scripts/sessions_menu'
+# alias ts='tmux display-popup -E "tmux list-sessions | sed -E \'s/:.*$//\' | grep -v \"^$(tmux display-message -p \'#S\')\$\" | fzf --reverse | xargs tmux switch-client -t"'

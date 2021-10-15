@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+tmux list-sessions -F "#{session_name} #{?session_attached,*,}" | xargs
