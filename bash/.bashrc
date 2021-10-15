@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
 
-if [ -f ~/.aliases ]; then
-   source ~/.aliases
-fi
+_source_if ~/.aliases
+_source_if ~/.fzf.bash
 
 if [[ -d ~/bin ]]; then
   export PATH=~/bin:$PATH
 fi
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 eval "$(rbenv init -)"
 

@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-if [ -f ~/.bashrc ]; then
-  source ~/.bashrc
-fi
+_source_if() { [[ -r "$1" ]] && source "$1"; }
 
-if [ -f ~/.bashrc$ENV_SUFFIX ]; then
-  source ~/.bashrc$ENV_SUFFIX
-fi
+_source_if ~/.bashrc
+_source_if ~/.bashrc$ENV_SUFFIX
