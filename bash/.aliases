@@ -112,8 +112,12 @@ alias esen='trans es:en'
 alias enes='trans en:es'
 alias def='trans -d'
 alias pu='paste_unindented'
+alias sys='neofetch'
+# See https://superuser.com/questions/763071/show-whitespace-characters-in-printout
+alias whitespace="sed 's/ /·/g;s/\t/￫/g;s/\r/§/g;s/$/¶/g'"
+## Youtube-dl
 alias yt='youtube-dl'
 alias yta='yt -f 140 -o "~/Downloads/music/%(title)s.%(ext)s" '
 alias ytv='yt -f 22 -o "~/Downloads/video/%(title)s.%(ext)s" '
 alias ytf='yt -F'
-alias sys='neofetch'
+
