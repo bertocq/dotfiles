@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Bash Helper functions
+## Create directory and cd into it
+mkcd() {
+  mkdir "$1"
+  cd "$1"
+}
+
+## Set terminal title
+title() {
+  echo -ne "\033]0;"$*"\007"
+}
+
+## Print directories size
+# Source: https://diamantidis.github.io/2020/01/04/find-large-files-from-command-line
+dirsize() {
+  du -ah "$1" | sort -rh | head -n 20
+}

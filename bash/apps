@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Apps
+## Ruby's rbenv
+eval "$(rbenv init -)"
+
+## Fzf
+[[ -r ~/.fzf.bash ]] && source ~/.fzf.bash;
+## Avoid curl issues
+export PATH="/usr/local/opt/curl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/curl/lib"
+export CPPFLAGS="-I/usr/local/opt/curl/include"
+
+## Add Homebrew’s sbin to PATH
+export PATH=/usr/local/sbin:$PATH
+
+## Config sublimetext as default editor
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+export EDITOR="subl -w"
+
+## Colorize man pages with bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"

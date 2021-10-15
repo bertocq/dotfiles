@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# System
+## English as default
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
+
+## Set XDG dirs
+export XDG_DATA_HOME=$HOME"/.local/share"
+export XDG_CONFIG_HOME=$HOME"/.config"
+export XDG_CACHE_HOME=$HOME"/.cache"
+
+## Macos
+### Overwrite macos old sqlite3
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+### Silence macos zsh promotion
+export BASH_SILENCE_DEPRECATION_WARNING=1
