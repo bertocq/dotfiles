@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-source ~/dotfiles/bash/.aliases
+source ~/dotfiles/bash/aliases
+source ~/dotfiles/bash/prompt
+
 [[ -r ~/.fzf.bash ]] && source ~/.fzf.bash;
 
 if [[ -d ~/bin ]]; then
@@ -72,21 +74,6 @@ shopt -s autocd # type directory name to cd into it
 shopt -s cdspell # correct directory name spelling errors
 shopt -s checkwinsize # adjust lines & columns after each command
 shopt -s cmdhist # store multi-line commands in single history entry
-
-## Prompt
-### https://github.com/twolfson/sexy-bash-prompt
-export PROMPT_SYNCED_SYMBOL=" 👌"
-export PROMPT_DIRTY_SYNCED_SYMBOL=" ✍️"
-export PROMPT_UNPUSHED_SYMBOL=" 👆"
-export PROMPT_DIRTY_UNPUSHED_SYMBOL=" 🖕"
-export PROMPT_UNPULLED_SYMBOL=" 👇"
-export PROMPT_DIRTY_UNPULLED_SYMBOL=" 👎"
-export PROMPT_UNPUSHED_UNPULLED_SYMBOL=" ↕️"
-export PROMPT_DIRTY_UNPUSHED_UNPULLED_SYMBOL=" 💩"
-source ~/.bash_prompt
-
-### https://github.com/michaeldfallen/git-radar
-export PS1="$PS1\$(git-radar --bash --fetch): "
 
 # Colorize man pages with bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"

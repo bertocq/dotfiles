@@ -23,7 +23,6 @@ git clone https://github.com/bertocq/dotfiles.git ~/dotfiles && cd ~/dotfiles
 
 ## Bash
 ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
-ln -s ~/dotfiles/bash/.bash_prompt ~/.bash_prompt
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/bash/.hushlogin ~/.hushlogin
 ln -s ~/dotfiles/bin ~/bin
