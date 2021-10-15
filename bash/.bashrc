@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-_source_if ~/.aliases
-_source_if ~/.fzf.bash
+source ~/dotfiles/bash/.aliases
+[[ -r ~/.fzf.bash ]] && source ~/.fzf.bash;
 
 if [[ -d ~/bin ]]; then
   export PATH=~/bin:$PATH
