@@ -133,7 +133,7 @@
   stripLeadingSymbols = true
   useUnicodeRuler = true
 [push]
-  default = tracking
+  default = simple
 [pull]
   rebase = true
 [commit]
