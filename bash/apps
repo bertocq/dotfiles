@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Apps
 ## Ruby's rbenv
 eval "$(rbenv init -)"

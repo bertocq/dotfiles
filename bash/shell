@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Bash shell customizations
 ## Set bash colors
 export CLICOLOR=true

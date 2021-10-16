@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Bash
 alias c='bat'
 alias cat='bat'

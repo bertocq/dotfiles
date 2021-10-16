@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Bash Helper functions
 ## Create directory and cd into it
 mkcd() {
