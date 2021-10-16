@@ -21,17 +21,13 @@ if tput setaf 1 &> /dev/null; then
 
   # If the terminal supports at least 256 colors, write out our 256 color based set
   if [[ "$(tput colors)" -ge 256 ]] &> /dev/null; then
-    sexy_bash_prompt_user_color="$sexy_bash_prompt_bold$(tput setaf 27)" # BOLD BLUE
     sexy_bash_prompt_preposition_color="$sexy_bash_prompt_bold$(tput setaf 7)" # BOLD WHITE
-    sexy_bash_prompt_device_color="$sexy_bash_prompt_bold$(tput setaf 39)" # BOLD CYAN
     sexy_bash_prompt_dir_color="$sexy_bash_prompt_bold$(tput setaf 76)" # BOLD GREEN
     sexy_bash_prompt_git_status_color="$sexy_bash_prompt_bold$(tput setaf 154)" # BOLD YELLOW
     sexy_bash_prompt_git_progress_color="$sexy_bash_prompt_bold$(tput setaf 9)" # BOLD RED
   else
   # Otherwise, use colors from our set of 8
-    sexy_bash_prompt_user_color="$sexy_bash_prompt_bold$(tput setaf 4)" # BOLD BLUE
     sexy_bash_prompt_preposition_color="$sexy_bash_prompt_bold$(tput setaf 7)" # BOLD WHITE
-    sexy_bash_prompt_device_color="$sexy_bash_prompt_bold$(tput setaf 6)" # BOLD CYAN
     sexy_bash_prompt_dir_color="$sexy_bash_prompt_bold$(tput setaf 2)" # BOLD GREEN
     sexy_bash_prompt_git_status_color="$sexy_bash_prompt_bold$(tput setaf 3)" # BOLD YELLOW
     sexy_bash_prompt_git_progress_color="$sexy_bash_prompt_bold$(tput setaf 1)" # BOLD RED
@@ -49,9 +45,7 @@ else
   # done
 
   sexy_bash_prompt_reset="\033[m"
-  sexy_bash_prompt_user_color="\033[1;34m" # BLUE
   sexy_bash_prompt_preposition_color="\033[1;37m" # WHITE
-  sexy_bash_prompt_device_color="\033[1;36m" # CYAN
   sexy_bash_prompt_dir_color="\033[1;32m" # GREEN
   sexy_bash_prompt_git_status_color="\033[1;33m" # YELLOW
   sexy_bash_prompt_git_progress_color="\033[1;31m" # RED
@@ -67,9 +61,7 @@ else
 fi
 
 # Apply any color overrides that have been set in the environment
-if [[ -n "$PROMPT_USER_COLOR" ]]; then sexy_bash_prompt_user_color="$PROMPT_USER_COLOR"; fi
 if [[ -n "$PROMPT_PREPOSITION_COLOR" ]]; then sexy_bash_prompt_preposition_color="$PROMPT_PREPOSITION_COLOR"; fi
-if [[ -n "$PROMPT_DEVICE_COLOR" ]]; then sexy_bash_prompt_device_color="$PROMPT_DEVICE_COLOR"; fi
 if [[ -n "$PROMPT_DIR_COLOR" ]]; then sexy_bash_prompt_dir_color="$PROMPT_DIR_COLOR"; fi
 if [[ -n "$PROMPT_GIT_STATUS_COLOR" ]]; then sexy_bash_prompt_git_status_color="$PROMPT_GIT_STATUS_COLOR"; fi
 if [[ -n "$PROMPT_GIT_PROGRESS_COLOR" ]]; then sexy_bash_prompt_git_progress_color="$PROMPT_GIT_PROGRESS_COLOR"; fi
@@ -147,7 +139,7 @@ sexy_bash_prompt_is_branch1_behind_branch2 () {
   #     Unsynced commit
 
   # Find the first log (if any) that is in branch1 but not branch2
-  first_log="$(git log $1..$2 -1 2> /dev/null)"
+  first_log="$(git log "$1".."$2" -1 2> /dev/null)"
 
   # Exit with 0 if there is a first log, 1 if there is not
   [[ -n "$first_log" ]]
@@ -294,8 +286,8 @@ sexy_bash_prompt_command () {
   # Capture last commands for `SEXY_BASH_PROMPT_SHOW_ERROR_ONCE` logic
   # DEV: We would save these in `get_symbol_color` but its subshell variables don't persist
   export sexy_bash_prompt_last_command="$sexy_bash_prompt_current_command"
-  export sexy_bash_prompt_current_command="$(history 1)"
-
+  sexy_bash_prompt_current_command="$(history 1)"
+  export sexy_bash_prompt_current_command
   # DEV: We don't set PS1 in here as it would prevent extension, see https://github.com/twolfson/sexy-bash-prompt/issues/90
 }
 # DEV: Extend `PROMPT_COMMAND` if there already is one

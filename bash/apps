@@ -5,7 +5,9 @@
 eval "$(rbenv init -)"
 
 ## Fzf
+# shellcheck source=/Users/bertocq/.fzf.bash
 [[ -r ~/.fzf.bash ]] && source ~/.fzf.bash;
+
 ## Avoid curl issues
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/curl/lib"

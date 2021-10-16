@@ -2,18 +2,30 @@
 
 # Bash Helper functions
 ## Create directory and cd into it
-mkcd() {
+function mkcd() {
   mkdir "$1"
-  cd "$1"
+  cd "$1" || exit
 }
 
 ## Set terminal title
-title() {
-  echo -ne "\033]0;"$*"\007"
+function title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
 }
 
 ## Print directories size
 # Source: https://diamantidis.github.io/2020/01/04/find-large-files-from-command-line
-dirsize() {
+function dirsize() {
   du -ah "$1" | sort -rh | head -n 20
+}
+
+function btime() {
+  pmset -g batt | awk "/^ /{print \$5}"
+}
+
+function cmds() {
+  sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl |  head -n50
 }
