@@ -37,6 +37,7 @@ mkdir ~/.config/translate-shell/
 ln -s ~/dotfiles/tools/translate-shell/init.trans ~/.config/translate-shell/init.trans
 ln -s ~/dotfiles/tools/translate-shell/theme.trans ~/.config/translate-shell/theme.trans
 ln -s ~/dotfiles/tools/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/tools/kitty.conf ~/.config/kitty/kitty.conf
 
 ## Ruby
 ln -s ~/dotfiles/ruby/.gemrc ~/.gemrc
