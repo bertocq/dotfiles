@@ -7,6 +7,11 @@ alias ll='gls -GlAhp --group-directories-first --color=auto'
 alias reload='source ~/.bash_profile'
 alias f='open -a Finder ./' # Opens current directory with macos Finder
 alias rmrf='rm -rf'
+alias ..="cd .."
+alias -- -="cd -"
+
+# Shortcuts
+alias dl="cd ~/Downloads"
 
 # Git
 alias g='git'
@@ -87,10 +92,6 @@ alias bws='brew services list'
 alias s='subl'
 alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
 
-# OSX
-alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
-alias webcam='sudo killall VDCAssistant; sudo killall AppleCameraAssistant'
-
 ## Maintenance
 alias bw='brew'
 alias brew_maintenance='bw doctor; bw update; bw upgrade; bw cleanup -s; rm -rf "$(brew --cache)"; brewfile'
@@ -102,7 +103,8 @@ alias freedisk='diskutil secureErase freespace 0 /' # Afterwards: Reboot; Disk U
 alias diskusage='ncdu --color dark -rr -x'
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+# Finally, clear download history from quarantine. https://mths.be/bum
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 # Tools
 alias wifi='wifi-password'
