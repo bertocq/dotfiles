@@ -90,7 +90,7 @@ alias bws='brew services list'
 
 # Dev
 alias s='subl'
-alias unused='git ctags; cat ./.git/tags | unused --stdin -C'
+# alias unused='git ctags; cat ./.git/tags | unused'
 
 ## Maintenance
 alias bw='brew'
