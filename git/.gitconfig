@@ -80,6 +80,7 @@
   pb = "!sh -c 'git push --set-upstream origin $1' -"
   pu = ![[ $(git config "branch.$(git current-branch).merge") = '' ]] && git push -u origin $(git current-branch) || git push
   rpo = remote update --prune # Removes merged branches from all remotes
+  remove-gone = "!git checkout master && git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d"
 
   # Commits
   ca = commit --amend
