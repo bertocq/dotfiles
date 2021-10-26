@@ -69,7 +69,15 @@
 		"*.css.map",
 		"*.svg",
 		"*.min.css",
-    "tags"
+		"tags",
+    "*.js",
+    "*.jsx",
+    "*.tsx",
+    "*.scss",
+    "*.css",
+    "*.snap",
+    "*.less",
+    "*.otf"
 	],
 	"fold_buttons": true,
 	"folder_exclude_patterns":
@@ -84,7 +92,7 @@
 	[
 		"no_round"
 	],
-	"font_size": 22,
+	"font_size": 21,
 	"gutter": true,
 	"hide_new_tab_button": true,
 	"hide_tab_scrolling_buttons": true,
@@ -93,7 +101,7 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Vintage",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
@@ -126,5 +134,5 @@
 	"wide_caret": true,
 	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~",
 	"word_wrap": true,
-	"wrap_width_style": "min",
+	"wrap_width_style": "min"
 }
