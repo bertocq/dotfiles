@@ -57,7 +57,7 @@ ln -s ~/dotfiles/git/.git-prompt.sh ~/.git-prompt.sh
 ln -s ~/.git/hooks ~/dotfiles/git/hooks
 
 # Install Homebrew and use Brewfile with Cask
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
 brew tap Homebrew/bundle # https://github.com/Homebrew/homebrew-bundle
 brew bundle install
