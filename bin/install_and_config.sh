@@ -159,4 +159,4 @@ scutil --set HostName "bcq"
 ln -sf ~/dotfiles/sublimetext ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 # Divvy shortcuts setup: (will prompt on Safari to confirm)
-open -a Safari "$(< ~/dotfiles/.divvy)"
+open -a Safari "$(< ~/dotfiles/tools/divvy)"
