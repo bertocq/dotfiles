@@ -94,11 +94,11 @@ alias s='subl'
 
 ## Maintenance
 alias bw='brew'
-alias brew_maintenance='bw doctor; bw update; bw upgrade; bw cleanup -s; rm -rf "$(brew --cache)"; brewfile'
+alias brew_maintenance='bw doctor; bw update; bw upgrade --cask; bw upgrade; bw cleanup -s; rm -rf "$(brew --cache)"; brewfile'
 alias brewfile='(brew_bundle_dump; brew_bundle cleanup --force; brew_bundle check; brew_bundle; brew_bundle_dump)'
 alias brew_bundle='bw bundle --no-lock --file=~/dotfiles$ENV_SUFFIX/tools/Brewfile'
 alias brew_bundle_dump='brew_bundle dump --force --describe'
-alias update='sudo softwareupdate -ia; gem update --system; brew upgrade --cask; brew_maintenance'
+alias update='sudo softwareupdate -ia; gem update --system; brew_maintenance'
 alias freedisk='diskutil secureErase freespace 0 /' # Afterwards: Reboot; Disk Utility "First Aid"
 alias diskusage='ncdu --color dark -rr -x'
 # Empty the Trash on all mounted volumes and the main HDD
