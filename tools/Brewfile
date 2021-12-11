@@ -20,12 +20,12 @@ brew "bat"
 brew "brew-pip"
 # Mozilla CA certificate store
 brew "ca-certificates"
+# Library for command-line editing
+brew "readline"
 # Glorious Glasgow Haskell Compilation System
 brew "ghc"
 # Command-line interface for Cabal and Hackage
 brew "cabal-install"
-# Library for command-line editing
-brew "readline"
 # Manage compile and link flags for libraries
 brew "pkg-config"
 # Like cat but displays content with syntax highlighting
@@ -41,7 +41,7 @@ brew "curl"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Validating, recursive, caching DNS resolver
-brew "unbound"
+brew "unbound", restart_service: true
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -62,8 +62,6 @@ brew "htop"
 brew "httpie"
 # Add GitHub support to git on the command-line
 brew "hub"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -73,7 +71,7 @@ brew "krb5"
 # GNOME XML library
 brew "libxml2"
 # Small memory footprint, flexible web-server
-brew "lighttpd"
+brew "lighttpd", restart_service: true
 # Creates dependencies in makefiles
 brew "makedepend"
 # NCurses Disk Usage
@@ -81,11 +79,13 @@ brew "ncdu"
 # Fast, highly customisable system info script
 brew "neofetch"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
+brew "nginx", restart_service: true
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Object-relational database system
-brew "postgresql"
+brew "postgresql", restart_service: true
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -142,8 +142,6 @@ cask "dropbox"
 # Web browser
 cask "firefox"
 cask "font-hack"
-# Update maps and software, sync with Garmin Connect and register your device
-cask "garmin-express"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
@@ -172,6 +170,8 @@ cask "libreoffice"
 cask "logitech-camera-settings"
 # Detailed information on every Apple product ever made
 cask "mactracker"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
 # Simple application that will prevent iTunes or Apple Music from launching
 cask "notunes"
 # Instant messaging application focusing on security
