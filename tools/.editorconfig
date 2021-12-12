@@ -14,3 +14,7 @@ trim_trailing_whitespace = false
 
 [*.yml]
 insert_final_newline = false
+
+[*.sublime-settings]
+indent_style = tab
+indent_size = 1
