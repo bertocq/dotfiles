@@ -70,14 +70,7 @@
 		"*.svg",
 		"*.min.css",
 		"tags",
-    "*.otf"
-    // "*.js",
-    // "*.jsx",
-    // "*.tsx",
-    // "*.scss",
-    // "*.css",
-    // "*.snap",
-    // "*.less",
+		"*.otf"
 	],
 	"fold_buttons": true,
 	"folder_exclude_patterns":
@@ -101,7 +94,7 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -123,6 +116,8 @@
 	"show_definitions": false,
 	"show_encoding": true,
 	"show_sidebar_button": false,
+	"show_panel_on_build": false,
+	"show_errors_inline": false,
 	"sidebar_font_big": true,
 	"smart_indent": true,
 	"spell_check": false,
@@ -130,9 +125,9 @@
 	"tab_size": 2,
 	"theme": "Cobalt2.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
-	"update_check": false,
+	"update_check": true,
 	"wide_caret": true,
 	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~",
 	"word_wrap": true,
-	"wrap_width_style": "min"
+	"wrap_width_style": "min",
 }
