@@ -9,6 +9,8 @@
 # - Ask confirmation to config  Divvy shortcuts
 ############################
 
+chsh -s /bin/bash
+
 # Update firmware
 sudo softwareupdate -ia
 
