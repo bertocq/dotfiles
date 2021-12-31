@@ -43,7 +43,7 @@
 
   # Pull
   fu = fetch upstream
-  p = pull --rebase
+  p = pull
 
   # Adding
   ga = add
