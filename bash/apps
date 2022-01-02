@@ -15,6 +15,7 @@ export CPPFLAGS="-I/usr/local/opt/curl/include"
 ## Add Homebrew’s sbin to PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/opt/homebrew/bin:$PATH # For M1
+export PATH="/opt/homebrew/sbin:$PATH" # For M1
 
 ## Config sublimetext as default editor
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
