@@ -66,7 +66,7 @@
   bdi = !git branch -D `git branch | fzf`
   bdr = "!sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -" # Delete local & remote branch
   bs = branch -vv
-  bsr = !git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}' # Most recently-used branches
+  bsr = !git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 30 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}' # Most recently-used branches
 
   clearb = "!git branch --merged master | grep -v "master" | xargs git branch -d"
 
