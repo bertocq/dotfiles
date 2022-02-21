@@ -58,7 +58,7 @@ alias fix_ruby="grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -A --parallel"
 alias ru='git gsp | fix_ruby' # autocorrect ruby files listed on working directory & staging area
 alias rum='git gdmaster | fix_ruby' # autocorrect ruby files in diff between current branch and master
 alias solocop='be rubocop --parallel --only' # autocorrect using a single cop by name (passed as argument)
-alias bra='be rubocop -A --parallel'
+alias bra='be rubocop -A'
 # Bundle
 alias b='bundle'
 alias be='b exec'
