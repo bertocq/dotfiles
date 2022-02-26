@@ -42,6 +42,8 @@ brew "curl"
 brew "diff-so-fancy"
 # Validating, recursive, caching DNS resolver
 brew "unbound", restart_service: true
+# OpenType text shaping engine
+brew "harfbuzz"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -135,6 +137,8 @@ cask "chromium"
 cask "contexts"
 # Digital photo manager
 cask "digikam"
+# Voice and text chat software
+cask "discord"
 # Application window manager focusing on simplicity
 cask "divvy"
 # Client for the Dropbox cloud storage service
