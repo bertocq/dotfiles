@@ -116,7 +116,7 @@
   ra = rebase --abort
   rc = rebase --continue
   ri = rebase -i
-  rbm = "!git rebase -i `git merge-base master HEAD`" # Interactive rebase of all branch commits that aren't in master
+  rbm = "!git rebase -i `git merge-base origin/master HEAD`" # Interactive rebase of all branch commits that aren't in master
 
   # Github
   PR = "!hub pull-request --push --edit -F ~/.github_template.md --browse"
