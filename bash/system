@@ -13,7 +13,7 @@ export XDG_CACHE_HOME=$HOME"/.cache"
 
 ## Macos
 ### Overwrite macos old sqlite3
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 ### Silence macos zsh promotion
 export BASH_SILENCE_DEPRECATION_WARNING=1

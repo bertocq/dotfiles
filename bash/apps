@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
 
 # Apps
-## Ruby's rbenv
-eval "$(rbenv init -)"
-
 ## Fzf
 [[ -r ~/.fzf.bash ]] && source ~/.fzf.bash;
 
 ## Avoid curl issues
-export PATH="/usr/local/opt/curl/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/curl/lib"
-export CPPFLAGS="-I/usr/local/opt/curl/include"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
 
 ## Add Homebrew’s sbin to PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=/opt/homebrew/bin:$PATH # For M1
-export PATH="/opt/homebrew/sbin:$PATH" # For M1
+export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+## Ruby's rbenv
+eval "$(rbenv init -)"
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # Solve issue with NSCF
 
 ## Config sublimetext as default editor
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
