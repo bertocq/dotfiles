@@ -4,24 +4,11 @@
 
 export ENV_SUFFIX=.work
 
-## Nokigiri on MacOS sierra
-```
-bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2
-bundle install
-brew unlink xz; bundle install; brew link xz
-http://stackoverflow.com/questions/40038953/installing-nokogiri-on-mac-os-sierra-10-12
-```
-
 ## Add private key to OSX Keychain
 ```
 ssh-add -K ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa &>/dev/null
-```
-
-## Clone all Organization repos (private ones as well)
-```
-curl -u bertocq -s https://api.github.com/orgs/<ORG_NAME>/repos?per_page=200 | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo["ssh_url"]} ]}'
 ```
 
 ## Chrome config:
