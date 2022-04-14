@@ -63,6 +63,7 @@ alias bra='be rubocop -A'
 alias b='bundle'
 alias be='b exec'
 alias ber='be bin/rake'
+alias bus='bundle update --source'
 ## RSpec
 alias sp='be rspec --order rand'
 alias spf='sp --fail-fast'
