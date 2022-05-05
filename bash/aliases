@@ -23,6 +23,7 @@ alias gaa='git gaa'
 alias gai='git gai'
 alias gc='git commit'
 alias gcm='git commit -m'
+alias gcmn='git commit --no-verify -m'
 ## Github
 alias PR='git PR'
 alias PRO='~./dotfiles/github-pull-request'
@@ -59,6 +60,9 @@ alias ru='git gsp | fix_ruby' # autocorrect ruby files listed on working directo
 alias rum='git gdmaster | fix_ruby' # autocorrect ruby files in diff between current branch and master
 alias solocop='be rubocop --parallel --only' # autocorrect using a single cop by name (passed as argument)
 alias bra='be rubocop -A'
+alias brao='bra --only'
+alias bre='be rubocop'
+alias bres='bre --display-only-safe-correctable'
 # Bundle
 alias b='bundle'
 alias be='b exec'
