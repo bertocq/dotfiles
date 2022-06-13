@@ -83,7 +83,8 @@ mkdir ~/Downloads/video
 mkdir ~/Downloads/screenshots
 
 # Use Sexy Bash Prompt https://github.com/twolfson/sexy-bash-prompt
-(cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
+# (cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
+# my own copy is at bash/prompt
 
 # Bash 4 in OS X
 sudo bash -c "echo $(brew --prefix)/bin/bash >> /etc/shells"
