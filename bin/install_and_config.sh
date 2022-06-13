@@ -70,8 +70,8 @@ brew cleanup # Delete cask downloads
 $(brew --prefix)/opt/fzf/install
 
 # Install Ruby + Bundler & Rubocop
-rbenv install 2.4.1
-rbenv global 2.4.1
+rbenv install 2.7.6
+rbenv global 2.7.6
 gem install bundler
 gem install rubocop
 gem install rubocop-rspec
