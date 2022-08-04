@@ -58,18 +58,18 @@ alias r='ruby'
 alias fix_ruby="grep -E 'rb|rake|Gemfile|ru' | xargs rubocop -A --parallel"
 alias ru='git gsp | fix_ruby' # autocorrect ruby files listed on working directory & staging area
 alias rum='git gdmaster | fix_ruby' # autocorrect ruby files in diff between current branch and master
-alias solocop='be rubocop --parallel --only' # autocorrect using a single cop by name (passed as argument)
-alias bra='be rubocop -A'
+alias solocop='bundle exec rubocop --parallel --only' # autocorrect using a single cop by name (passed as argument)
+alias bra='bundle exec rubocop -A'
 alias brao='bra --only'
-alias bre='be rubocop'
+alias bre='bundle exec rubocop'
 alias bres='bre --display-only-safe-correctable'
 # Bundle
 alias b='bundle'
 alias be='b exec'
-alias ber='be bin/rake'
+alias ber='bundle exec bin/rake'
 alias bus='bundle update --source'
 ## RSpec
-alias sp='be rspec --order rand'
+alias sp='bundle exec rspec --order rand'
 alias spf='sp --fail-fast'
 alias spd='sp --format documentation'
 alias spt='sp --tag'
@@ -84,8 +84,9 @@ alias rg='rails generate'
 alias dbmigrate='ber db:migrate RAILS_ENV=development; ber db:migrate RAILS_ENV=test'
 alias dbrollback='ber db:rollback RAILS_ENV=development; ber db:rollback RAILS_ENV=test'
 alias dbreset='ber db:drop; ber db:create; dbmigrate; ber db:seed'
+alias routes='bundle exec rails routes | fzf'
 ## Jekyll
-alias js='be jekyll serve --watch'
+alias js='bundle exec jekyll serve --watch'
 alias serve="ruby -run -ehttpd" # serves the current directory up on port 8080 over HTTP
 ## Foreman
 alias fs='foreman start'
