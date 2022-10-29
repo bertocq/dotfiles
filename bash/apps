@@ -15,6 +15,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## Ruby's rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # Solve issue with NSCF
 
@@ -24,3 +25,9 @@ export EDITOR="subl -w"
 
 ## Colorize man pages with bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+## FNM Node version manager
+eval "$(fnm env --use-on-cd)"
+
+## Python for some node stuff
+export PATH="$HOMEBREW_PREFIX/opt/python@3.10/libexec/bin:$PATH"
