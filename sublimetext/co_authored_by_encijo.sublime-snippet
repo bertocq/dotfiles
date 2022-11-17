@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[Co-authored-by: Javier Encijo <javier.encijo@rubiconmd.com>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>cabe</tabTrigger>
+    <!-- Optional: Description to show in the menu -->
+    <description>Coauthoredby Encijo</description>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[Co-authored-by: Alfonso Alba García <alfonso@rubiconmd.com>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>caba</tabTrigger>
+    <!-- Optional: Description to show in the menu -->
+    <description>Coauthoredby Alfonso</description>
+</snippet>
