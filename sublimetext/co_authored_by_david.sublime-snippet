@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[Co-authored-by: David Marchante <david.marchante@rubiconmd.com>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>cabd</tabTrigger>
+    <!-- Optional: Description to show in the menu -->
+    <description>Coauthoredby David</description>
+</snippet>

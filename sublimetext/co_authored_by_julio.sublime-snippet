@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[Co-authored-by: Julio Antequera Galiano <julio@rubiconmd.com>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>cabj</tabTrigger>
+    <!-- Optional: Description to show in the menu -->
+    <description>Coauthoredby Julio</description>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[Co-authored-by: Edgar <edgar@rubiconmd.com>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>cabed</tabTrigger>
+    <!-- Optional: Description to show in the menu -->
+    <description>Coauthoredby Edgar</description>
+</snippet>
