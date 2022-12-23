@@ -62,6 +62,7 @@ alias solocop='bundle exec rubocop --parallel --only' # autocorrect using a sing
 alias bra='bundle exec rubocop -A'
 alias brao='bra --only'
 alias bre='bundle exec rubocop'
+alias breo='bre --only'
 alias bres='bre --display-only-safe-correctable'
 # Bundle
 alias b='bundle'
