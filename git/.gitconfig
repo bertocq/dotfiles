@@ -178,7 +178,7 @@
 [diff "rspec"]
   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
 [init]
-  templatedir = ~/.git_template
+  # templatedir = ~/.git_template
 [rebase]
   autosquash = true
   autostash = true # Automatically stash before rebasing, to rebase with changes in the repo.
