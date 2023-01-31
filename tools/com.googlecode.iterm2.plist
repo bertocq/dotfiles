@@ -1022,7 +1022,7 @@
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>SoundForEsc</key>
