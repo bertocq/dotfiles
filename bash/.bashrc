@@ -10,7 +10,3 @@ source ~/dotfiles/bash/apps
 if [[ -d ~/bin ]]; then
   export PATH=~/bin:$PATH
 fi
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
