@@ -9,7 +9,9 @@ tap "homebrew/command-not-found"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "michaeldfallen/formula"
+tap "pr0d1r2/python2"
 tap "unused-code/formulae"
+tap "yt-dlp/taps"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 4.2+
@@ -20,12 +22,12 @@ brew "bat"
 brew "brew-pip"
 # Mozilla CA certificate store
 brew "ca-certificates"
-# Library for command-line editing
-brew "readline"
 # Glorious Glasgow Haskell Compilation System
 brew "ghc"
 # Command-line interface for Cabal and Hackage
 brew "cabal-install"
+# Core application library for C
+brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
 # Like cat but displays content with syntax highlighting
@@ -44,26 +46,48 @@ brew "diff-so-fancy"
 brew "unbound", restart_service: true
 # OpenType text shaping engine
 brew "harfbuzz"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Image processing and image analysis library
+brew "leptonica"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# Secure Reliable Transport
+brew "srt"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Fast and simple Node.js version manager
+brew "fnm"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # International domain name library
 brew "libidn"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
 # Distributed revision control system
 brew "git"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Open-source video transcoder available for Linux, Mac, and Windows
+brew "handbrake"
 # Improved top (interactive process viewer)
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Add GitHub support to git on the command-line
 brew "hub"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# Library for reading RAW files from digital photo cameras
+brew "libraw"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -85,9 +109,9 @@ brew "nginx", restart_service: true
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Object-relational database system
-brew "postgresql", restart_service: true
+brew "postgresql@14"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
+brew "python@3.8", link: false
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -116,11 +140,17 @@ brew "wget"
 brew "wifi-password"
 # Cross-platform C++ GUI toolkit
 brew "wxwidgets"
+# JavaScript package manager
+brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 brew "michaeldfallen/formula/git-radar"
+# A youtube-dl fork with additional features and fixes
+brew "yt-dlp/taps/yt-dlp"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Application uninstaller
 cask "appcleaner"
 # Software updates for Bose products
@@ -135,6 +165,10 @@ cask "chromedriver"
 cask "chromium"
 # Allows switching between application windows
 cask "contexts"
+# Browser for SQLite databases
+cask "db-browser-for-sqlite"
+# Design, document and deploy databases
+cask "dbschema"
 # Digital photo manager
 cask "digikam"
 # Voice and text chat software
@@ -146,6 +180,10 @@ cask "dropbox"
 # Web browser
 cask "firefox"
 cask "font-hack"
+# 3D mapping application
+cask "garmin-basecamp"
+# Update maps and software, sync with Garmin Connect and register your device
+cask "garmin-express"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
@@ -154,12 +192,16 @@ cask "google-chrome"
 cask "google-chrome-canary"
 # Utility to fix grammar errors and style issues in text
 cask "grammarly"
+# Open-source video transcoder
+cask "handbrake"
 # Free and open-source media player
 cask "iina"
-# Icon creator and file and folder customizer
+# Icon creator and file and folder customiser
 cask "image2icon"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Extensible editor for OpenStreetMap
+cask "josm"
 # Open-source screen recorder built with web technology
 cask "kap"
 # File archiver
@@ -174,6 +216,8 @@ cask "libreoffice"
 cask "logitech-camera-settings"
 # Detailed information on every Apple product ever made
 cask "mactracker"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Simple application that will prevent iTunes or Apple Music from launching
@@ -194,8 +238,15 @@ cask "steam"
 cask "sublime-text"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# Fantasy-themed turn-based strategy game
+cask "the-battle-for-wesnoth"
 # Open-source BitTorrent client
 cask "transmission"
+# 3D printer and slicing GUI
+cask "ultimaker-cura"
+# Desktop client for WhatsApp
+cask "whatsapp"
 # Video communication and virtual meeting platform
 cask "zoom"
+# Indoor cycling game
 cask "zwift"
