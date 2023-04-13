@@ -12,14 +12,14 @@ tap "michaeldfallen/formula"
 tap "pr0d1r2/python2"
 tap "unused-code/formulae"
 tap "yt-dlp/taps"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 4.2+
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Install pip packages as homebrew formulae
-brew "brew-pip"
 # Mozilla CA certificate store
 brew "ca-certificates"
 # Glorious Glasgow Haskell Compilation System
@@ -46,12 +46,10 @@ brew "diff-so-fancy"
 brew "unbound", restart_service: true
 # OpenType text shaping engine
 brew "harfbuzz"
-# Color management engine supporting ICC profiles
-brew "little-cms2"
 # Image processing and image analysis library
 brew "leptonica"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Secure Reliable Transport
 brew "srt"
 # OCR (Optical Character Recognition) engine
@@ -70,8 +68,8 @@ brew "ghostscript"
 brew "git"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Framework for layout and rendering of i18n text
-brew "pango"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
@@ -110,8 +108,6 @@ brew "nginx", restart_service: true
 brew "openssl@3"
 # Object-relational database system
 brew "postgresql@14"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8", link: false
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
