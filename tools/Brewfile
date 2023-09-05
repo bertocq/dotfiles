@@ -42,6 +42,8 @@ brew "openldap"
 brew "curl"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Validating, recursive, caching DNS resolver
 brew "unbound", restart_service: true
 # OpenType text shaping engine
@@ -94,6 +96,8 @@ brew "jq"
 brew "krb5"
 # GNOME XML library
 brew "libxml2"
+# YAML Parser
+brew "libyaml"
 # Small memory footprint, flexible web-server
 brew "lighttpd", restart_service: true
 # Creates dependencies in makefiles
@@ -218,6 +222,8 @@ cask "microsoft-teams"
 cask "monitorcontrol"
 # Simple application that will prevent iTunes or Apple Music from launching
 cask "notunes"
+# Collaboration platform for API development
+cask "postman"
 # Instant messaging application focusing on security
 cask "signal"
 # Video chat, voice call and instant messaging application
