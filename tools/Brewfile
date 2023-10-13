@@ -1,12 +1,10 @@
 tap "buo/cask-upgrade"
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/command-not-found"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "michaeldfallen/formula"
 tap "pr0d1r2/python2"
@@ -240,8 +238,6 @@ cask "logitech-camera-settings"
 cask "mactracker"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-# Sandbox construction video game
-cask "minecraft"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Simple application that will prevent iTunes or Apple Music from launching
@@ -258,14 +254,10 @@ cask "slack"
 cask "soundsource"
 # Music streaming service
 cask "spotify"
-# Video game digital distribution service
-cask "steam"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Messaging app with a focus on speed and security
 cask "telegram"
-# Fantasy-themed turn-based strategy game
-cask "the-battle-for-wesnoth"
 # Open-source BitTorrent client
 cask "transmission"
 # Native desktop client for WhatsApp
