@@ -12,6 +12,9 @@ ssh-add ~/.ssh/id_rsa &>/dev/null
 ```
 
 ## Chrome config:
+### Duplicate tab shortcut
+Macos preferences > Keyboard > Shortcuts > App Shortcuts > "Duplicate tab" command+shift+E
+Also overwrite "Check Document Now" to command+'
 ### Gmail as email handler
 http://apple.stackexchange.com/a/112624
 
