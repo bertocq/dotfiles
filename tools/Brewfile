@@ -49,6 +49,8 @@ brew "diff-so-fancy"
 brew "docker"
 # Validating, recursive, caching DNS resolver
 brew "unbound", restart_service: true
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Image processing and image analysis library
@@ -90,7 +92,7 @@ brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Open-source video transcoder available for Linux, Mac, and Windows
-brew "handbrake"
+brew "handbrake", link: false
 # Improved top (interactive process viewer)
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -157,11 +159,11 @@ brew "wxwidgets"
 brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 brew "michaeldfallen/formula/git-radar"
-# A youtube-dl fork with additional features and fixes
-brew "yt-dlp/taps/yt-dlp"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Application uninstaller
@@ -257,8 +259,6 @@ cask "sublime-text"
 cask "telegram"
 # Open-source BitTorrent client
 cask "transmission"
-# Native desktop client for WhatsApp
-cask "whatsapp"
 # Video communication and virtual meeting platform
 cask "zoom"
 # Indoor cycling game
