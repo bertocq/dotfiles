@@ -17,6 +17,9 @@ sudo softwareupdate -ia
 # XCode dev tools install
 xcode-select --install
 
+# Install Rosetta 2 for those old apps
+sudo softwareupdate --install-rosetta
+
 # Allow apps from unidentified developers without macos asking every single time
 sudo spctl --master-disable
 
