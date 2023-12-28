@@ -17,7 +17,6 @@
 		"GitHubinator",
 		"Indent XML",
 		"JSON Reindent",
-		"Kotlin",
 		"LanguageTool",
 		"MoveTab",
 		"Package Control",
@@ -32,6 +31,5 @@
 		"SublimeLinter-xmllint",
 		"Text Pastry",
 		"Theme - Cobalt2",
-		"TOML",
 	],
 }
