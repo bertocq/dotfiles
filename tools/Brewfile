@@ -103,6 +103,8 @@ brew "libraw"
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Postgres C API library
+brew "libpq"
 # GNOME XML library
 brew "libxml2"
 # YAML Parser

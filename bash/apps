@@ -32,6 +32,7 @@ eval "$(fnm env --use-on-cd)"
 ## Python for some node stuff
 export PATH="$HOMEBREW_PREFIX/opt/python@3.10/libexec/bin:$PATH"
 
-# Postgresql
+# Set up libpq for postgresql, ruby and others
 export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
