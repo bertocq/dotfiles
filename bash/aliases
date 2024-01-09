@@ -51,6 +51,11 @@ alias gdf='git gdf'
 alias gds='git gds'
 alias gdsf='git gdsf'
 alias gs='git st'
+## Branches
+alias gcs='git co staging'
+alias gcsp='gcs; p'
+alias gco='git co'
+alias gcob='git cob'
 
 # Ruby
 alias r='ruby'
@@ -117,6 +122,10 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias wifi='wifi-password'
 alias esen='trans es:en'
 alias enes='trans en:es'
+alias esfr='trans es:fr'
+alias fres='trans fr:es'
+alias fren='trans fr:en'
+alias enfr='trans en:fr'
 alias def='trans -d'
 alias pu='paste_unindented'
 alias sys='neofetch'
