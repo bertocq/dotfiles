@@ -2,7 +2,16 @@
 # https://github.com/thoughtbot/dotfiles/blob/master/git_template/hooks/ctags
 set -e
 
-PATH="/opt/homebrew/bin:$PATH"
+if [[ "$(/usr/bin/uname -m)" == "arm64" ]] # Distinguish between M1 and Intel macbooks
+then
+  # On ARM (M1) macOS, homebrew uses folder /opt/homebrew
+  HOMEBREW_PREFIX="/opt/homebrew"
+else
+  # On Intel macOS, homebrew uses folder /usr/local
+  HOMEBREW_PREFIX="/usr/local"
+fi
+
+PATH="$HOMEBREW_PREFIX/bin:$PATH"
 dir="$(git rev-parse --git-dir)"
 trap 'rm -f "$dir/$$.tags"' EXIT
 git ls-files | \

@@ -11,9 +11,5 @@ export XDG_DATA_HOME=$HOME"/.local/share"
 export XDG_CONFIG_HOME=$HOME"/.config"
 export XDG_CACHE_HOME=$HOME"/.cache"
 
-## Macos
-### Overwrite macos old sqlite3
-export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
-
 ### Silence macos zsh promotion
 export BASH_SILENCE_DEPRECATION_WARNING=1

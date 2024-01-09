@@ -4,15 +4,24 @@
 ## Fzf
 [[ -r ~/.fzf.bash ]] && source ~/.fzf.bash;
 
-## Avoid curl issues
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
+if [[ "$(/usr/bin/uname -m)" == "arm64" ]] # Distinguish between M1 and Intel macbooks
+then
+  # On ARM (M1) macOS, homebrew uses folder /opt/homebrew
+  HOMEBREW_PREFIX="/opt/homebrew"
+else
+  # On Intel macOS, homebrew uses folder /usr/local
+  HOMEBREW_PREFIX="/usr/local"
+fi
 
-## Add Homebrew’s sbin to PATH
-export PATH="/opt/homebrew/sbin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+## Avoid curl issues
+export PATH="$HOMEBREW_PREFIX/opt/curl/bin:$PATH"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/curl/lib"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/curl/include"
+
+# Add Homebrew’s binaries to PATH
+export PATH="$HOMEBREW_PREFIX/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/sbin:$PATH"
+eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
 
 ## Ruby's rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -32,12 +41,23 @@ eval "$(fnm env --use-on-cd)"
 ## Python for some node stuff
 export PATH="$HOMEBREW_PREFIX/opt/python@3.10/libexec/bin:$PATH"
 
-# Set up libpq for postgresql, ruby and others
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
-export PATH="/opt/homebrew/opt/imagemagick@6/bin:$PATH"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/imagemagick@6/lib/pkgconfig"
-export LDFLAGS="-L/opt/homebrew/opt/imagemagick@6/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/imagemagick@6/include"
+# Openssl compilation flags
+export PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@1.1/lib"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/lib/pkgconfig"
+
+# Postgresql
+export PATH="$HOMEBREW_PREFIX/opt/libpq/bin:$PATH"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/libpq/lib"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/libpq/include"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/libpq/lib/pkgconfig"
+
+## Imagemagick@6
+export PATH="$PATH:$HOMEBREW_PREFIX/opt/imagemagick@6/bin"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/imagemagick@6/lib"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/imagemagick@6/include"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/imagemagick@6/lib/pkgconfig"
+
+### Overwrite macos old sqlite3
+export PATH="$HOMEBREW_PREFIXopt/sqlite/bin:$PATH"
