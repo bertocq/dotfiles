@@ -13,6 +13,7 @@ vendor/*/vendor/ruby/
 # Ignore todo files and folders
 *.todo
 /todo
+/notes
 
 # Ignore environment config file
 .env
