@@ -2,7 +2,7 @@
 
 ## If work setup
 
-export ENV_SUFFIX=.work
+export ENV_SUFFIX=.work to /etc/profile or /etc/bashrc
 
 ## Add private key to OSX Keychain
 ```
