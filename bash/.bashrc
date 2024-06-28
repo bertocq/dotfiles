@@ -7,6 +7,12 @@ source ~/dotfiles/bash/functions
 source ~/dotfiles/bash/system
 source ~/dotfiles/bash/apps
 
-if [[ -d ~/bin ]]; then
-  export PATH=~/bin:$PATH
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
 fi
