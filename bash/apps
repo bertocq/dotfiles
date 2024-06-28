@@ -4,21 +4,25 @@
 ## Fzf
 [[ -r ~/.fzf.bash ]] && source ~/.fzf.bash;
 
-if [[ "$(/usr/bin/uname -m)" == "arm64" ]] # Distinguish between M1 and Intel macbooks
-then
-  # On ARM (M1) macOS, homebrew uses folder /opt/homebrew
-  HOMEBREW_PREFIX="/opt/homebrew"
+if [[ "$(/usr/bin/uname -s)" == "Darwin" ]]; then # Distinguish between macos and linux
+  if [[ "$(/usr/bin/uname -m)" == "arm64" ]]; then # Distinguish between M1 and Intel macbooks
+    # On ARM (M1) macOS, homebrew uses folder /opt/homebrew
+    HOMEBREW_PREFIX="/opt/homebrew"
+    # On Intel macOS, homebrew uses folder /usr/local
+    HOMEBREW_PREFIX="/usr/local"
+  fi
+elif [[ "$(/usr/bin/uname -s)" == "Linux" ]]; then # Distinguish between macos and linux
+  HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
 else
-  # On Intel macOS, homebrew uses folder /usr/local
-  HOMEBREW_PREFIX="/usr/local"
+  echo "Is this a reebok or a nike?"
 fi
 
-## Avoid curl issues
+### Avoid curl issues
 export PATH="$HOMEBREW_PREFIX/opt/curl/bin:$PATH"
 export LDFLAGS="-L$HOMEBREW_PREFIX/opt/curl/lib"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/curl/include"
 
-# Add Homebrew’s binaries to PATH
+## Add Homebrew’s binaries to PATH
 export PATH="$HOMEBREW_PREFIX/bin:$PATH"
 export PATH="$HOMEBREW_PREFIX/sbin:$PATH"
 eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
@@ -26,7 +30,7 @@ eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
 ## Ruby's rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # Solve issue with NSCF
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # Solve issue with NSCF in macos
 
 ## Config sublimetext as default editor
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"

@@ -162,8 +162,13 @@ scutil --set LocalHostName "bcq"
 scutil --set HostName "bcq"
 
 # Use own SublimeText config
+# macos
 rm -rf ~/Library/Application\ Support/Sublime\ Text/Packages/User
 ln -sfn ~/dotfiles/sublimetext ~/Library/Application\ Support/Sublime\ Text/Packages/User
+
+# linux
+rm -rf ~/.config/sublime-text/Packages/User
+ln -sfn ~/dotfiles/sublimetext ~/.config/sublime-text/Packages/User
 
 # Divvy shortcuts setup: (will prompt on Safari to confirm)
 open -a Safari "$(< ~/dotfiles/tools/divvy)"
