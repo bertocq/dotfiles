@@ -85,7 +85,7 @@
 	[
 		"no_round"
 	],
-	"font_size": 19,
+	"font_size": 15,
 	"gutter": true,
 	"hide_new_tab_button": true,
 	"hide_tab_scrolling_buttons": true,
