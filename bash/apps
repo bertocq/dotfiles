@@ -5,11 +5,11 @@
 [[ -r ~/.fzf.bash ]] && source ~/.fzf.bash;
 
 if [[ "$(/usr/bin/uname -s)" == "Darwin" ]]; then # Distinguish between macos and linux
+  # On Intel macOS, homebrew uses folder /usr/local
+  HOMEBREW_PREFIX="/usr/local"
   if [[ "$(/usr/bin/uname -m)" == "arm64" ]]; then # Distinguish between M1 and Intel macbooks
     # On ARM (M1) macOS, homebrew uses folder /opt/homebrew
     HOMEBREW_PREFIX="/opt/homebrew"
-    # On Intel macOS, homebrew uses folder /usr/local
-    HOMEBREW_PREFIX="/usr/local"
   fi
 elif [[ "$(/usr/bin/uname -s)" == "Linux" ]]; then # Distinguish between macos and linux
   HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
