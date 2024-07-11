@@ -176,8 +176,6 @@ cask "font-hack"
 cask "gimp"
 # Web browser
 cask "google-chrome"
-# Utility to fix grammar errors and style issues in text
-cask "grammarly"
 # Free and open-source media player
 cask "iina"
 # Vector graphics editor
