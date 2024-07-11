@@ -38,6 +38,7 @@ ln -s ~/dotfiles/tools/.unused.yml ~/.unused.yml
 ln -s ~/dotfiles/tools/Brewfile ~/Brewfile
 ln -s ~/dotfiles/tools/com.googlecode.iterm2.plist ~/com.googlecode.iterm2.plist
 ln -s ~/dotfiles/sublimetext/.SideBarEnhancements.optout ~/.SideBarEnhancements.optout
+mkdir ~/.config
 mkdir ~/.config/translate-shell/
 ln -s ~/dotfiles/tools/translate-shell/init.trans ~/.config/translate-shell/init.trans
 ln -s ~/dotfiles/tools/translate-shell/theme.trans ~/.config/translate-shell/theme.trans
