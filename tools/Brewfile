@@ -1,5 +1,4 @@
 tap "buo/cask-upgrade"
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
@@ -147,8 +146,6 @@ brew "wifi-password"
 brew "wxwidgets"
 # JavaScript package manager
 brew "yarn"
-# Everything you need to get started with Heroku
-brew "heroku/brew/heroku"
 brew "michaeldfallen/formula/git-radar"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
