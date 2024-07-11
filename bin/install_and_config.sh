@@ -134,6 +134,19 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
+# Move dock to the left & restart it
+defaults write com.apple.dock orientation left
+
+# Remove all app icons from Dock
+defaults write com.apple.dock persistent-apps -array
+
+# Restart dock to apply changes
+killall Dock
+
+# Disable handoff
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool no
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool no
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
