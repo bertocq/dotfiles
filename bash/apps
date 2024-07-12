@@ -65,3 +65,6 @@ export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/imagemagick@6/lib/pkgconfig"
 
 ### Overwrite macos old sqlite3
 export PATH="$HOMEBREW_PREFIXopt/sqlite/bin:$PATH"
+
+### Docker desktop app
+export PATH="$HOME/.docker/bin:$PATH"
