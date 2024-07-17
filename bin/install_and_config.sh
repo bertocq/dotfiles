@@ -65,6 +65,10 @@ ln -s ~/.git/hooks ~/dotfiles/git/hooks
 
 # Install Homebrew and use Brewfile with Cask
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# If brew already installed on another existing user, just give permissions to admin group
+sudo chgrp -R admin /opt/homebrew/
+sudo chmod -R 770 /opt/homebrew/
+
 brew doctor
 brew tap Homebrew/bundle # https://github.com/Homebrew/homebrew-bundle
 brew bundle install
