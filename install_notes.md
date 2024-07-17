@@ -11,12 +11,11 @@ ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa &>/dev/null
 ```
 
-## Chrome config:
-### Duplicate tab shortcut
-Macos preferences > Keyboard > Shortcuts > App Shortcuts > "Duplicate tab" command+shift+E
-Also overwrite "Check Document Now" to command+'
-### Gmail as email handler
-http://apple.stackexchange.com/a/112624
+## macOS Shortcuts:
+> Preferences > Keyboard Shortcuts > Keyboard > Move focus to next window > Cmd+¡
+> Preferences > Keyboard Shortcuts > App Shortcuts > "Duplicate tab" Cmd+shift+E
+> Preferences > Keyboard Shortcuts > App Shortcuts > "Check Document Now" Cmd+' (to avoid collision with Cmd+¡)
+> Preferences > Keyboard Shortcuts > Mission Control > Disable ^↑ & ^↓ that would collide with Sublimetext shortcuts
 
 ### Chrome extensions config
 chrome://extensions > Keyboard shortcuts
@@ -26,9 +25,6 @@ chrome://extensions > Keyboard shortcuts
 - Rearrange Tabs:
   - "Move active tab to left": Command+Ctrl+Left Arrow
   - "Move active tab to right": Command+Ctrl+Right Arrow
-
-## macOS Shortcut:
-> Preferences > Keyboard > Shortcuts > Keyboard > Move focus to next window > Cmd+¡
 
 ## macOS Matrix RedPill ScreenSaver
 https://github.com/lpar/RedPill
