@@ -13,8 +13,13 @@ ssh-add ~/.ssh/id_rsa &>/dev/null
 
 ## macOS Shortcuts:
 > Preferences > Keyboard Shortcuts > Keyboard > Move focus to next window > Cmd+¡
+
+
 > Preferences > Keyboard Shortcuts > App Shortcuts > "Duplicate tab" Cmd+shift+E
+
 > Preferences > Keyboard Shortcuts > App Shortcuts > "Check Document Now" Cmd+' (to avoid collision with Cmd+¡)
+
+
 > Preferences > Keyboard Shortcuts > Mission Control > Disable ^↑ & ^↓ that would collide with Sublimetext shortcuts
 
 ### Chrome extensions config
