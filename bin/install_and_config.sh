@@ -9,6 +9,16 @@
 # - Ask confirmation to config  Divvy shortcuts
 ############################
 
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until script has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 chsh -s /bin/bash
 
 # Update firmware
@@ -99,8 +109,39 @@ mkdir ~/Downloads/screenshots
 sudo bash -c "echo $(brew --prefix)/bin/bash >> /etc/shells"
 chsh -s "$(brew --prefix)"/bin/bash
 
-# Show hidden files on Finder
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Set highlight color to green
+defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
+
+# Finder: Show hidden files on
 defaults write com.apple.finder AppleShowAllFiles YES
+
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Finder: Display full POSIX path as window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Finder: Always open everything in list view.
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+
+# Finder :Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Finder :Disable the warning before emptying the Trash
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Finder: Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Finder Show the /Volumes folder
+sudo chflags nohidden /Volumes
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
@@ -111,11 +152,18 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Disable creation of metadata files on USB volumes
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
-# Change screenshots format
-defaults write com.apple.screencapture type jpg
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
 
 # Change screenshots destination folder
 defaults write com.apple.screencapture location ~/Downloads/screenshots
+
+# Enable subpixel font rendering on non-Apple LCDs
+# Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
+defaults write NSGlobalDomain AppleFontSmoothing -int 1
+
+# Enable HiDPI display modes (requires restart)
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -137,14 +185,35 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
+# Disable automatic capitalization as it’s annoying when typing code
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# Disable smart dashes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable automatic period substitution as it’s annoying when typing code
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+# Disable smart quotes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
-# Move dock to the left & restart it
+# Dock: Move to the left & restart it
 defaults write com.apple.dock orientation left
 
-# Remove all app icons from Dock
+# Dock: Remove all app icons
 defaults write com.apple.dock persistent-apps -array
+
+# Dock: Set the icon size to 36 pixels
+defaults write com.apple.dock tilesize -int 40
+
+# Dock: Make icons of hidden applications translucent
+defaults write com.apple.dock showhidden -bool true
 
 # Restart dock to apply changes
 killall Dock
@@ -152,12 +221,6 @@ killall Dock
 # Disable handoff
 defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool no
 defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool no
-
-# Show the ~/Library folder
-chflags nohidden ~/Library
-
-# Disable the warning before emptying the Trash
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Disable Spell Check in Every Application system-wide
 defaults write com.apple.notes NSAutomaticSpellingCorrectionEnabled -bool false
@@ -168,9 +231,6 @@ killall SystemUIServer
 
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
-
-# Always open everything in Finder's list view.
-defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Disable font smoothing. 0: disable 1: light 2: medium (default) 3: strong
 defaults -currentHost write -g AppleFontSmoothing -int 0
