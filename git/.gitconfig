@@ -191,3 +191,5 @@
 	insteadOf = https://github.com/
 [includeIf "gitdir:~/workspace/"]
   path = ~/.gitconfig.work
+[safe]
+	directory = /opt/homebrew
