@@ -40,7 +40,7 @@ export EDITOR="subl -w"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 ## FNM Node version manager
-eval "$(fnm env --use-on-cd)"
+# eval "$(fnm env --use-on-cd)" # uninstalled for now
 
 ## Python for some node stuff
 export PATH="$HOMEBREW_PREFIX/opt/python@3.10/libexec/bin:$PATH"
