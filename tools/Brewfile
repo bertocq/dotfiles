@@ -1,13 +1,11 @@
 tap "buo/cask-upgrade"
+tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/command-not-found"
 tap "homebrew/services"
 tap "michaeldfallen/formula"
-tap "pr0d1r2/python2"
 tap "unused-code/formulae"
-tap "yt-dlp/taps"
+tap "yukiarrr/tap"
 # Color management engine supporting ICC profiles
 brew "little-cms2"
 # Image format providing lossless and lossy compression for web images
@@ -16,14 +14,16 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Bourne-Again SHell, a UNIX command interpreter
-brew "bash"
-# Programmable completion for Bash 4.2+
-brew "bash-completion@2"
 # Mozilla CA certificate store
 brew "ca-certificates"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 4.2+
+brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Glorious Glasgow Haskell Compilation System
@@ -34,22 +34,22 @@ brew "cabal-install"
 brew "glib"
 # Like cat but displays content with syntax highlighting
 brew "ccat"
+# Cross-platform make
+brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Reimplementation of ctags(1)
 brew "ctags"
-# Open source suite of directory software
-brew "openldap"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
 # Validating, recursive, caching DNS resolver
-brew "unbound", restart_service: true
+brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@76"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Image processing and image analysis library
@@ -62,8 +62,6 @@ brew "srt"
 brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# Fast and simple Node.js version manager
-brew "fnm"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Graphics library to dynamically manipulate images
@@ -94,28 +92,32 @@ brew "htop"
 brew "httpie"
 # Add GitHub support to git on the command-line
 brew "hub"
-# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
-brew "libheif"
-# Library for reading RAW files from digital photo cameras
-brew "libraw"
 # Tools and libraries to manipulate images in many formats
-brew "imagemagick"
+brew "imagemagick@6"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# C library for the MaxMind DB file format
+brew "libmaxminddb"
 # Postgres C API library
 brew "libpq"
+# Library for reading RAW files from digital photo cameras
+brew "libraw"
 # GNOME XML library
 brew "libxml2"
 # YAML Parser
 brew "libyaml"
+# Open source suite of directory software
+brew "openldap"
 # Small memory footprint, flexible web-server
-brew "lighttpd", restart_service: true
+brew "lighttpd"
 # Creates dependencies in makefiles
 brew "makedepend"
 # NCurses Disk Usage
 brew "ncdu"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx", restart_service: true
+brew "nginx"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -146,27 +148,25 @@ brew "wifi-password"
 brew "wxwidgets"
 # JavaScript package manager
 brew "yarn"
+# Everything you need to get started with Heroku
+brew "heroku/brew/heroku"
 brew "michaeldfallen/formula/git-radar"
+# ecsk is a CLI tool to interactively use frequently used functions of docker command in Amazon ECS. (docker run, exec, cp, logs, stop)
+brew "yukiarrr/tap/ecsk"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Application uninstaller
 cask "appcleaner"
-# Finds and sets up subtitles automatically
-cask "caption"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
-# Free and open-source web browser
-cask "chromium"
 # Allows switching between application windows
 cask "contexts"
-# Browser for SQLite databases
-cask "db-browser-for-sqlite"
-# Design, document and deploy databases
-cask "dbschema"
 # Voice and text chat software
 cask "discord"
 # Application window manager focusing on simplicity
 cask "divvy"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Web browser
@@ -184,8 +184,6 @@ cask "inkscape"
 cask "iterm2"
 # File archiver
 cask "keka"
-# GPU-based terminal emulator
-cask "kitty"
 # Free cross-platform office suite, fresh version
 cask "libreoffice"
 # Provides access to camera controls
@@ -196,12 +194,16 @@ cask "mactracker"
 cask "monitorcontrol"
 # Simple application that will prevent iTunes or Apple Music from launching
 cask "notunes"
+# Plugin for AWS CLI to start and end sessions that connect to managed instances
+cask "session-manager-plugin"
 # Team communication and collaboration software
 cask "slack"
 # Sound and audio controller
 cask "soundsource"
 # Music streaming service
 cask "spotify"
+# Video game digital distribution service
+cask "steam"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Messaging app with a focus on speed and security
@@ -210,5 +212,3 @@ cask "telegram"
 cask "transmission"
 # Video communication and virtual meeting platform
 cask "zoom"
-# Indoor cycling game
-cask "zwift"
