@@ -136,8 +136,8 @@ alias cmds="sed 's/|/\n/g' ~/.bash_history | awk '{CMD[\$1]++;count++;}END { for
 ## Youtube-dl
 alias yt='youtube-dl'
 alias yta='yt -f 140 -o "~/Downloads/music/%(title)s.%(ext)s" '
-alias ytv='yt -f 22 -o "~/Downloads/video/%(title)s.%(ext)s" '
-alias ytvp='yt -f 22 -o "~/Downloads/video/%(title)s.%(ext)s" --cookies ~/Downloads/video/cookies.txt'
+alias ytv='yt -f 137 -o "~/Downloads/video/%(title)s.%(ext)s" '
+alias ytvp='yt -f 137 -o "~/Downloads/video/%(title)s.%(ext)s" --cookies ~/Downloads/video/cookies.txt'
 alias ytf='yt -F'
 
 # Tmux
