@@ -109,8 +109,8 @@
 	"rulers":
 	[
 		100,
-		130,
-		160
+		120,
+		140
 	],
 	"save_on_focus_lost": true,
 	"show_definitions": false,
