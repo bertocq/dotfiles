@@ -193,3 +193,5 @@
   path = ~/.gitconfig.work
 [safe]
 	directory = /opt/homebrew
+[help]
+	autocorrect = prompt
