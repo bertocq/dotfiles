@@ -44,6 +44,7 @@ alias p='git p'
 alias P='git push'
 alias PU='git pu'
 alias PUF='git pu --force-with-lease'
+alias GPU='gaa; gcm "UP"; PU'
 ## Status
 alias cgs='clear; git st' # Clear screen and git status
 alias gd='git gd'
