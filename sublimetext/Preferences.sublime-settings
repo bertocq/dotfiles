@@ -71,7 +71,8 @@
 		"*.svg",
 		"*.min.css",
 		"tags",
-		"*.otf"
+		"*.otf",
+		"*.cjs"
 	],
 	"fold_buttons": true,
 	"folder_exclude_patterns":
