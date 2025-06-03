@@ -3,6 +3,7 @@
 	"auto_complete": true,
 	"auto_indent": true,
 	"auto_match_enabled": true,
+	"sidebar_on_right": true,
 	"binary_file_patterns":
 	[
 		"*.jpg",
