@@ -39,3 +39,8 @@ tags
 .tags
 
 db/var
+
+# Git hooks system
+.githooks
+bin/git/
+bin/lint/
