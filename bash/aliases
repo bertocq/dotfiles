@@ -60,7 +60,7 @@ alias gcs='git co staging'
 alias gcsp='gcs; p'
 alias gco='git co'
 alias gcob='git cob'
-
+alias grs='gcs; p; p; git co -; git rebase staging'
 # Ruby
 alias r='ruby'
 ## Rubocoping
