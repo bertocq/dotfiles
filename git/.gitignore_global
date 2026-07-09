@@ -44,3 +44,10 @@ db/var
 .githooks
 bin/git
 bin/lint
+
+# Claude
+**/.claude/settings.local.json
+.claude
+
+# Claude helpful graph tool
+graphify-out
