@@ -52,19 +52,19 @@ export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/lib/pkgconfig"
 
 # Postgresql
-export PATH="$HOMEBREW_PREFIX/opt/libpq/bin:$PATH"
-export LDFLAGS="-L$HOMEBREW_PREFIX/opt/libpq/lib"
-export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/libpq/include"
-export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/libpq/lib/pkgconfig"
+# export PATH="$HOMEBREW_PREFIX/opt/libpq/bin:$PATH"
+# export LDFLAGS="-L$HOMEBREW_PREFIX/opt/libpq/lib"
+# export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/libpq/include"
+# export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/libpq/lib/pkgconfig"
 
 ## Imagemagick@6
-export PATH="$PATH:$HOMEBREW_PREFIX/opt/imagemagick@6/bin"
-export LDFLAGS="-L$HOMEBREW_PREFIX/opt/imagemagick@6/lib"
-export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/imagemagick@6/include"
-export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/imagemagick@6/lib/pkgconfig"
+# export PATH="$PATH:$HOMEBREW_PREFIX/opt/imagemagick@6/bin"
+# export LDFLAGS="-L$HOMEBREW_PREFIX/opt/imagemagick@6/lib"
+# export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/imagemagick@6/include"
+# export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/imagemagick@6/lib/pkgconfig"
 
 ### Overwrite macos old sqlite3
-export PATH="$HOMEBREW_PREFIXopt/sqlite/bin:$PATH"
+# export PATH="$HOMEBREW_PREFIX/opt/sqlite/bin:$PATH"
 
 ### Docker desktop app
 export PATH="$HOME/.docker/bin:$PATH"
