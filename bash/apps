@@ -43,13 +43,13 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # eval "$(fnm env --use-on-cd)" # uninstalled for now
 
 ## Python for some node stuff
-export PATH="$HOMEBREW_PREFIX/opt/python@3.10/libexec/bin:$PATH"
+# export PATH="$HOMEBREW_PREFIX/opt/python@3.10/libexec/bin:$PATH"
 
-# Openssl compilation flags
-export PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/bin:$PATH"
-export LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@1.1/lib"
-export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@1.1/include"
-export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/lib/pkgconfig"
+# # Openssl compilation flags
+# export PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/bin:$PATH"
+# export LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@1.1/lib"
+# export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@1.1/include"
+# export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/lib/pkgconfig"
 
 # Postgresql
 # export PATH="$HOMEBREW_PREFIX/opt/libpq/bin:$PATH"
